@@ -105,5 +105,53 @@
   <ItemGroup>
     <None Include="Resources\utilizadores2_48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emprestimos4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emprestimos3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventos3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventos4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utilizadores3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utilizadores6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

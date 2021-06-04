@@ -1,0 +1,14 @@
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\biblioteca.exe.config
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\biblioteca.exe
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\biblioteca.pdb
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\MetroFramework.Design.dll
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\MetroFramework.dll
+C:\Users\a37800\adm-biblioteca\biblioteca\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.csproj.AssemblyReference.cache
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Menu.resources
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Properties.Resources.resources
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.cache
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.csproj.CopyComplete
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.exe
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.pdb

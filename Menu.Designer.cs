@@ -40,14 +40,16 @@ namespace biblioteca
             this.btEquipamentos = new MetroFramework.Controls.MetroTile();
             this.btUtilizadores = new MetroFramework.Controls.MetroTile();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(23, 148);
+            this.panel1.Location = new System.Drawing.Point(23, 135);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1394, 729);
+            this.panel1.Size = new System.Drawing.Size(1394, 698);
             this.panel1.TabIndex = 0;
             // 
             // btEmprestimos
@@ -59,7 +61,7 @@ namespace biblioteca
             this.btEmprestimos.Location = new System.Drawing.Point(601, 36);
             this.btEmprestimos.Name = "btEmprestimos";
             this.btEmprestimos.PaintTileCount = false;
-            this.btEmprestimos.Size = new System.Drawing.Size(131, 106);
+            this.btEmprestimos.Size = new System.Drawing.Size(131, 93);
             this.btEmprestimos.Style = MetroFramework.MetroColorStyle.Orange;
             this.btEmprestimos.TabIndex = 10;
             this.btEmprestimos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -76,11 +78,12 @@ namespace biblioteca
             // 
             this.btSair.AccessibleName = "Sair";
             this.btSair.ActiveControl = null;
+            this.btSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSair.Location = new System.Drawing.Point(1286, 36);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(131, 106);
+            this.btSair.Size = new System.Drawing.Size(131, 93);
             this.btSair.TabIndex = 9;
-            this.btSair.TileImage = global::biblioteca.Properties.Resources.sair5;
+            this.btSair.TileImage = global::biblioteca.Properties.Resources.sair2;
             this.btSair.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btSair.UseSelectable = true;
             this.btSair.UseTileImage = true;
@@ -90,12 +93,13 @@ namespace biblioteca
             // 
             this.btLogout.AccessibleName = "Logout";
             this.btLogout.ActiveControl = null;
+            this.btLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btLogout.Location = new System.Drawing.Point(1149, 36);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(131, 106);
+            this.btLogout.Size = new System.Drawing.Size(131, 93);
             this.btLogout.Style = MetroFramework.MetroColorStyle.Blue;
             this.btLogout.TabIndex = 8;
-            this.btLogout.TileImage = global::biblioteca.Properties.Resources.sair9;
+            this.btLogout.TileImage = global::biblioteca.Properties.Resources.sair6;
             this.btLogout.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btLogout.UseSelectable = true;
             this.btLogout.UseTileImage = true;
@@ -104,9 +108,10 @@ namespace biblioteca
             // 
             this.btConfigs.AccessibleName = "Configurações";
             this.btConfigs.ActiveControl = null;
+            this.btConfigs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btConfigs.Location = new System.Drawing.Point(1012, 36);
             this.btConfigs.Name = "btConfigs";
-            this.btConfigs.Size = new System.Drawing.Size(131, 106);
+            this.btConfigs.Size = new System.Drawing.Size(131, 93);
             this.btConfigs.Style = MetroFramework.MetroColorStyle.Orange;
             this.btConfigs.TabIndex = 7;
             this.btConfigs.TileImage = global::biblioteca.Properties.Resources.settings3;
@@ -118,9 +123,10 @@ namespace biblioteca
             // 
             this.btNotas.AccessibleName = "Notas";
             this.btNotas.ActiveControl = null;
+            this.btNotas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNotas.Location = new System.Drawing.Point(875, 36);
             this.btNotas.Name = "btNotas";
-            this.btNotas.Size = new System.Drawing.Size(131, 106);
+            this.btNotas.Size = new System.Drawing.Size(131, 93);
             this.btNotas.Style = MetroFramework.MetroColorStyle.Orange;
             this.btNotas.TabIndex = 6;
             this.btNotas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,9 +139,10 @@ namespace biblioteca
             // 
             this.btEventos.AccessibleName = "Calendário";
             this.btEventos.ActiveControl = null;
+            this.btEventos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEventos.Location = new System.Drawing.Point(738, 36);
             this.btEventos.Name = "btEventos";
-            this.btEventos.Size = new System.Drawing.Size(131, 106);
+            this.btEventos.Size = new System.Drawing.Size(131, 93);
             this.btEventos.Style = MetroFramework.MetroColorStyle.Orange;
             this.btEventos.TabIndex = 5;
             this.btEventos.TileImage = global::biblioteca.Properties.Resources.eventos4;
@@ -148,9 +155,10 @@ namespace biblioteca
             // 
             this.btSalas.AccessibleName = "Salas";
             this.btSalas.ActiveControl = null;
+            this.btSalas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSalas.Location = new System.Drawing.Point(464, 36);
             this.btSalas.Name = "btSalas";
-            this.btSalas.Size = new System.Drawing.Size(131, 106);
+            this.btSalas.Size = new System.Drawing.Size(131, 93);
             this.btSalas.Style = MetroFramework.MetroColorStyle.Orange;
             this.btSalas.TabIndex = 4;
             this.btSalas.TileImage = global::biblioteca.Properties.Resources.salas3;
@@ -162,9 +170,10 @@ namespace biblioteca
             // 
             this.btEquipamentos.AccessibleName = "Equipamentos";
             this.btEquipamentos.ActiveControl = null;
+            this.btEquipamentos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEquipamentos.Location = new System.Drawing.Point(327, 36);
             this.btEquipamentos.Name = "btEquipamentos";
-            this.btEquipamentos.Size = new System.Drawing.Size(131, 106);
+            this.btEquipamentos.Size = new System.Drawing.Size(131, 93);
             this.btEquipamentos.Style = MetroFramework.MetroColorStyle.Orange;
             this.btEquipamentos.TabIndex = 3;
             this.btEquipamentos.TileImage = global::biblioteca.Properties.Resources.equipamentos2;
@@ -178,10 +187,10 @@ namespace biblioteca
             this.btUtilizadores.ActiveControl = null;
             this.btUtilizadores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUtilizadores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btUtilizadores.Location = new System.Drawing.Point(190, 36);
+            this.btUtilizadores.Location = new System.Drawing.Point(212, 36);
             this.btUtilizadores.Name = "btUtilizadores";
             this.btUtilizadores.PaintTileCount = false;
-            this.btUtilizadores.Size = new System.Drawing.Size(131, 106);
+            this.btUtilizadores.Size = new System.Drawing.Size(109, 93);
             this.btUtilizadores.Style = MetroFramework.MetroColorStyle.Orange;
             this.btUtilizadores.TabIndex = 2;
             this.btUtilizadores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -198,19 +207,42 @@ namespace biblioteca
             // 
             this.pictureBox1.BackgroundImage = global::biblioteca.Properties.Resources.biblio1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ErrorImage = global::biblioteca.Properties.Resources.biblio;
             this.pictureBox1.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(131, 93);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(918, 836);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(502, 19);
+            this.metroLabel1.TabIndex = 11;
+            this.metroLabel1.Text = "Este programa foi desenvolvido por Anna Garcia para a Biblioteca Escolar da ESHN." +
+    "";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(23, 836);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(165, 19);
+            this.metroLabel2.TabIndex = 12;
+            this.metroLabel2.Text = "Biblioteca Escolar - Gestão";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.ClientSize = new System.Drawing.Size(1440, 870);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btEmprestimos);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btLogout);
@@ -227,6 +259,7 @@ namespace biblioteca
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -243,6 +276,8 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTile btLogout;
         private MetroFramework.Controls.MetroTile btSair;
         private MetroFramework.Controls.MetroTile btEmprestimos;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
 

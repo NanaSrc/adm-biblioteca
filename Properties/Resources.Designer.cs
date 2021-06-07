@@ -63,6 +63,17 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3D_stereoscopic_wallpaper_book_3d_wallpaper_living_room_3d_mural_designs_Home_Decoration_Wallpapers_for_living_jpg {
+            get {
+                object obj = ResourceManager.GetObject("3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Dec" +
+                        "oration-Wallpapers-for-living.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap biblio {
             get {
                 object obj = ResourceManager.GetObject("biblio", resourceCulture);
@@ -76,6 +87,46 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap biblio1 {
             get {
                 object obj = ResourceManager.GetObject("biblio1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap biblio7 {
+            get {
+                object obj = ResourceManager.GetObject("biblio7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap books_jpg {
+            get {
+                object obj = ResourceManager.GetObject("books.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap books1_jpg {
+            get {
+                object obj = ResourceManager.GetObject("books1.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap books2_jpg {
+            get {
+                object obj = ResourceManager.GetObject("books2.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +337,16 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap utilizadores1 {
             get {
                 object obj = ResourceManager.GetObject("utilizadores1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap utilizadores11 {
+            get {
+                object obj = ResourceManager.GetObject("utilizadores11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

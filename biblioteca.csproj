@@ -91,12 +91,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Decoration-Wallpapers-for-living.jpg.opdownload" />
     <None Include="Resources\biblio.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\biblio1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\books.jpg.opdownload" />
+    <None Include="Resources\books1.jpg.opdownload" />
+    <None Include="Resources\books2.jpg.opdownload" />
     <None Include="Resources\utilizadores1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sair6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblio7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

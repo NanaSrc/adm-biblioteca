@@ -14,10 +14,10 @@ C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.exe
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.pdb
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Turmas.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Equipamentos.resources
-C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Salas.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Utilizadores.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Agenda.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Calendario.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Configuracoes.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Notas.resources
 C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Login.resources
+C:\Users\a37800\adm-biblioteca\biblioteca\obj\Debug\biblioteca.Espacos.resources

@@ -99,11 +99,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Salas.cs">
+    <Compile Include="Espacos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salas.Designer.cs">
-      <DependentUpon>Salas.cs</DependentUpon>
+    <Compile Include="Espacos.Designer.cs">
+      <DependentUpon>Espacos.cs</DependentUpon>
     </Compile>
     <Compile Include="Turma.cs" />
     <Compile Include="Turmas.cs">
@@ -149,8 +149,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Salas.resx">
-      <DependentUpon>Salas.cs</DependentUpon>
+    <EmbeddedResource Include="Espacos.resx">
+      <DependentUpon>Espacos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Turmas.resx">
       <DependentUpon>Turmas.cs</DependentUpon>
@@ -283,6 +283,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\settings6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

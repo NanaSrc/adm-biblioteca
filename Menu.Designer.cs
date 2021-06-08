@@ -137,7 +137,7 @@ namespace biblioteca
             this.btEmprestimos.Text = "Agenda";
             this.btEmprestimos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btEmprestimos.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btEmprestimos.TileImage = global::biblioteca.Properties.Resources.notas51;
+            this.btEmprestimos.TileImage = global::biblioteca.Properties.Resources.emprestimos5;
             this.btEmprestimos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btEmprestimos.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.btEmprestimos.UseCustomForeColor = true;
@@ -210,7 +210,7 @@ namespace biblioteca
             this.btNotas.TabIndex = 6;
             this.btNotas.Text = "Notas";
             this.btNotas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btNotas.TileImage = global::biblioteca.Properties.Resources.notas41;
+            this.btNotas.TileImage = global::biblioteca.Properties.Resources.notas52;
             this.btNotas.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btNotas.UseSelectable = true;
             this.btNotas.UseTileImage = true;

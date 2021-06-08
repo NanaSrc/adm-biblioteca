@@ -84,7 +84,7 @@ namespace biblioteca
             this.btBiblioNet.Name = "btBiblioNet";
             this.btBiblioNet.PaintTileCount = false;
             this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
-            this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Teal;
             this.btBiblioNet.TabIndex = 14;
             this.btBiblioNet.Text = "biblio.net";
             this.btBiblioNet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -96,6 +96,7 @@ namespace biblioteca
             this.btBiblioNet.UseSelectable = true;
             this.btBiblioNet.UseStyleColors = true;
             this.btBiblioNet.UseTileImage = true;
+            this.btBiblioNet.Click += new System.EventHandler(this.btBiblioNet_Click);
             // 
             // btTurmas
             // 
@@ -119,6 +120,7 @@ namespace biblioteca
             this.btTurmas.UseSelectable = true;
             this.btTurmas.UseStyleColors = true;
             this.btTurmas.UseTileImage = true;
+            this.btTurmas.Click += new System.EventHandler(this.btTurmas_Click);
             // 
             // btEmprestimos
             // 
@@ -130,7 +132,7 @@ namespace biblioteca
             this.btEmprestimos.Name = "btEmprestimos";
             this.btEmprestimos.PaintTileCount = false;
             this.btEmprestimos.Size = new System.Drawing.Size(109, 93);
-            this.btEmprestimos.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btEmprestimos.Style = MetroFramework.MetroColorStyle.Red;
             this.btEmprestimos.TabIndex = 10;
             this.btEmprestimos.Text = "Agenda";
             this.btEmprestimos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -142,6 +144,7 @@ namespace biblioteca
             this.btEmprestimos.UseSelectable = true;
             this.btEmprestimos.UseStyleColors = true;
             this.btEmprestimos.UseTileImage = true;
+            this.btEmprestimos.Click += new System.EventHandler(this.btEmprestimos_Click);
             // 
             // btSair
             // 
@@ -168,7 +171,7 @@ namespace biblioteca
             this.btLogout.Location = new System.Drawing.Point(1193, 36);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(109, 93);
-            this.btLogout.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btLogout.Style = MetroFramework.MetroColorStyle.Teal;
             this.btLogout.TabIndex = 8;
             this.btLogout.Text = "Logout";
             this.btLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -185,7 +188,7 @@ namespace biblioteca
             this.btConfigs.Location = new System.Drawing.Point(1078, 36);
             this.btConfigs.Name = "btConfigs";
             this.btConfigs.Size = new System.Drawing.Size(109, 93);
-            this.btConfigs.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btConfigs.Style = MetroFramework.MetroColorStyle.Silver;
             this.btConfigs.TabIndex = 7;
             this.btConfigs.Text = "Configurações";
             this.btConfigs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -193,6 +196,7 @@ namespace biblioteca
             this.btConfigs.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btConfigs.UseSelectable = true;
             this.btConfigs.UseTileImage = true;
+            this.btConfigs.Click += new System.EventHandler(this.btConfigs_Click);
             // 
             // btNotas
             // 
@@ -202,14 +206,15 @@ namespace biblioteca
             this.btNotas.Location = new System.Drawing.Point(963, 36);
             this.btNotas.Name = "btNotas";
             this.btNotas.Size = new System.Drawing.Size(109, 93);
-            this.btNotas.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btNotas.Style = MetroFramework.MetroColorStyle.Purple;
             this.btNotas.TabIndex = 6;
             this.btNotas.Text = "Notas";
             this.btNotas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btNotas.TileImage = global::biblioteca.Properties.Resources.notas4;
+            this.btNotas.TileImage = global::biblioteca.Properties.Resources.notas41;
             this.btNotas.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btNotas.UseSelectable = true;
             this.btNotas.UseTileImage = true;
+            this.btNotas.Click += new System.EventHandler(this.btNotas_Click);
             // 
             // btEventos
             // 
@@ -219,7 +224,7 @@ namespace biblioteca
             this.btEventos.Location = new System.Drawing.Point(848, 36);
             this.btEventos.Name = "btEventos";
             this.btEventos.Size = new System.Drawing.Size(109, 93);
-            this.btEventos.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btEventos.Style = MetroFramework.MetroColorStyle.Red;
             this.btEventos.TabIndex = 5;
             this.btEventos.Text = "Calendário";
             this.btEventos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -245,6 +250,7 @@ namespace biblioteca
             this.btSalas.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btSalas.UseSelectable = true;
             this.btSalas.UseTileImage = true;
+            this.btSalas.Click += new System.EventHandler(this.btSalas_Click);
             // 
             // btEquipamentos
             // 
@@ -262,6 +268,7 @@ namespace biblioteca
             this.btEquipamentos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btEquipamentos.UseSelectable = true;
             this.btEquipamentos.UseTileImage = true;
+            this.btEquipamentos.Click += new System.EventHandler(this.btEquipamentos_Click);
             // 
             // btUtilizadores
             // 
@@ -285,6 +292,7 @@ namespace biblioteca
             this.btUtilizadores.UseSelectable = true;
             this.btUtilizadores.UseStyleColors = true;
             this.btUtilizadores.UseTileImage = true;
+            this.btUtilizadores.Click += new System.EventHandler(this.btUtilizadores_Click);
             // 
             // pictureBox1
             // 

@@ -94,6 +94,16 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap biblio6 {
+            get {
+                object obj = ResourceManager.GetObject("biblio6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap biblio7 {
             get {
                 object obj = ResourceManager.GetObject("biblio7", resourceCulture);
@@ -214,9 +224,29 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap notas21 {
+            get {
+                object obj = ResourceManager.GetObject("notas21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap notas4 {
             get {
                 object obj = ResourceManager.GetObject("notas4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notas41 {
+            get {
+                object obj = ResourceManager.GetObject("notas41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -237,6 +267,16 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap notas51 {
             get {
                 object obj = ResourceManager.GetObject("notas51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notas6 {
+            get {
+                object obj = ResourceManager.GetObject("notas6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

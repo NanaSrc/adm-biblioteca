@@ -184,6 +184,16 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap emprestimos5 {
+            get {
+                object obj = ResourceManager.GetObject("emprestimos5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap equipamentos0 {
             get {
                 object obj = ResourceManager.GetObject("equipamentos0", resourceCulture);
@@ -317,6 +327,16 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap notas51 {
             get {
                 object obj = ResourceManager.GetObject("notas51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notas52 {
+            get {
+                object obj = ResourceManager.GetObject("notas52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

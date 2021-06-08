@@ -78,7 +78,7 @@ namespace biblioteca
 
         private void btSalas_Click(object sender, EventArgs e)
         {
-            Salas form = new Salas();
+            Espacos form = new Espacos();
             PanelShow(form);
         }
 

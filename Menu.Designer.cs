@@ -86,7 +86,7 @@ namespace biblioteca
             this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
             this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Teal;
             this.btBiblioNet.TabIndex = 14;
-            this.btBiblioNet.Text = "biblio.net";
+            this.btBiblioNet.Text = "Biblio.net";
             this.btBiblioNet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btBiblioNet.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btBiblioNet.TileImage = global::biblioteca.Properties.Resources.biblio7;
@@ -157,7 +157,7 @@ namespace biblioteca
             this.btSair.TabIndex = 9;
             this.btSair.Text = "Fechar ";
             this.btSair.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btSair.TileImage = global::biblioteca.Properties.Resources.sair2;
+            this.btSair.TileImage = global::biblioteca.Properties.Resources.sair11;
             this.btSair.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btSair.UseSelectable = true;
             this.btSair.UseTileImage = true;
@@ -173,7 +173,7 @@ namespace biblioteca
             this.btLogout.Size = new System.Drawing.Size(109, 93);
             this.btLogout.Style = MetroFramework.MetroColorStyle.Teal;
             this.btLogout.TabIndex = 8;
-            this.btLogout.Text = "Logout";
+            this.btLogout.Text = "Deslogar";
             this.btLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btLogout.TileImage = global::biblioteca.Properties.Resources.sair6;
             this.btLogout.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;

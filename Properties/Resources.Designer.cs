@@ -344,9 +344,39 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sair10 {
+            get {
+                object obj = ResourceManager.GetObject("sair10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sair11 {
+            get {
+                object obj = ResourceManager.GetObject("sair11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sair2 {
             get {
                 object obj = ResourceManager.GetObject("sair2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sair3 {
+            get {
+                object obj = ResourceManager.GetObject("sair3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -467,6 +497,16 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap settings6 {
             get {
                 object obj = ResourceManager.GetObject("settings6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings7 {
+            get {
+                object obj = ResourceManager.GetObject("settings7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

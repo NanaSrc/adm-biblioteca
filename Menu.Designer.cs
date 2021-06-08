@@ -192,7 +192,7 @@ namespace biblioteca
             this.btConfigs.TabIndex = 7;
             this.btConfigs.Text = "Configurações";
             this.btConfigs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btConfigs.TileImage = global::biblioteca.Properties.Resources.settings3;
+            this.btConfigs.TileImage = global::biblioteca.Properties.Resources.settings6;
             this.btConfigs.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btConfigs.UseSelectable = true;
             this.btConfigs.UseTileImage = true;
@@ -236,7 +236,7 @@ namespace biblioteca
             // 
             // btSalas
             // 
-            this.btSalas.AccessibleName = "Salas";
+            this.btSalas.AccessibleName = "Espaços";
             this.btSalas.ActiveControl = null;
             this.btSalas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSalas.Location = new System.Drawing.Point(618, 36);
@@ -244,9 +244,9 @@ namespace biblioteca
             this.btSalas.Size = new System.Drawing.Size(109, 93);
             this.btSalas.Style = MetroFramework.MetroColorStyle.Orange;
             this.btSalas.TabIndex = 4;
-            this.btSalas.Text = "Salas";
+            this.btSalas.Text = "Espaços";
             this.btSalas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btSalas.TileImage = global::biblioteca.Properties.Resources.salas3;
+            this.btSalas.TileImage = global::biblioteca.Properties.Resources.salas61;
             this.btSalas.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btSalas.UseSelectable = true;
             this.btSalas.UseTileImage = true;
@@ -264,7 +264,7 @@ namespace biblioteca
             this.btEquipamentos.TabIndex = 3;
             this.btEquipamentos.Text = "Equipamentos";
             this.btEquipamentos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btEquipamentos.TileImage = global::biblioteca.Properties.Resources.equipamentos2;
+            this.btEquipamentos.TileImage = global::biblioteca.Properties.Resources.equipamentos5;
             this.btEquipamentos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btEquipamentos.UseSelectable = true;
             this.btEquipamentos.UseTileImage = true;
@@ -285,7 +285,7 @@ namespace biblioteca
             this.btUtilizadores.Text = "Utilizadores";
             this.btUtilizadores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btUtilizadores.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btUtilizadores.TileImage = global::biblioteca.Properties.Resources.utilizadores11;
+            this.btUtilizadores.TileImage = global::biblioteca.Properties.Resources.sair91;
             this.btUtilizadores.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btUtilizadores.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.btUtilizadores.UseCustomForeColor = true;
@@ -301,9 +301,9 @@ namespace biblioteca
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ErrorImage = global::biblioteca.Properties.Resources.biblio;
             this.pictureBox1.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(129, 93);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);

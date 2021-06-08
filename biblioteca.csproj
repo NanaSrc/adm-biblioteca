@@ -260,5 +260,29 @@
   <ItemGroup>
     <None Include="Resources\notas6.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipamentos9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salas6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salas7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

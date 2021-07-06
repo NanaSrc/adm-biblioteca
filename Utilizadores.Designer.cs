@@ -29,16 +29,14 @@ namespace biblioteca
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.pageAluno = new MetroFramework.Controls.MetroTabPage();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.metroButton6 = new MetroFramework.Controls.MetroButton();
             this.cbAnoAluno = new MetroFramework.Controls.MetroComboBox();
             this.tbNotasAluno = new MetroFramework.Controls.MetroTextBox();
             this.tbTurmaAluno = new MetroFramework.Controls.MetroTextBox();
@@ -58,8 +56,8 @@ namespace biblioteca
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.btLimpar = new MetroFramework.Controls.MetroButton();
-            this.btSubmeter = new MetroFramework.Controls.MetroButton();
+            this.btLimparProf = new MetroFramework.Controls.MetroButton();
+            this.btSubmeterProf = new MetroFramework.Controls.MetroButton();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
@@ -67,7 +65,9 @@ namespace biblioteca
             this.gridLista = new MetroFramework.Controls.MetroGrid();
             this.gridAtivos = new MetroFramework.Controls.MetroGrid();
             this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabControl1.SuspendLayout();
+            this.btLimparAluno = new MetroFramework.Controls.MetroButton();
+            this.btSubmeterAluno = new MetroFramework.Controls.MetroButton();
+            this.tabRegisto.SuspendLayout();
             this.pageAluno.SuspendLayout();
             this.pageProfessor.SuspendLayout();
             this.tabLista.SuspendLayout();
@@ -77,22 +77,22 @@ namespace biblioteca
             this.tabAtivos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroTabControl1
+            // tabRegisto
             // 
-            this.metroTabControl1.Controls.Add(this.pageAluno);
-            this.metroTabControl1.Controls.Add(this.pageProfessor);
-            this.metroTabControl1.Location = new System.Drawing.Point(23, 63);
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(714, 379);
-            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabControl1.TabIndex = 1;
-            this.metroTabControl1.UseSelectable = true;
+            this.tabRegisto.Controls.Add(this.pageAluno);
+            this.tabRegisto.Controls.Add(this.pageProfessor);
+            this.tabRegisto.Location = new System.Drawing.Point(23, 63);
+            this.tabRegisto.Name = "tabRegisto";
+            this.tabRegisto.SelectedIndex = 0;
+            this.tabRegisto.Size = new System.Drawing.Size(714, 606);
+            this.tabRegisto.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tabRegisto.TabIndex = 1;
+            this.tabRegisto.UseSelectable = true;
             // 
             // pageAluno
             // 
-            this.pageAluno.Controls.Add(this.metroButton5);
-            this.pageAluno.Controls.Add(this.metroButton6);
+            this.pageAluno.Controls.Add(this.btLimparAluno);
+            this.pageAluno.Controls.Add(this.btSubmeterAluno);
             this.pageAluno.Controls.Add(this.cbAnoAluno);
             this.pageAluno.Controls.Add(this.tbNotasAluno);
             this.pageAluno.Controls.Add(this.tbTurmaAluno);
@@ -108,30 +108,12 @@ namespace biblioteca
             this.pageAluno.HorizontalScrollbarSize = 10;
             this.pageAluno.Location = new System.Drawing.Point(4, 38);
             this.pageAluno.Name = "pageAluno";
-            this.pageAluno.Size = new System.Drawing.Size(706, 337);
+            this.pageAluno.Size = new System.Drawing.Size(706, 564);
             this.pageAluno.TabIndex = 0;
             this.pageAluno.Text = "Aluno";
             this.pageAluno.VerticalScrollbarBarColor = true;
             this.pageAluno.VerticalScrollbarHighlightOnWheel = false;
             this.pageAluno.VerticalScrollbarSize = 10;
-            // 
-            // metroButton5
-            // 
-            this.metroButton5.Location = new System.Drawing.Point(81, 544);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(332, 30);
-            this.metroButton5.TabIndex = 25;
-            this.metroButton5.Text = "Limpar";
-            this.metroButton5.UseSelectable = true;
-            // 
-            // metroButton6
-            // 
-            this.metroButton6.Location = new System.Drawing.Point(419, 544);
-            this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(337, 30);
-            this.metroButton6.TabIndex = 24;
-            this.metroButton6.Text = "Submeter";
-            this.metroButton6.UseSelectable = true;
             // 
             // cbAnoAluno
             // 
@@ -157,9 +139,9 @@ namespace biblioteca
             // 
             // 
             this.tbNotasAluno.CustomButton.Image = null;
-            this.tbNotasAluno.CustomButton.Location = new System.Drawing.Point(441, 1);
+            this.tbNotasAluno.CustomButton.Location = new System.Drawing.Point(277, 2);
             this.tbNotasAluno.CustomButton.Name = "";
-            this.tbNotasAluno.CustomButton.Size = new System.Drawing.Size(125, 125);
+            this.tbNotasAluno.CustomButton.Size = new System.Drawing.Size(287, 287);
             this.tbNotasAluno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbNotasAluno.CustomButton.TabIndex = 1;
             this.tbNotasAluno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -177,7 +159,7 @@ namespace biblioteca
             this.tbNotasAluno.SelectionLength = 0;
             this.tbNotasAluno.SelectionStart = 0;
             this.tbNotasAluno.ShortcutsEnabled = true;
-            this.tbNotasAluno.Size = new System.Drawing.Size(567, 127);
+            this.tbNotasAluno.Size = new System.Drawing.Size(567, 292);
             this.tbNotasAluno.TabIndex = 20;
             this.tbNotasAluno.UseSelectable = true;
             this.tbNotasAluno.WaterMark = "Anotações adicionais";
@@ -327,7 +309,9 @@ namespace biblioteca
             // 
             // pageProfessor
             // 
+            this.pageProfessor.Controls.Add(this.btLimparProf);
             this.pageProfessor.Controls.Add(this.tbNotasProf);
+            this.pageProfessor.Controls.Add(this.btSubmeterProf);
             this.pageProfessor.Controls.Add(this.tbTurmaProf);
             this.pageProfessor.Controls.Add(this.tbProcessoProf);
             this.pageProfessor.Controls.Add(this.tbNomeProf);
@@ -340,7 +324,7 @@ namespace biblioteca
             this.pageProfessor.HorizontalScrollbarSize = 10;
             this.pageProfessor.Location = new System.Drawing.Point(4, 38);
             this.pageProfessor.Name = "pageProfessor";
-            this.pageProfessor.Size = new System.Drawing.Size(706, 337);
+            this.pageProfessor.Size = new System.Drawing.Size(706, 564);
             this.pageProfessor.TabIndex = 1;
             this.pageProfessor.Text = "Professor";
             this.pageProfessor.VerticalScrollbarBarColor = true;
@@ -353,9 +337,9 @@ namespace biblioteca
             // 
             // 
             this.tbNotasProf.CustomButton.Image = null;
-            this.tbNotasProf.CustomButton.Location = new System.Drawing.Point(441, 1);
+            this.tbNotasProf.CustomButton.Location = new System.Drawing.Point(237, 2);
             this.tbNotasProf.CustomButton.Name = "";
-            this.tbNotasProf.CustomButton.Size = new System.Drawing.Size(125, 125);
+            this.tbNotasProf.CustomButton.Size = new System.Drawing.Size(327, 327);
             this.tbNotasProf.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbNotasProf.CustomButton.TabIndex = 1;
             this.tbNotasProf.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -373,7 +357,7 @@ namespace biblioteca
             this.tbNotasProf.SelectionLength = 0;
             this.tbNotasProf.SelectionStart = 0;
             this.tbNotasProf.ShortcutsEnabled = true;
-            this.tbNotasProf.Size = new System.Drawing.Size(567, 127);
+            this.tbNotasProf.Size = new System.Drawing.Size(567, 332);
             this.tbNotasProf.TabIndex = 8;
             this.tbNotasProf.UseSelectable = true;
             this.tbNotasProf.WaterMark = "Anotações adicionais";
@@ -512,24 +496,24 @@ namespace biblioteca
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Nome: ⁎";
             // 
-            // btLimpar
+            // btLimparProf
             // 
-            this.btLimpar.Location = new System.Drawing.Point(140, 444);
-            this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(281, 30);
-            this.btLimpar.TabIndex = 11;
-            this.btLimpar.Text = "Limpar";
-            this.btLimpar.UseSelectable = true;
+            this.btLimparProf.Location = new System.Drawing.Point(113, 518);
+            this.btLimparProf.Name = "btLimparProf";
+            this.btLimparProf.Size = new System.Drawing.Size(281, 30);
+            this.btLimparProf.TabIndex = 11;
+            this.btLimparProf.Text = "Limpar";
+            this.btLimparProf.UseSelectable = true;
             // 
-            // btSubmeter
+            // btSubmeterProf
             // 
-            this.btSubmeter.Location = new System.Drawing.Point(427, 444);
-            this.btSubmeter.Name = "btSubmeter";
-            this.btSubmeter.Size = new System.Drawing.Size(280, 30);
-            this.btSubmeter.TabIndex = 10;
-            this.btSubmeter.Text = "Submeter";
-            this.btSubmeter.UseSelectable = true;
-            this.btSubmeter.Click += new System.EventHandler(this.btSubmeter_Click);
+            this.btSubmeterProf.Location = new System.Drawing.Point(400, 518);
+            this.btSubmeterProf.Name = "btSubmeterProf";
+            this.btSubmeterProf.Size = new System.Drawing.Size(280, 30);
+            this.btSubmeterProf.TabIndex = 10;
+            this.btSubmeterProf.Text = "Submeter";
+            this.btSubmeterProf.UseSelectable = true;
+            this.btSubmeterProf.Click += new System.EventHandler(this.btSubmeter_Click);
             // 
             // tabLista
             // 
@@ -585,37 +569,37 @@ namespace biblioteca
             this.gridLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridLista.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridLista.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridLista.EnableHeadersVisualStyles = false;
             this.gridLista.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridLista.Location = new System.Drawing.Point(17, 18);
             this.gridLista.Name = "gridLista";
             this.gridLista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridLista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridLista.Size = new System.Drawing.Size(573, 477);
@@ -629,37 +613,37 @@ namespace biblioteca
             this.gridAtivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridAtivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridAtivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridAtivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle5;
             this.gridAtivos.EnableHeadersVisualStyles = false;
             this.gridAtivos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridAtivos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridAtivos.Location = new System.Drawing.Point(17, 18);
             this.gridAtivos.Name = "gridAtivos";
             this.gridAtivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridAtivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridAtivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridAtivos.Size = new System.Drawing.Size(573, 477);
@@ -681,6 +665,24 @@ namespace biblioteca
             this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
             this.tabAtivos.VerticalScrollbarSize = 10;
             // 
+            // btLimparAluno
+            // 
+            this.btLimparAluno.Location = new System.Drawing.Point(113, 518);
+            this.btLimparAluno.Name = "btLimparAluno";
+            this.btLimparAluno.Size = new System.Drawing.Size(281, 30);
+            this.btLimparAluno.TabIndex = 27;
+            this.btLimparAluno.Text = "Limpar";
+            this.btLimparAluno.UseSelectable = true;
+            // 
+            // btSubmeterAluno
+            // 
+            this.btSubmeterAluno.Location = new System.Drawing.Point(400, 518);
+            this.btSubmeterAluno.Name = "btSubmeterAluno";
+            this.btSubmeterAluno.Size = new System.Drawing.Size(280, 30);
+            this.btSubmeterAluno.TabIndex = 26;
+            this.btSubmeterAluno.Text = "Submeter";
+            this.btSubmeterAluno.UseSelectable = true;
+            // 
             // Utilizadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,9 +690,7 @@ namespace biblioteca
             this.ClientSize = new System.Drawing.Size(1394, 698);
             this.ControlBox = false;
             this.Controls.Add(this.tabLista);
-            this.Controls.Add(this.btLimpar);
-            this.Controls.Add(this.metroTabControl1);
-            this.Controls.Add(this.btSubmeter);
+            this.Controls.Add(this.tabRegisto);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Movable = false;
@@ -700,7 +700,7 @@ namespace biblioteca
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Utilizadores";
             this.Load += new System.EventHandler(this.Utilizadores_Load);
-            this.metroTabControl1.ResumeLayout(false);
+            this.tabRegisto.ResumeLayout(false);
             this.pageAluno.ResumeLayout(false);
             this.pageAluno.PerformLayout();
             this.pageProfessor.ResumeLayout(false);
@@ -716,7 +716,7 @@ namespace biblioteca
 
         #endregion
 
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabControl tabRegisto;
         private MetroFramework.Controls.MetroTabPage pageAluno;
         private MetroFramework.Controls.MetroTabPage pageProfessor;
         private MetroFramework.Controls.MetroLabel metroLabel5;
@@ -727,8 +727,8 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTextBox tbTurmaProf;
         private MetroFramework.Controls.MetroTextBox tbProcessoProf;
         private MetroFramework.Controls.MetroTextBox tbNomeProf;
-        private MetroFramework.Controls.MetroButton btSubmeter;
-        private MetroFramework.Controls.MetroButton btLimpar;
+        private MetroFramework.Controls.MetroButton btSubmeterProf;
+        private MetroFramework.Controls.MetroButton btLimparProf;
         private MetroFramework.Controls.MetroComboBox cbAnoAluno;
         private MetroFramework.Controls.MetroTextBox tbNotasAluno;
         private MetroFramework.Controls.MetroTextBox tbTurmaAluno;
@@ -739,8 +739,6 @@ namespace biblioteca
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel10;
-        private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroButton metroButton6;
         private MetroFramework.Controls.MetroTabControl tabLista;
         private MetroFramework.Controls.MetroTabPage tabLista1;
         private MetroFramework.Controls.MetroButton btDeletar;
@@ -748,5 +746,7 @@ namespace biblioteca
         private MetroFramework.Controls.MetroGrid gridLista;
         private MetroFramework.Controls.MetroTabPage tabAtivos;
         private MetroFramework.Controls.MetroGrid gridAtivos;
+        private MetroFramework.Controls.MetroButton btLimparAluno;
+        private MetroFramework.Controls.MetroButton btSubmeterAluno;
     }
 }

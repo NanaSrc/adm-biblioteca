@@ -29,49 +29,52 @@ namespace biblioteca
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.pageAluno = new MetroFramework.Controls.MetroTabPage();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
-            this.cbAno1 = new MetroFramework.Controls.MetroComboBox();
-            this.tbNotas1 = new MetroFramework.Controls.MetroTextBox();
-            this.tbTurma1 = new MetroFramework.Controls.MetroTextBox();
-            this.tbProcesso1 = new MetroFramework.Controls.MetroTextBox();
-            this.tbNome1 = new MetroFramework.Controls.MetroTextBox();
+            this.cbAnoAluno = new MetroFramework.Controls.MetroComboBox();
+            this.tbNotasAluno = new MetroFramework.Controls.MetroTextBox();
+            this.tbTurmaAluno = new MetroFramework.Controls.MetroTextBox();
+            this.tbProcessoAluno = new MetroFramework.Controls.MetroTextBox();
+            this.tbNomeAluno = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.pageProfessor = new MetroFramework.Controls.MetroTabPage();
-            this.tbDisciplinas = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.btDelet = new MetroFramework.Controls.MetroButton();
-            this.btAdd = new MetroFramework.Controls.MetroButton();
-            this.cbDisciplinas = new MetroFramework.Controls.MetroComboBox();
-            this.tbAdicionais = new MetroFramework.Controls.MetroTextBox();
-            this.tbTurma = new MetroFramework.Controls.MetroTextBox();
-            this.tbProcesso = new MetroFramework.Controls.MetroTextBox();
-            this.tbNome = new MetroFramework.Controls.MetroTextBox();
+            this.tbNotasProf = new MetroFramework.Controls.MetroTextBox();
+            this.tbTurmaProf = new MetroFramework.Controls.MetroTextBox();
+            this.tbProcessoProf = new MetroFramework.Controls.MetroTextBox();
+            this.tbNomeProf = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.lbDisciplina = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btLimpar = new MetroFramework.Controls.MetroButton();
             this.btSubmeter = new MetroFramework.Controls.MetroButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tabLista = new MetroFramework.Controls.MetroTabControl();
+            this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
             this.btAlterar = new MetroFramework.Controls.MetroButton();
-            this.grid = new MetroFramework.Controls.MetroGrid();
+            this.gridLista = new MetroFramework.Controls.MetroGrid();
+            this.gridAtivos = new MetroFramework.Controls.MetroGrid();
+            this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl1.SuspendLayout();
             this.pageAluno.SuspendLayout();
             this.pageProfessor.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
+            this.tabLista.SuspendLayout();
+            this.tabLista1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAtivos)).BeginInit();
+            this.tabAtivos.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -81,7 +84,7 @@ namespace biblioteca
             this.metroTabControl1.Location = new System.Drawing.Point(23, 63);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(788, 579);
+            this.metroTabControl1.Size = new System.Drawing.Size(714, 379);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
@@ -90,11 +93,11 @@ namespace biblioteca
             // 
             this.pageAluno.Controls.Add(this.metroButton5);
             this.pageAluno.Controls.Add(this.metroButton6);
-            this.pageAluno.Controls.Add(this.cbAno1);
-            this.pageAluno.Controls.Add(this.tbNotas1);
-            this.pageAluno.Controls.Add(this.tbTurma1);
-            this.pageAluno.Controls.Add(this.tbProcesso1);
-            this.pageAluno.Controls.Add(this.tbNome1);
+            this.pageAluno.Controls.Add(this.cbAnoAluno);
+            this.pageAluno.Controls.Add(this.tbNotasAluno);
+            this.pageAluno.Controls.Add(this.tbTurmaAluno);
+            this.pageAluno.Controls.Add(this.tbProcessoAluno);
+            this.pageAluno.Controls.Add(this.tbNomeAluno);
             this.pageAluno.Controls.Add(this.metroLabel3);
             this.pageAluno.Controls.Add(this.metroLabel6);
             this.pageAluno.Controls.Add(this.metroLabel8);
@@ -105,7 +108,7 @@ namespace biblioteca
             this.pageAluno.HorizontalScrollbarSize = 10;
             this.pageAluno.Location = new System.Drawing.Point(4, 38);
             this.pageAluno.Name = "pageAluno";
-            this.pageAluno.Size = new System.Drawing.Size(780, 537);
+            this.pageAluno.Size = new System.Drawing.Size(706, 337);
             this.pageAluno.TabIndex = 0;
             this.pageAluno.Text = "Aluno";
             this.pageAluno.VerticalScrollbarBarColor = true;
@@ -130,11 +133,11 @@ namespace biblioteca
             this.metroButton6.Text = "Submeter";
             this.metroButton6.UseSelectable = true;
             // 
-            // cbAno1
+            // cbAnoAluno
             // 
-            this.cbAno1.FormattingEnabled = true;
-            this.cbAno1.ItemHeight = 23;
-            this.cbAno1.Items.AddRange(new object[] {
+            this.cbAnoAluno.FormattingEnabled = true;
+            this.cbAnoAluno.ItemHeight = 23;
+            this.cbAnoAluno.Items.AddRange(new object[] {
             "7",
             "8",
             "9",
@@ -142,145 +145,145 @@ namespace biblioteca
             "11",
             "12",
             "Outro"});
-            this.cbAno1.Location = new System.Drawing.Point(81, 119);
-            this.cbAno1.Name = "cbAno1";
-            this.cbAno1.Size = new System.Drawing.Size(189, 29);
-            this.cbAno1.TabIndex = 21;
-            this.cbAno1.UseSelectable = true;
+            this.cbAnoAluno.Location = new System.Drawing.Point(113, 119);
+            this.cbAnoAluno.Name = "cbAnoAluno";
+            this.cbAnoAluno.Size = new System.Drawing.Size(172, 29);
+            this.cbAnoAluno.TabIndex = 21;
+            this.cbAnoAluno.UseSelectable = true;
             // 
-            // tbNotas1
-            // 
-            // 
-            // 
-            // 
-            this.tbNotas1.CustomButton.Image = null;
-            this.tbNotas1.CustomButton.Location = new System.Drawing.Point(549, 1);
-            this.tbNotas1.CustomButton.Name = "";
-            this.tbNotas1.CustomButton.Size = new System.Drawing.Size(125, 125);
-            this.tbNotas1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbNotas1.CustomButton.TabIndex = 1;
-            this.tbNotas1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbNotas1.CustomButton.UseSelectable = true;
-            this.tbNotas1.CustomButton.Visible = false;
-            this.tbNotas1.Lines = new string[0];
-            this.tbNotas1.Location = new System.Drawing.Point(81, 202);
-            this.tbNotas1.MaxLength = 32767;
-            this.tbNotas1.Multiline = true;
-            this.tbNotas1.Name = "tbNotas1";
-            this.tbNotas1.PasswordChar = '\0';
-            this.tbNotas1.PromptText = "Anotações adicionais";
-            this.tbNotas1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbNotas1.SelectedText = "";
-            this.tbNotas1.SelectionLength = 0;
-            this.tbNotas1.SelectionStart = 0;
-            this.tbNotas1.ShortcutsEnabled = true;
-            this.tbNotas1.Size = new System.Drawing.Size(675, 127);
-            this.tbNotas1.TabIndex = 20;
-            this.tbNotas1.UseSelectable = true;
-            this.tbNotas1.WaterMark = "Anotações adicionais";
-            this.tbNotas1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbNotas1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbTurma1
+            // tbNotasAluno
             // 
             // 
             // 
             // 
-            this.tbTurma1.CustomButton.Image = null;
-            this.tbTurma1.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbTurma1.CustomButton.Name = "";
-            this.tbTurma1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbTurma1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbTurma1.CustomButton.TabIndex = 1;
-            this.tbTurma1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbTurma1.CustomButton.UseSelectable = true;
-            this.tbTurma1.CustomButton.Visible = false;
-            this.tbTurma1.Lines = new string[0];
-            this.tbTurma1.Location = new System.Drawing.Point(81, 162);
-            this.tbTurma1.MaxLength = 32767;
-            this.tbTurma1.Name = "tbTurma1";
-            this.tbTurma1.PasswordChar = '\0';
-            this.tbTurma1.PromptText = "Designação da turma";
-            this.tbTurma1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbTurma1.SelectedText = "";
-            this.tbTurma1.SelectionLength = 0;
-            this.tbTurma1.SelectionStart = 0;
-            this.tbTurma1.ShortcutsEnabled = true;
-            this.tbTurma1.Size = new System.Drawing.Size(675, 23);
-            this.tbTurma1.TabIndex = 19;
-            this.tbTurma1.UseSelectable = true;
-            this.tbTurma1.WaterMark = "Designação da turma";
-            this.tbTurma1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbTurma1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbNotasAluno.CustomButton.Image = null;
+            this.tbNotasAluno.CustomButton.Location = new System.Drawing.Point(441, 1);
+            this.tbNotasAluno.CustomButton.Name = "";
+            this.tbNotasAluno.CustomButton.Size = new System.Drawing.Size(125, 125);
+            this.tbNotasAluno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbNotasAluno.CustomButton.TabIndex = 1;
+            this.tbNotasAluno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbNotasAluno.CustomButton.UseSelectable = true;
+            this.tbNotasAluno.CustomButton.Visible = false;
+            this.tbNotasAluno.Lines = new string[0];
+            this.tbNotasAluno.Location = new System.Drawing.Point(113, 203);
+            this.tbNotasAluno.MaxLength = 32767;
+            this.tbNotasAluno.Multiline = true;
+            this.tbNotasAluno.Name = "tbNotasAluno";
+            this.tbNotasAluno.PasswordChar = '\0';
+            this.tbNotasAluno.PromptText = "Anotações adicionais";
+            this.tbNotasAluno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbNotasAluno.SelectedText = "";
+            this.tbNotasAluno.SelectionLength = 0;
+            this.tbNotasAluno.SelectionStart = 0;
+            this.tbNotasAluno.ShortcutsEnabled = true;
+            this.tbNotasAluno.Size = new System.Drawing.Size(567, 127);
+            this.tbNotasAluno.TabIndex = 20;
+            this.tbNotasAluno.UseSelectable = true;
+            this.tbNotasAluno.WaterMark = "Anotações adicionais";
+            this.tbNotasAluno.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbNotasAluno.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // tbProcesso1
-            // 
-            // 
-            // 
-            // 
-            this.tbProcesso1.CustomButton.Image = null;
-            this.tbProcesso1.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbProcesso1.CustomButton.Name = "";
-            this.tbProcesso1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbProcesso1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbProcesso1.CustomButton.TabIndex = 1;
-            this.tbProcesso1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbProcesso1.CustomButton.UseSelectable = true;
-            this.tbProcesso1.CustomButton.Visible = false;
-            this.tbProcesso1.Lines = new string[0];
-            this.tbProcesso1.Location = new System.Drawing.Point(81, 81);
-            this.tbProcesso1.MaxLength = 32767;
-            this.tbProcesso1.Name = "tbProcesso1";
-            this.tbProcesso1.PasswordChar = '\0';
-            this.tbProcesso1.PromptText = "Número do processo escolar";
-            this.tbProcesso1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbProcesso1.SelectedText = "";
-            this.tbProcesso1.SelectionLength = 0;
-            this.tbProcesso1.SelectionStart = 0;
-            this.tbProcesso1.ShortcutsEnabled = true;
-            this.tbProcesso1.Size = new System.Drawing.Size(675, 23);
-            this.tbProcesso1.TabIndex = 18;
-            this.tbProcesso1.UseSelectable = true;
-            this.tbProcesso1.WaterMark = "Número do processo escolar";
-            this.tbProcesso1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbProcesso1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbNome1
+            // tbTurmaAluno
             // 
             // 
             // 
             // 
-            this.tbNome1.CustomButton.Image = null;
-            this.tbNome1.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbNome1.CustomButton.Name = "";
-            this.tbNome1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbNome1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbNome1.CustomButton.TabIndex = 1;
-            this.tbNome1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbNome1.CustomButton.UseSelectable = true;
-            this.tbNome1.CustomButton.Visible = false;
-            this.tbNome1.Lines = new string[0];
-            this.tbNome1.Location = new System.Drawing.Point(81, 46);
-            this.tbNome1.MaxLength = 32767;
-            this.tbNome1.Name = "tbNome1";
-            this.tbNome1.PasswordChar = '\0';
-            this.tbNome1.PromptText = "Nome completo";
-            this.tbNome1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbNome1.SelectedText = "";
-            this.tbNome1.SelectionLength = 0;
-            this.tbNome1.SelectionStart = 0;
-            this.tbNome1.ShortcutsEnabled = true;
-            this.tbNome1.Size = new System.Drawing.Size(675, 23);
-            this.tbNome1.TabIndex = 17;
-            this.tbNome1.UseSelectable = true;
-            this.tbNome1.WaterMark = "Nome completo";
-            this.tbNome1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbNome1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbTurmaAluno.CustomButton.Image = null;
+            this.tbTurmaAluno.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbTurmaAluno.CustomButton.Name = "";
+            this.tbTurmaAluno.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbTurmaAluno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbTurmaAluno.CustomButton.TabIndex = 1;
+            this.tbTurmaAluno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbTurmaAluno.CustomButton.UseSelectable = true;
+            this.tbTurmaAluno.CustomButton.Visible = false;
+            this.tbTurmaAluno.Lines = new string[0];
+            this.tbTurmaAluno.Location = new System.Drawing.Point(113, 162);
+            this.tbTurmaAluno.MaxLength = 32767;
+            this.tbTurmaAluno.Name = "tbTurmaAluno";
+            this.tbTurmaAluno.PasswordChar = '\0';
+            this.tbTurmaAluno.PromptText = "Designação da turma";
+            this.tbTurmaAluno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbTurmaAluno.SelectedText = "";
+            this.tbTurmaAluno.SelectionLength = 0;
+            this.tbTurmaAluno.SelectionStart = 0;
+            this.tbTurmaAluno.ShortcutsEnabled = true;
+            this.tbTurmaAluno.Size = new System.Drawing.Size(567, 23);
+            this.tbTurmaAluno.TabIndex = 19;
+            this.tbTurmaAluno.UseSelectable = true;
+            this.tbTurmaAluno.WaterMark = "Designação da turma";
+            this.tbTurmaAluno.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbTurmaAluno.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbProcessoAluno
+            // 
+            // 
+            // 
+            // 
+            this.tbProcessoAluno.CustomButton.Image = null;
+            this.tbProcessoAluno.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbProcessoAluno.CustomButton.Name = "";
+            this.tbProcessoAluno.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbProcessoAluno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbProcessoAluno.CustomButton.TabIndex = 1;
+            this.tbProcessoAluno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbProcessoAluno.CustomButton.UseSelectable = true;
+            this.tbProcessoAluno.CustomButton.Visible = false;
+            this.tbProcessoAluno.Lines = new string[0];
+            this.tbProcessoAluno.Location = new System.Drawing.Point(113, 81);
+            this.tbProcessoAluno.MaxLength = 32767;
+            this.tbProcessoAluno.Name = "tbProcessoAluno";
+            this.tbProcessoAluno.PasswordChar = '\0';
+            this.tbProcessoAluno.PromptText = "Número do processo escolar";
+            this.tbProcessoAluno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbProcessoAluno.SelectedText = "";
+            this.tbProcessoAluno.SelectionLength = 0;
+            this.tbProcessoAluno.SelectionStart = 0;
+            this.tbProcessoAluno.ShortcutsEnabled = true;
+            this.tbProcessoAluno.Size = new System.Drawing.Size(567, 23);
+            this.tbProcessoAluno.TabIndex = 18;
+            this.tbProcessoAluno.UseSelectable = true;
+            this.tbProcessoAluno.WaterMark = "Número do processo escolar";
+            this.tbProcessoAluno.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbProcessoAluno.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbNomeAluno
+            // 
+            // 
+            // 
+            // 
+            this.tbNomeAluno.CustomButton.Image = null;
+            this.tbNomeAluno.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbNomeAluno.CustomButton.Name = "";
+            this.tbNomeAluno.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbNomeAluno.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbNomeAluno.CustomButton.TabIndex = 1;
+            this.tbNomeAluno.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbNomeAluno.CustomButton.UseSelectable = true;
+            this.tbNomeAluno.CustomButton.Visible = false;
+            this.tbNomeAluno.Lines = new string[0];
+            this.tbNomeAluno.Location = new System.Drawing.Point(113, 46);
+            this.tbNomeAluno.MaxLength = 32767;
+            this.tbNomeAluno.Name = "tbNomeAluno";
+            this.tbNomeAluno.PasswordChar = '\0';
+            this.tbNomeAluno.PromptText = "Nome completo";
+            this.tbNomeAluno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbNomeAluno.SelectedText = "";
+            this.tbNomeAluno.SelectionLength = 0;
+            this.tbNomeAluno.SelectionStart = 0;
+            this.tbNomeAluno.ShortcutsEnabled = true;
+            this.tbNomeAluno.Size = new System.Drawing.Size(567, 23);
+            this.tbNomeAluno.TabIndex = 17;
+            this.tbNomeAluno.UseSelectable = true;
+            this.tbNomeAluno.WaterMark = "Nome completo";
+            this.tbNomeAluno.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbNomeAluno.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(0, 202);
+            this.metroLabel3.Location = new System.Drawing.Point(4, 202);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(71, 19);
             this.metroLabel3.TabIndex = 13;
@@ -324,18 +327,12 @@ namespace biblioteca
             // 
             // pageProfessor
             // 
-            this.pageProfessor.Controls.Add(this.tbDisciplinas);
-            this.pageProfessor.Controls.Add(this.metroLabel4);
-            this.pageProfessor.Controls.Add(this.btDelet);
-            this.pageProfessor.Controls.Add(this.btAdd);
-            this.pageProfessor.Controls.Add(this.cbDisciplinas);
-            this.pageProfessor.Controls.Add(this.tbAdicionais);
-            this.pageProfessor.Controls.Add(this.tbTurma);
-            this.pageProfessor.Controls.Add(this.tbProcesso);
-            this.pageProfessor.Controls.Add(this.tbNome);
+            this.pageProfessor.Controls.Add(this.tbNotasProf);
+            this.pageProfessor.Controls.Add(this.tbTurmaProf);
+            this.pageProfessor.Controls.Add(this.tbProcessoProf);
+            this.pageProfessor.Controls.Add(this.tbNomeProf);
             this.pageProfessor.Controls.Add(this.metroLabel7);
             this.pageProfessor.Controls.Add(this.metroLabel5);
-            this.pageProfessor.Controls.Add(this.lbDisciplina);
             this.pageProfessor.Controls.Add(this.metroLabel2);
             this.pageProfessor.Controls.Add(this.metroLabel1);
             this.pageProfessor.HorizontalScrollbarBarColor = true;
@@ -343,235 +340,146 @@ namespace biblioteca
             this.pageProfessor.HorizontalScrollbarSize = 10;
             this.pageProfessor.Location = new System.Drawing.Point(4, 38);
             this.pageProfessor.Name = "pageProfessor";
-            this.pageProfessor.Size = new System.Drawing.Size(780, 537);
+            this.pageProfessor.Size = new System.Drawing.Size(706, 337);
             this.pageProfessor.TabIndex = 1;
             this.pageProfessor.Text = "Professor";
             this.pageProfessor.VerticalScrollbarBarColor = true;
             this.pageProfessor.VerticalScrollbarHighlightOnWheel = false;
             this.pageProfessor.VerticalScrollbarSize = 10;
             // 
-            // tbDisciplinas
+            // tbNotasProf
             // 
             // 
             // 
             // 
-            this.tbDisciplinas.CustomButton.Image = null;
-            this.tbDisciplinas.CustomButton.Location = new System.Drawing.Point(299, 2);
-            this.tbDisciplinas.CustomButton.Name = "";
-            this.tbDisciplinas.CustomButton.Size = new System.Drawing.Size(85, 85);
-            this.tbDisciplinas.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbDisciplinas.CustomButton.TabIndex = 1;
-            this.tbDisciplinas.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbDisciplinas.CustomButton.UseSelectable = true;
-            this.tbDisciplinas.CustomButton.Visible = false;
-            this.tbDisciplinas.Lines = new string[0];
-            this.tbDisciplinas.Location = new System.Drawing.Point(81, 124);
-            this.tbDisciplinas.MaxLength = 32767;
-            this.tbDisciplinas.Multiline = true;
-            this.tbDisciplinas.Name = "tbDisciplinas";
-            this.tbDisciplinas.PasswordChar = '\0';
-            this.tbDisciplinas.PromptText = "Disciplinas";
-            this.tbDisciplinas.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbDisciplinas.SelectedText = "";
-            this.tbDisciplinas.SelectionLength = 0;
-            this.tbDisciplinas.SelectionStart = 0;
-            this.tbDisciplinas.ShortcutsEnabled = true;
-            this.tbDisciplinas.Size = new System.Drawing.Size(387, 90);
-            this.tbDisciplinas.TabIndex = 16;
-            this.tbDisciplinas.UseSelectable = true;
-            this.tbDisciplinas.WaterMark = "Disciplinas";
-            this.tbDisciplinas.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbDisciplinas.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbNotasProf.CustomButton.Image = null;
+            this.tbNotasProf.CustomButton.Location = new System.Drawing.Point(441, 1);
+            this.tbNotasProf.CustomButton.Name = "";
+            this.tbNotasProf.CustomButton.Size = new System.Drawing.Size(125, 125);
+            this.tbNotasProf.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbNotasProf.CustomButton.TabIndex = 1;
+            this.tbNotasProf.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbNotasProf.CustomButton.UseSelectable = true;
+            this.tbNotasProf.CustomButton.Visible = false;
+            this.tbNotasProf.Lines = new string[0];
+            this.tbNotasProf.Location = new System.Drawing.Point(113, 163);
+            this.tbNotasProf.MaxLength = 32767;
+            this.tbNotasProf.Multiline = true;
+            this.tbNotasProf.Name = "tbNotasProf";
+            this.tbNotasProf.PasswordChar = '\0';
+            this.tbNotasProf.PromptText = "Anotações adicionais";
+            this.tbNotasProf.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbNotasProf.SelectedText = "";
+            this.tbNotasProf.SelectionLength = 0;
+            this.tbNotasProf.SelectionStart = 0;
+            this.tbNotasProf.ShortcutsEnabled = true;
+            this.tbNotasProf.Size = new System.Drawing.Size(567, 127);
+            this.tbNotasProf.TabIndex = 8;
+            this.tbNotasProf.UseSelectable = true;
+            this.tbNotasProf.WaterMark = "Anotações adicionais";
+            this.tbNotasProf.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbNotasProf.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(4, 124);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(71, 19);
-            this.metroLabel4.TabIndex = 14;
-            this.metroLabel4.Text = "Disciplinas:";
-            // 
-            // btDelet
-            // 
-            this.btDelet.Location = new System.Drawing.Point(474, 185);
-            this.btDelet.Name = "btDelet";
-            this.btDelet.Size = new System.Drawing.Size(139, 29);
-            this.btDelet.TabIndex = 13;
-            this.btDelet.Text = "Deletar disciplina";
-            this.btDelet.UseSelectable = true;
-            // 
-            // btAdd
-            // 
-            this.btAdd.Location = new System.Drawing.Point(619, 185);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(137, 29);
-            this.btAdd.TabIndex = 12;
-            this.btAdd.Text = "Adicionar disciplina";
-            this.btAdd.UseSelectable = true;
-            // 
-            // cbDisciplinas
-            // 
-            this.cbDisciplinas.FormattingEnabled = true;
-            this.cbDisciplinas.ItemHeight = 23;
-            this.cbDisciplinas.Items.AddRange(new object[] {
-            "Biologia",
-            "Ciências",
-            "Desenho",
-            "Educação Física",
-            "Educação Visual",
-            "Filosofia",
-            "Física",
-            "Francês",
-            "Geografia",
-            "Geometria",
-            "História",
-            "Informática",
-            "Inglês",
-            "Literatura",
-            "Matemática",
-            "Música",
-            "Português",
-            "Sociologia"});
-            this.cbDisciplinas.Location = new System.Drawing.Point(474, 146);
-            this.cbDisciplinas.Name = "cbDisciplinas";
-            this.cbDisciplinas.Size = new System.Drawing.Size(282, 29);
-            this.cbDisciplinas.TabIndex = 9;
-            this.cbDisciplinas.UseSelectable = true;
-            // 
-            // tbAdicionais
+            // tbTurmaProf
             // 
             // 
             // 
             // 
-            this.tbAdicionais.CustomButton.Image = null;
-            this.tbAdicionais.CustomButton.Location = new System.Drawing.Point(549, 1);
-            this.tbAdicionais.CustomButton.Name = "";
-            this.tbAdicionais.CustomButton.Size = new System.Drawing.Size(125, 125);
-            this.tbAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbAdicionais.CustomButton.TabIndex = 1;
-            this.tbAdicionais.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbAdicionais.CustomButton.UseSelectable = true;
-            this.tbAdicionais.CustomButton.Visible = false;
-            this.tbAdicionais.Lines = new string[0];
-            this.tbAdicionais.Location = new System.Drawing.Point(81, 271);
-            this.tbAdicionais.MaxLength = 32767;
-            this.tbAdicionais.Multiline = true;
-            this.tbAdicionais.Name = "tbAdicionais";
-            this.tbAdicionais.PasswordChar = '\0';
-            this.tbAdicionais.PromptText = "Anotações adicionais";
-            this.tbAdicionais.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbAdicionais.SelectedText = "";
-            this.tbAdicionais.SelectionLength = 0;
-            this.tbAdicionais.SelectionStart = 0;
-            this.tbAdicionais.ShortcutsEnabled = true;
-            this.tbAdicionais.Size = new System.Drawing.Size(675, 127);
-            this.tbAdicionais.TabIndex = 8;
-            this.tbAdicionais.UseSelectable = true;
-            this.tbAdicionais.WaterMark = "Anotações adicionais";
-            this.tbAdicionais.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbAdicionais.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbTurmaProf.CustomButton.Image = null;
+            this.tbTurmaProf.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbTurmaProf.CustomButton.Name = "";
+            this.tbTurmaProf.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbTurmaProf.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbTurmaProf.CustomButton.TabIndex = 1;
+            this.tbTurmaProf.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbTurmaProf.CustomButton.UseSelectable = true;
+            this.tbTurmaProf.CustomButton.Visible = false;
+            this.tbTurmaProf.Lines = new string[0];
+            this.tbTurmaProf.Location = new System.Drawing.Point(113, 123);
+            this.tbTurmaProf.MaxLength = 32767;
+            this.tbTurmaProf.Name = "tbTurmaProf";
+            this.tbTurmaProf.PasswordChar = '\0';
+            this.tbTurmaProf.PromptText = "Designação da turma";
+            this.tbTurmaProf.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbTurmaProf.SelectedText = "";
+            this.tbTurmaProf.SelectionLength = 0;
+            this.tbTurmaProf.SelectionStart = 0;
+            this.tbTurmaProf.ShortcutsEnabled = true;
+            this.tbTurmaProf.Size = new System.Drawing.Size(567, 23);
+            this.tbTurmaProf.TabIndex = 7;
+            this.tbTurmaProf.UseSelectable = true;
+            this.tbTurmaProf.WaterMark = "Designação da turma";
+            this.tbTurmaProf.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbTurmaProf.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // tbTurma
-            // 
-            // 
-            // 
-            // 
-            this.tbTurma.CustomButton.Image = null;
-            this.tbTurma.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbTurma.CustomButton.Name = "";
-            this.tbTurma.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbTurma.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbTurma.CustomButton.TabIndex = 1;
-            this.tbTurma.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbTurma.CustomButton.UseSelectable = true;
-            this.tbTurma.CustomButton.Visible = false;
-            this.tbTurma.Lines = new string[0];
-            this.tbTurma.Location = new System.Drawing.Point(81, 231);
-            this.tbTurma.MaxLength = 32767;
-            this.tbTurma.Name = "tbTurma";
-            this.tbTurma.PasswordChar = '\0';
-            this.tbTurma.PromptText = "Designação da turma";
-            this.tbTurma.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbTurma.SelectedText = "";
-            this.tbTurma.SelectionLength = 0;
-            this.tbTurma.SelectionStart = 0;
-            this.tbTurma.ShortcutsEnabled = true;
-            this.tbTurma.Size = new System.Drawing.Size(675, 23);
-            this.tbTurma.TabIndex = 7;
-            this.tbTurma.UseSelectable = true;
-            this.tbTurma.WaterMark = "Designação da turma";
-            this.tbTurma.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbTurma.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbProcesso
+            // tbProcessoProf
             // 
             // 
             // 
             // 
-            this.tbProcesso.CustomButton.Image = null;
-            this.tbProcesso.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbProcesso.CustomButton.Name = "";
-            this.tbProcesso.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbProcesso.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbProcesso.CustomButton.TabIndex = 1;
-            this.tbProcesso.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbProcesso.CustomButton.UseSelectable = true;
-            this.tbProcesso.CustomButton.Visible = false;
-            this.tbProcesso.Lines = new string[0];
-            this.tbProcesso.Location = new System.Drawing.Point(81, 81);
-            this.tbProcesso.MaxLength = 32767;
-            this.tbProcesso.Name = "tbProcesso";
-            this.tbProcesso.PasswordChar = '\0';
-            this.tbProcesso.PromptText = "Número do processo escolar";
-            this.tbProcesso.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbProcesso.SelectedText = "";
-            this.tbProcesso.SelectionLength = 0;
-            this.tbProcesso.SelectionStart = 0;
-            this.tbProcesso.ShortcutsEnabled = true;
-            this.tbProcesso.Size = new System.Drawing.Size(675, 23);
-            this.tbProcesso.TabIndex = 5;
-            this.tbProcesso.UseSelectable = true;
-            this.tbProcesso.WaterMark = "Número do processo escolar";
-            this.tbProcesso.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbProcesso.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbProcessoProf.CustomButton.Image = null;
+            this.tbProcessoProf.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbProcessoProf.CustomButton.Name = "";
+            this.tbProcessoProf.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbProcessoProf.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbProcessoProf.CustomButton.TabIndex = 1;
+            this.tbProcessoProf.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbProcessoProf.CustomButton.UseSelectable = true;
+            this.tbProcessoProf.CustomButton.Visible = false;
+            this.tbProcessoProf.Lines = new string[0];
+            this.tbProcessoProf.Location = new System.Drawing.Point(113, 81);
+            this.tbProcessoProf.MaxLength = 32767;
+            this.tbProcessoProf.Name = "tbProcessoProf";
+            this.tbProcessoProf.PasswordChar = '\0';
+            this.tbProcessoProf.PromptText = "Número do processo escolar";
+            this.tbProcessoProf.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbProcessoProf.SelectedText = "";
+            this.tbProcessoProf.SelectionLength = 0;
+            this.tbProcessoProf.SelectionStart = 0;
+            this.tbProcessoProf.ShortcutsEnabled = true;
+            this.tbProcessoProf.Size = new System.Drawing.Size(567, 23);
+            this.tbProcessoProf.TabIndex = 5;
+            this.tbProcessoProf.UseSelectable = true;
+            this.tbProcessoProf.WaterMark = "Número do processo escolar";
+            this.tbProcessoProf.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbProcessoProf.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // tbNome
-            // 
-            // 
+            // tbNomeProf
             // 
             // 
-            this.tbNome.CustomButton.Image = null;
-            this.tbNome.CustomButton.Location = new System.Drawing.Point(653, 1);
-            this.tbNome.CustomButton.Name = "";
-            this.tbNome.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbNome.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbNome.CustomButton.TabIndex = 1;
-            this.tbNome.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbNome.CustomButton.UseSelectable = true;
-            this.tbNome.CustomButton.Visible = false;
-            this.tbNome.Lines = new string[0];
-            this.tbNome.Location = new System.Drawing.Point(81, 46);
-            this.tbNome.MaxLength = 32767;
-            this.tbNome.Name = "tbNome";
-            this.tbNome.PasswordChar = '\0';
-            this.tbNome.PromptText = "Nome completo";
-            this.tbNome.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbNome.SelectedText = "";
-            this.tbNome.SelectionLength = 0;
-            this.tbNome.SelectionStart = 0;
-            this.tbNome.ShortcutsEnabled = true;
-            this.tbNome.Size = new System.Drawing.Size(675, 23);
-            this.tbNome.TabIndex = 4;
-            this.tbNome.UseSelectable = true;
-            this.tbNome.WaterMark = "Nome completo";
-            this.tbNome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbNome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // 
+            this.tbNomeProf.CustomButton.Image = null;
+            this.tbNomeProf.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbNomeProf.CustomButton.Name = "";
+            this.tbNomeProf.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbNomeProf.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbNomeProf.CustomButton.TabIndex = 1;
+            this.tbNomeProf.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbNomeProf.CustomButton.UseSelectable = true;
+            this.tbNomeProf.CustomButton.Visible = false;
+            this.tbNomeProf.Lines = new string[0];
+            this.tbNomeProf.Location = new System.Drawing.Point(113, 46);
+            this.tbNomeProf.MaxLength = 32767;
+            this.tbNomeProf.Name = "tbNomeProf";
+            this.tbNomeProf.PasswordChar = '\0';
+            this.tbNomeProf.PromptText = "Nome completo";
+            this.tbNomeProf.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbNomeProf.SelectedText = "";
+            this.tbNomeProf.SelectionLength = 0;
+            this.tbNomeProf.SelectionStart = 0;
+            this.tbNomeProf.ShortcutsEnabled = true;
+            this.tbNomeProf.Size = new System.Drawing.Size(567, 23);
+            this.tbNomeProf.TabIndex = 4;
+            this.tbNomeProf.UseSelectable = true;
+            this.tbNomeProf.WaterMark = "Nome completo";
+            this.tbNomeProf.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbNomeProf.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(0, 271);
+            this.metroLabel7.Location = new System.Drawing.Point(0, 163);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(71, 19);
             this.metroLabel7.TabIndex = 3;
@@ -580,20 +488,11 @@ namespace biblioteca
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(3, 231);
+            this.metroLabel5.Location = new System.Drawing.Point(3, 123);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(53, 19);
             this.metroLabel5.TabIndex = 3;
             this.metroLabel5.Text = "Turmas:";
-            // 
-            // lbDisciplina
-            // 
-            this.lbDisciplina.AutoSize = true;
-            this.lbDisciplina.Location = new System.Drawing.Point(474, 124);
-            this.lbDisciplina.Name = "lbDisciplina";
-            this.lbDisciplina.Size = new System.Drawing.Size(129, 19);
-            this.lbDisciplina.TabIndex = 3;
-            this.lbDisciplina.Text = "Selecionar disciplina:";
             // 
             // metroLabel2
             // 
@@ -615,94 +514,172 @@ namespace biblioteca
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(108, 644);
+            this.btLimpar.Location = new System.Drawing.Point(140, 444);
             this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(332, 30);
+            this.btLimpar.Size = new System.Drawing.Size(281, 30);
             this.btLimpar.TabIndex = 11;
             this.btLimpar.Text = "Limpar";
             this.btLimpar.UseSelectable = true;
             // 
             // btSubmeter
             // 
-            this.btSubmeter.Location = new System.Drawing.Point(446, 645);
+            this.btSubmeter.Location = new System.Drawing.Point(427, 444);
             this.btSubmeter.Name = "btSubmeter";
-            this.btSubmeter.Size = new System.Drawing.Size(337, 30);
+            this.btSubmeter.Size = new System.Drawing.Size(280, 30);
             this.btSubmeter.TabIndex = 10;
             this.btSubmeter.Text = "Submeter";
             this.btSubmeter.UseSelectable = true;
+            this.btSubmeter.Click += new System.EventHandler(this.btSubmeter_Click);
             // 
-            // groupBox1
+            // tabLista
             // 
-            this.groupBox1.Controls.Add(this.btDeletar);
-            this.groupBox1.Controls.Add(this.btAlterar);
-            this.groupBox1.Controls.Add(this.grid);
-            this.groupBox1.Location = new System.Drawing.Point(817, 70);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(542, 612);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Listagem";
+            this.tabLista.Controls.Add(this.tabLista1);
+            this.tabLista.Controls.Add(this.tabAtivos);
+            this.tabLista.Location = new System.Drawing.Point(743, 63);
+            this.tabLista.Name = "tabLista";
+            this.tabLista.SelectedIndex = 0;
+            this.tabLista.Size = new System.Drawing.Size(614, 606);
+            this.tabLista.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tabLista.TabIndex = 15;
+            this.tabLista.UseSelectable = true;
+            // 
+            // tabLista1
+            // 
+            this.tabLista1.Controls.Add(this.btDeletar);
+            this.tabLista1.Controls.Add(this.btAlterar);
+            this.tabLista1.Controls.Add(this.gridLista);
+            this.tabLista1.HorizontalScrollbarBarColor = true;
+            this.tabLista1.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabLista1.HorizontalScrollbarSize = 10;
+            this.tabLista1.Location = new System.Drawing.Point(4, 38);
+            this.tabLista1.Name = "tabLista1";
+            this.tabLista1.Size = new System.Drawing.Size(606, 564);
+            this.tabLista1.TabIndex = 0;
+            this.tabLista1.Text = "Lista";
+            this.tabLista1.VerticalScrollbarBarColor = true;
+            this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
+            this.tabLista1.VerticalScrollbarSize = 10;
             // 
             // btDeletar
             // 
-            this.btDeletar.Location = new System.Drawing.Point(277, 574);
+            this.btDeletar.Location = new System.Drawing.Point(312, 518);
             this.btDeletar.Name = "btDeletar";
-            this.btDeletar.Size = new System.Drawing.Size(249, 30);
+            this.btDeletar.Size = new System.Drawing.Size(278, 30);
             this.btDeletar.TabIndex = 13;
             this.btDeletar.Text = "Deletar";
             this.btDeletar.UseSelectable = true;
             // 
             // btAlterar
             // 
-            this.btAlterar.Location = new System.Drawing.Point(17, 574);
+            this.btAlterar.Location = new System.Drawing.Point(17, 518);
             this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(254, 30);
+            this.btAlterar.Size = new System.Drawing.Size(289, 30);
             this.btAlterar.TabIndex = 12;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseSelectable = true;
             // 
-            // grid
+            // gridLista
             // 
-            this.grid.AllowUserToResizeRows = false;
-            this.grid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid.DefaultCellStyle = dataGridViewCellStyle5;
-            this.grid.EnableHeadersVisualStyles = false;
-            this.grid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grid.Location = new System.Drawing.Point(17, 24);
-            this.grid.Name = "grid";
-            this.grid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(509, 544);
-            this.grid.TabIndex = 0;
+            this.gridLista.AllowUserToResizeRows = false;
+            this.gridLista.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridLista.DefaultCellStyle = dataGridViewCellStyle14;
+            this.gridLista.EnableHeadersVisualStyles = false;
+            this.gridLista.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridLista.Location = new System.Drawing.Point(17, 18);
+            this.gridLista.Name = "gridLista";
+            this.gridLista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.gridLista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridLista.Size = new System.Drawing.Size(573, 477);
+            this.gridLista.TabIndex = 0;
+            this.gridLista.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // gridAtivos
+            // 
+            this.gridAtivos.AllowUserToResizeRows = false;
+            this.gridAtivos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridAtivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridAtivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridAtivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.gridAtivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle17;
+            this.gridAtivos.EnableHeadersVisualStyles = false;
+            this.gridAtivos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridAtivos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridAtivos.Location = new System.Drawing.Point(17, 18);
+            this.gridAtivos.Name = "gridAtivos";
+            this.gridAtivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.gridAtivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridAtivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridAtivos.Size = new System.Drawing.Size(573, 477);
+            this.gridAtivos.TabIndex = 2;
+            this.gridAtivos.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // tabAtivos
+            // 
+            this.tabAtivos.Controls.Add(this.gridAtivos);
+            this.tabAtivos.HorizontalScrollbarBarColor = true;
+            this.tabAtivos.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabAtivos.HorizontalScrollbarSize = 10;
+            this.tabAtivos.Location = new System.Drawing.Point(4, 38);
+            this.tabAtivos.Name = "tabAtivos";
+            this.tabAtivos.Size = new System.Drawing.Size(606, 564);
+            this.tabAtivos.TabIndex = 1;
+            this.tabAtivos.Text = "Empréstimos ativos";
+            this.tabAtivos.VerticalScrollbarBarColor = true;
+            this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
+            this.tabAtivos.VerticalScrollbarSize = 10;
             // 
             // Utilizadores
             // 
@@ -710,7 +687,7 @@ namespace biblioteca
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1394, 698);
             this.ControlBox = false;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.tabLista);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.btSubmeter);
@@ -728,8 +705,11 @@ namespace biblioteca
             this.pageAluno.PerformLayout();
             this.pageProfessor.ResumeLayout(false);
             this.pageProfessor.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
+            this.tabLista.ResumeLayout(false);
+            this.tabLista1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridLista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAtivos)).EndInit();
+            this.tabAtivos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -740,36 +720,33 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTabPage pageAluno;
         private MetroFramework.Controls.MetroTabPage pageProfessor;
         private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel lbDisciplina;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel7;
-        private MetroFramework.Controls.MetroTextBox tbAdicionais;
-        private MetroFramework.Controls.MetroTextBox tbTurma;
-        private MetroFramework.Controls.MetroTextBox tbProcesso;
-        private MetroFramework.Controls.MetroTextBox tbNome;
-        private MetroFramework.Controls.MetroComboBox cbDisciplinas;
+        private MetroFramework.Controls.MetroTextBox tbNotasProf;
+        private MetroFramework.Controls.MetroTextBox tbTurmaProf;
+        private MetroFramework.Controls.MetroTextBox tbProcessoProf;
+        private MetroFramework.Controls.MetroTextBox tbNomeProf;
         private MetroFramework.Controls.MetroButton btSubmeter;
         private MetroFramework.Controls.MetroButton btLimpar;
-        private MetroFramework.Controls.MetroComboBox cbAno1;
-        private MetroFramework.Controls.MetroTextBox tbNotas1;
-        private MetroFramework.Controls.MetroTextBox tbTurma1;
-        private MetroFramework.Controls.MetroTextBox tbProcesso1;
-        private MetroFramework.Controls.MetroTextBox tbNome1;
+        private MetroFramework.Controls.MetroComboBox cbAnoAluno;
+        private MetroFramework.Controls.MetroTextBox tbNotasAluno;
+        private MetroFramework.Controls.MetroTextBox tbTurmaAluno;
+        private MetroFramework.Controls.MetroTextBox tbProcessoAluno;
+        private MetroFramework.Controls.MetroTextBox tbNomeAluno;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel10;
-        private MetroFramework.Controls.MetroButton btDelet;
-        private MetroFramework.Controls.MetroButton btAdd;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroTextBox tbDisciplinas;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private MetroFramework.Controls.MetroGrid grid;
         private MetroFramework.Controls.MetroButton metroButton5;
         private MetroFramework.Controls.MetroButton metroButton6;
+        private MetroFramework.Controls.MetroTabControl tabLista;
+        private MetroFramework.Controls.MetroTabPage tabLista1;
         private MetroFramework.Controls.MetroButton btDeletar;
         private MetroFramework.Controls.MetroButton btAlterar;
+        private MetroFramework.Controls.MetroGrid gridLista;
+        private MetroFramework.Controls.MetroTabPage tabAtivos;
+        private MetroFramework.Controls.MetroGrid gridAtivos;
     }
 }

@@ -33,8 +33,6 @@ namespace biblioteca
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btBiblioNet = new MetroFramework.Controls.MetroTile();
-            this.btTurmas = new MetroFramework.Controls.MetroTile();
-            this.btEmprestimos = new MetroFramework.Controls.MetroTile();
             this.btSair = new MetroFramework.Controls.MetroTile();
             this.btLogout = new MetroFramework.Controls.MetroTile();
             this.btConfigs = new MetroFramework.Controls.MetroTile();
@@ -62,9 +60,9 @@ namespace biblioteca
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(23, 836);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(165, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(236, 19);
             this.metroLabel2.TabIndex = 12;
-            this.metroLabel2.Text = "Biblioteca Escolar - Gestão";
+            this.metroLabel2.Text = "Biblioteca Escolar - Gestão de recursos";
             // 
             // panel1
             // 
@@ -80,7 +78,7 @@ namespace biblioteca
             this.btBiblioNet.ActiveControl = null;
             this.btBiblioNet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btBiblioNet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btBiblioNet.Location = new System.Drawing.Point(158, 36);
+            this.btBiblioNet.Location = new System.Drawing.Point(388, 36);
             this.btBiblioNet.Name = "btBiblioNet";
             this.btBiblioNet.PaintTileCount = false;
             this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
@@ -97,54 +95,6 @@ namespace biblioteca
             this.btBiblioNet.UseStyleColors = true;
             this.btBiblioNet.UseTileImage = true;
             this.btBiblioNet.Click += new System.EventHandler(this.btBiblioNet_Click);
-            // 
-            // btTurmas
-            // 
-            this.btTurmas.AccessibleName = "Turmas";
-            this.btTurmas.ActiveControl = null;
-            this.btTurmas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTurmas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btTurmas.Location = new System.Drawing.Point(273, 36);
-            this.btTurmas.Name = "btTurmas";
-            this.btTurmas.PaintTileCount = false;
-            this.btTurmas.Size = new System.Drawing.Size(109, 93);
-            this.btTurmas.Style = MetroFramework.MetroColorStyle.Orange;
-            this.btTurmas.TabIndex = 13;
-            this.btTurmas.Text = "Turmas";
-            this.btTurmas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btTurmas.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btTurmas.TileImage = global::biblioteca.Properties.Resources.utilizadores6;
-            this.btTurmas.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btTurmas.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btTurmas.UseCustomForeColor = true;
-            this.btTurmas.UseSelectable = true;
-            this.btTurmas.UseStyleColors = true;
-            this.btTurmas.UseTileImage = true;
-            this.btTurmas.Click += new System.EventHandler(this.btTurmas_Click);
-            // 
-            // btEmprestimos
-            // 
-            this.btEmprestimos.AccessibleName = "Requisitados";
-            this.btEmprestimos.ActiveControl = null;
-            this.btEmprestimos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEmprestimos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btEmprestimos.Location = new System.Drawing.Point(733, 36);
-            this.btEmprestimos.Name = "btEmprestimos";
-            this.btEmprestimos.PaintTileCount = false;
-            this.btEmprestimos.Size = new System.Drawing.Size(109, 93);
-            this.btEmprestimos.Style = MetroFramework.MetroColorStyle.Red;
-            this.btEmprestimos.TabIndex = 10;
-            this.btEmprestimos.Text = "Agenda";
-            this.btEmprestimos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btEmprestimos.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btEmprestimos.TileImage = global::biblioteca.Properties.Resources.emprestimos5;
-            this.btEmprestimos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btEmprestimos.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btEmprestimos.UseCustomForeColor = true;
-            this.btEmprestimos.UseSelectable = true;
-            this.btEmprestimos.UseStyleColors = true;
-            this.btEmprestimos.UseTileImage = true;
-            this.btEmprestimos.Click += new System.EventHandler(this.btEmprestimos_Click);
             // 
             // btSair
             // 
@@ -171,7 +121,7 @@ namespace biblioteca
             this.btLogout.Location = new System.Drawing.Point(1193, 36);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(109, 93);
-            this.btLogout.Style = MetroFramework.MetroColorStyle.Teal;
+            this.btLogout.Style = MetroFramework.MetroColorStyle.Blue;
             this.btLogout.TabIndex = 8;
             this.btLogout.Text = "Deslogar";
             this.btLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -224,7 +174,7 @@ namespace biblioteca
             this.btEventos.Location = new System.Drawing.Point(848, 36);
             this.btEventos.Name = "btEventos";
             this.btEventos.Size = new System.Drawing.Size(109, 93);
-            this.btEventos.Style = MetroFramework.MetroColorStyle.Red;
+            this.btEventos.Style = MetroFramework.MetroColorStyle.Purple;
             this.btEventos.TabIndex = 5;
             this.btEventos.Text = "Calendário";
             this.btEventos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -239,7 +189,7 @@ namespace biblioteca
             this.btSalas.AccessibleName = "Espaços";
             this.btSalas.ActiveControl = null;
             this.btSalas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSalas.Location = new System.Drawing.Point(618, 36);
+            this.btSalas.Location = new System.Drawing.Point(733, 36);
             this.btSalas.Name = "btSalas";
             this.btSalas.Size = new System.Drawing.Size(109, 93);
             this.btSalas.Style = MetroFramework.MetroColorStyle.Orange;
@@ -257,7 +207,7 @@ namespace biblioteca
             this.btEquipamentos.AccessibleName = "Equipamentos";
             this.btEquipamentos.ActiveControl = null;
             this.btEquipamentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEquipamentos.Location = new System.Drawing.Point(503, 36);
+            this.btEquipamentos.Location = new System.Drawing.Point(618, 36);
             this.btEquipamentos.Name = "btEquipamentos";
             this.btEquipamentos.Size = new System.Drawing.Size(109, 93);
             this.btEquipamentos.Style = MetroFramework.MetroColorStyle.Orange;
@@ -276,7 +226,7 @@ namespace biblioteca
             this.btUtilizadores.ActiveControl = null;
             this.btUtilizadores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUtilizadores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btUtilizadores.Location = new System.Drawing.Point(388, 36);
+            this.btUtilizadores.Location = new System.Drawing.Point(503, 36);
             this.btUtilizadores.Name = "btUtilizadores";
             this.btUtilizadores.PaintTileCount = false;
             this.btUtilizadores.Size = new System.Drawing.Size(109, 93);
@@ -285,7 +235,7 @@ namespace biblioteca
             this.btUtilizadores.Text = "Utilizadores";
             this.btUtilizadores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btUtilizadores.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btUtilizadores.TileImage = global::biblioteca.Properties.Resources.sair91;
+            this.btUtilizadores.TileImage = global::biblioteca.Properties.Resources.users5x64;
             this.btUtilizadores.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btUtilizadores.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.btUtilizadores.UseCustomForeColor = true;
@@ -314,10 +264,8 @@ namespace biblioteca
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 870);
             this.Controls.Add(this.btBiblioNet);
-            this.Controls.Add(this.btTurmas);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.btEmprestimos);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btConfigs);
@@ -349,10 +297,8 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTile btConfigs;
         private MetroFramework.Controls.MetroTile btLogout;
         private MetroFramework.Controls.MetroTile btSair;
-        private MetroFramework.Controls.MetroTile btEmprestimos;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroTile btTurmas;
         private MetroFramework.Controls.MetroTile btBiblioNet;
     }
 }

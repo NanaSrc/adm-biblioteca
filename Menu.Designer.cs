@@ -32,17 +32,19 @@ namespace biblioteca
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btBiblioNet = new MetroFramework.Controls.MetroTile();
+            this.biblionet = new System.Windows.Forms.PictureBox();
             this.btSair = new MetroFramework.Controls.MetroTile();
-            this.btLogout = new MetroFramework.Controls.MetroTile();
             this.btConfigs = new MetroFramework.Controls.MetroTile();
             this.btNotas = new MetroFramework.Controls.MetroTile();
             this.btEventos = new MetroFramework.Controls.MetroTile();
             this.btSalas = new MetroFramework.Controls.MetroTile();
             this.btEquipamentos = new MetroFramework.Controls.MetroTile();
             this.btUtilizadores = new MetroFramework.Controls.MetroTile();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btBiblioNet = new MetroFramework.Controls.MetroTile();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.biblionet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -66,35 +68,26 @@ namespace biblioteca
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(40)))), ((int)(((byte)(89)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btBiblioNet);
             this.panel1.Location = new System.Drawing.Point(23, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1394, 698);
             this.panel1.TabIndex = 0;
             // 
-            // btBiblioNet
+            // biblionet
             // 
-            this.btBiblioNet.AccessibleName = "biblio.net - Base de dados";
-            this.btBiblioNet.ActiveControl = null;
-            this.btBiblioNet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btBiblioNet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btBiblioNet.Location = new System.Drawing.Point(388, 36);
-            this.btBiblioNet.Name = "btBiblioNet";
-            this.btBiblioNet.PaintTileCount = false;
-            this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
-            this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Teal;
-            this.btBiblioNet.TabIndex = 14;
-            this.btBiblioNet.Text = "Biblio.net";
-            this.btBiblioNet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btBiblioNet.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btBiblioNet.TileImage = global::biblioteca.Properties.Resources.biblio7;
-            this.btBiblioNet.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btBiblioNet.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btBiblioNet.UseCustomForeColor = true;
-            this.btBiblioNet.UseSelectable = true;
-            this.btBiblioNet.UseStyleColors = true;
-            this.btBiblioNet.UseTileImage = true;
-            this.btBiblioNet.Click += new System.EventHandler(this.btBiblioNet_Click);
+            this.biblionet.BackgroundImage = global::biblioteca.Properties.Resources.biblionet1;
+            this.biblionet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.biblionet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.biblionet.ErrorImage = global::biblioteca.Properties.Resources.biblio;
+            this.biblionet.InitialImage = global::biblioteca.Properties.Resources.biblio;
+            this.biblionet.Location = new System.Drawing.Point(229, 36);
+            this.biblionet.Name = "biblionet";
+            this.biblionet.Size = new System.Drawing.Size(307, 93);
+            this.biblionet.TabIndex = 15;
+            this.biblionet.TabStop = false;
+            this.biblionet.Click += new System.EventHandler(this.biblionet_Click);
             // 
             // btSair
             // 
@@ -104,6 +97,7 @@ namespace biblioteca
             this.btSair.Location = new System.Drawing.Point(1308, 36);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(109, 93);
+            this.btSair.Style = MetroFramework.MetroColorStyle.Silver;
             this.btSair.TabIndex = 9;
             this.btSair.Text = "Fechar ";
             this.btSair.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -113,29 +107,12 @@ namespace biblioteca
             this.btSair.UseTileImage = true;
             this.btSair.Click += new System.EventHandler(this.metroTile2_Click_1);
             // 
-            // btLogout
-            // 
-            this.btLogout.AccessibleName = "Logout";
-            this.btLogout.ActiveControl = null;
-            this.btLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btLogout.Location = new System.Drawing.Point(1193, 36);
-            this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(109, 93);
-            this.btLogout.Style = MetroFramework.MetroColorStyle.Blue;
-            this.btLogout.TabIndex = 8;
-            this.btLogout.Text = "Deslogar";
-            this.btLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btLogout.TileImage = global::biblioteca.Properties.Resources.sair6;
-            this.btLogout.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btLogout.UseSelectable = true;
-            this.btLogout.UseTileImage = true;
-            // 
             // btConfigs
             // 
             this.btConfigs.AccessibleName = "Configurações";
             this.btConfigs.ActiveControl = null;
             this.btConfigs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btConfigs.Location = new System.Drawing.Point(1078, 36);
+            this.btConfigs.Location = new System.Drawing.Point(1193, 36);
             this.btConfigs.Name = "btConfigs";
             this.btConfigs.Size = new System.Drawing.Size(109, 93);
             this.btConfigs.Style = MetroFramework.MetroColorStyle.Silver;
@@ -153,7 +130,7 @@ namespace biblioteca
             this.btNotas.AccessibleName = "Notas";
             this.btNotas.ActiveControl = null;
             this.btNotas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNotas.Location = new System.Drawing.Point(963, 36);
+            this.btNotas.Location = new System.Drawing.Point(1078, 36);
             this.btNotas.Name = "btNotas";
             this.btNotas.Size = new System.Drawing.Size(109, 93);
             this.btNotas.Style = MetroFramework.MetroColorStyle.Purple;
@@ -171,14 +148,14 @@ namespace biblioteca
             this.btEventos.AccessibleName = "Calendário";
             this.btEventos.ActiveControl = null;
             this.btEventos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEventos.Location = new System.Drawing.Point(848, 36);
+            this.btEventos.Location = new System.Drawing.Point(963, 36);
             this.btEventos.Name = "btEventos";
             this.btEventos.Size = new System.Drawing.Size(109, 93);
             this.btEventos.Style = MetroFramework.MetroColorStyle.Purple;
             this.btEventos.TabIndex = 5;
             this.btEventos.Text = "Calendário";
             this.btEventos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btEventos.TileImage = global::biblioteca.Properties.Resources.eventos4;
+            this.btEventos.TileImage = global::biblioteca.Properties.Resources.calendar2x48x60__1_;
             this.btEventos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btEventos.UseSelectable = true;
             this.btEventos.UseTileImage = true;
@@ -189,9 +166,9 @@ namespace biblioteca
             this.btSalas.AccessibleName = "Espaços";
             this.btSalas.ActiveControl = null;
             this.btSalas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSalas.Location = new System.Drawing.Point(733, 36);
+            this.btSalas.Location = new System.Drawing.Point(842, 36);
             this.btSalas.Name = "btSalas";
-            this.btSalas.Size = new System.Drawing.Size(109, 93);
+            this.btSalas.Size = new System.Drawing.Size(115, 93);
             this.btSalas.Style = MetroFramework.MetroColorStyle.Orange;
             this.btSalas.TabIndex = 4;
             this.btSalas.Text = "Espaços";
@@ -207,7 +184,7 @@ namespace biblioteca
             this.btEquipamentos.AccessibleName = "Equipamentos";
             this.btEquipamentos.ActiveControl = null;
             this.btEquipamentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEquipamentos.Location = new System.Drawing.Point(618, 36);
+            this.btEquipamentos.Location = new System.Drawing.Point(727, 36);
             this.btEquipamentos.Name = "btEquipamentos";
             this.btEquipamentos.Size = new System.Drawing.Size(109, 93);
             this.btEquipamentos.Style = MetroFramework.MetroColorStyle.Orange;
@@ -226,7 +203,7 @@ namespace biblioteca
             this.btUtilizadores.ActiveControl = null;
             this.btUtilizadores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUtilizadores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btUtilizadores.Location = new System.Drawing.Point(503, 36);
+            this.btUtilizadores.Location = new System.Drawing.Point(612, 36);
             this.btUtilizadores.Name = "btUtilizadores";
             this.btUtilizadores.PaintTileCount = false;
             this.btUtilizadores.Size = new System.Drawing.Size(109, 93);
@@ -244,42 +221,68 @@ namespace biblioteca
             this.btUtilizadores.UseTileImage = true;
             this.btUtilizadores.Click += new System.EventHandler(this.btUtilizadores_Click);
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.BackgroundImage = global::biblioteca.Properties.Resources.biblio1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.ErrorImage = global::biblioteca.Properties.Resources.biblio;
-            this.pictureBox1.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 93);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picLogo.BackgroundImage = global::biblioteca.Properties.Resources.biblio1;
+            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLogo.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.picLogo.ErrorImage = global::biblioteca.Properties.Resources.biblio;
+            this.picLogo.InitialImage = global::biblioteca.Properties.Resources.biblio;
+            this.picLogo.Location = new System.Drawing.Point(23, 36);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(129, 93);
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btBiblioNet
+            // 
+            this.btBiblioNet.AccessibleName = "biblio.net - Base de dados";
+            this.btBiblioNet.ActiveControl = null;
+            this.btBiblioNet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBiblioNet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btBiblioNet.Location = new System.Drawing.Point(404, 19);
+            this.btBiblioNet.Name = "btBiblioNet";
+            this.btBiblioNet.PaintTileCount = false;
+            this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
+            this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Teal;
+            this.btBiblioNet.TabIndex = 14;
+            this.btBiblioNet.Text = "Biblio.net";
+            this.btBiblioNet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btBiblioNet.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btBiblioNet.TileImage = global::biblioteca.Properties.Resources.biblio7;
+            this.btBiblioNet.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btBiblioNet.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btBiblioNet.UseCustomForeColor = true;
+            this.btBiblioNet.UseSelectable = true;
+            this.btBiblioNet.UseStyleColors = true;
+            this.btBiblioNet.UseTileImage = true;
+            this.btBiblioNet.Visible = false;
+            this.btBiblioNet.Click += new System.EventHandler(this.btBiblioNet_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 870);
-            this.Controls.Add(this.btBiblioNet);
+            this.Controls.Add(this.biblionet);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btConfigs);
             this.Controls.Add(this.btNotas);
             this.Controls.Add(this.btEventos);
             this.Controls.Add(this.btSalas);
             this.Controls.Add(this.btEquipamentos);
             this.Controls.Add(this.btUtilizadores);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.panel1);
             this.Name = "Menu";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.biblionet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,18 +291,18 @@ namespace biblioteca
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private MetroFramework.Controls.MetroTile btUtilizadores;
         private MetroFramework.Controls.MetroTile btEquipamentos;
         private MetroFramework.Controls.MetroTile btSalas;
         private MetroFramework.Controls.MetroTile btEventos;
         private MetroFramework.Controls.MetroTile btNotas;
         private MetroFramework.Controls.MetroTile btConfigs;
-        private MetroFramework.Controls.MetroTile btLogout;
         private MetroFramework.Controls.MetroTile btSair;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTile btBiblioNet;
+        private System.Windows.Forms.PictureBox biblionet;
     }
 }
 

@@ -124,6 +124,26 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap biblionet {
+            get {
+                object obj = ResourceManager.GetObject("biblionet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap biblionet1 {
+            get {
+                object obj = ResourceManager.GetObject("biblionet1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap books_jpg {
             get {
                 object obj = ResourceManager.GetObject("books.jpg", resourceCulture);
@@ -147,6 +167,56 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap books2_jpg {
             get {
                 object obj = ResourceManager.GetObject("books2.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar {
+            get {
+                object obj = ResourceManager.GetObject("calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar2x48 {
+            get {
+                object obj = ResourceManager.GetObject("calendar2x48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar2x48x60 {
+            get {
+                object obj = ResourceManager.GetObject("calendar2x48x60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar2x48x60__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar2x48x60 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar2x64 {
+            get {
+                object obj = ResourceManager.GetObject("calendar2x64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

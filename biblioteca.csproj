@@ -311,5 +311,26 @@
   <ItemGroup>
     <None Include="Resources\users5x48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblionet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblionet11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2x48x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2x48x60 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

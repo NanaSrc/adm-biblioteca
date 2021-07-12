@@ -19,7 +19,7 @@ namespace biblioteca
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btUtilizadores_Click(btUtilizadores,e);
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace biblioteca
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
+            //panel1.Controls.Clear();
         }
 
         private void btBiblioNet_Click(object sender, EventArgs e)
@@ -98,6 +98,17 @@ namespace biblioteca
         {
             Configuracoes form = new Configuracoes();
             PanelShow(form);
+        }
+
+        private void biblionet_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process start = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C start https://biblioteca.cm-tvedras.pt/Biblionet/";
+            start.StartInfo = startInfo;
+            start.Start();
         }
     }
 }

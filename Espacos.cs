@@ -21,5 +21,19 @@ namespace biblioteca
         {
 
         }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            Defaults();
+        }
+
+        private void Defaults()
+        {
+            tbDesignacao.Text = "";
+            nudMax.Value = 1;
+            tbInicio.Text = "";
+            tbFim.Text = "";
+            tbNotas.Text = "";
+        }
     }
 }

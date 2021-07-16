@@ -79,6 +79,7 @@
     <Compile Include="Equipamentos.Designer.cs">
       <DependentUpon>Equipamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Espaco.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

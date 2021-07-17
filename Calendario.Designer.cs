@@ -31,6 +31,7 @@ namespace biblioteca
         {
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabCalendario = new MetroFramework.Controls.MetroTabPage();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.tabAdd = new MetroFramework.Controls.MetroTabPage();
             this.btSubmeter = new MetroFramework.Controls.MetroButton();
@@ -45,7 +46,6 @@ namespace biblioteca
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabLista.SuspendLayout();
             this.tabCalendario.SuspendLayout();
             this.tabRegisto.SuspendLayout();
@@ -78,6 +78,13 @@ namespace biblioteca
             this.tabCalendario.VerticalScrollbarBarColor = true;
             this.tabCalendario.VerticalScrollbarHighlightOnWheel = false;
             this.tabCalendario.VerticalScrollbarSize = 10;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 3);
+            this.monthCalendar1.Location = new System.Drawing.Point(2, 24);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 14;
             // 
             // tabRegisto
             // 
@@ -118,7 +125,7 @@ namespace biblioteca
             // 
             // btSubmeter
             // 
-            this.btSubmeter.Location = new System.Drawing.Point(349, 518);
+            this.btSubmeter.Location = new System.Drawing.Point(349, 507);
             this.btSubmeter.Name = "btSubmeter";
             this.btSubmeter.Size = new System.Drawing.Size(238, 30);
             this.btSubmeter.TabIndex = 12;
@@ -127,7 +134,7 @@ namespace biblioteca
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(112, 518);
+            this.btLimpar.Location = new System.Drawing.Point(112, 507);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(231, 30);
             this.btLimpar.TabIndex = 13;
@@ -149,7 +156,7 @@ namespace biblioteca
             this.tbFim.CustomButton.UseSelectable = true;
             this.tbFim.CustomButton.Visible = false;
             this.tbFim.Lines = new string[0];
-            this.tbFim.Location = new System.Drawing.Point(113, 159);
+            this.tbFim.Location = new System.Drawing.Point(113, 148);
             this.tbFim.MaxLength = 32767;
             this.tbFim.Name = "tbFim";
             this.tbFim.PasswordChar = '\0';
@@ -181,7 +188,7 @@ namespace biblioteca
             this.tbInicio.CustomButton.UseSelectable = true;
             this.tbInicio.CustomButton.Visible = false;
             this.tbInicio.Lines = new string[0];
-            this.tbInicio.Location = new System.Drawing.Point(113, 119);
+            this.tbInicio.Location = new System.Drawing.Point(113, 108);
             this.tbInicio.MaxLength = 32767;
             this.tbInicio.Name = "tbInicio";
             this.tbInicio.PasswordChar = '\0';
@@ -200,7 +207,7 @@ namespace biblioteca
             // 
             // nudMax
             // 
-            this.nudMax.Location = new System.Drawing.Point(113, 81);
+            this.nudMax.Location = new System.Drawing.Point(113, 70);
             this.nudMax.Maximum = new decimal(new int[] {
             2500,
             0,
@@ -235,7 +242,7 @@ namespace biblioteca
             this.tbNotas.CustomButton.UseSelectable = true;
             this.tbNotas.CustomButton.Visible = false;
             this.tbNotas.Lines = new string[0];
-            this.tbNotas.Location = new System.Drawing.Point(113, 202);
+            this.tbNotas.Location = new System.Drawing.Point(113, 191);
             this.tbNotas.MaxLength = 32767;
             this.tbNotas.Multiline = true;
             this.tbNotas.Name = "tbNotas";
@@ -268,7 +275,7 @@ namespace biblioteca
             this.tbDesignacao.CustomButton.UseSelectable = true;
             this.tbDesignacao.CustomButton.Visible = false;
             this.tbDesignacao.Lines = new string[0];
-            this.tbDesignacao.Location = new System.Drawing.Point(113, 46);
+            this.tbDesignacao.Location = new System.Drawing.Point(113, 35);
             this.tbDesignacao.MaxLength = 32767;
             this.tbDesignacao.Name = "tbDesignacao";
             this.tbDesignacao.PasswordChar = '\0';
@@ -288,7 +295,7 @@ namespace biblioteca
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(3, 46);
+            this.metroLabel10.Location = new System.Drawing.Point(3, 35);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(89, 19);
             this.metroLabel10.TabIndex = 42;
@@ -297,7 +304,7 @@ namespace biblioteca
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(3, 81);
+            this.metroLabel9.Location = new System.Drawing.Point(3, 70);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(88, 19);
             this.metroLabel9.TabIndex = 46;
@@ -306,7 +313,7 @@ namespace biblioteca
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(4, 202);
+            this.metroLabel3.Location = new System.Drawing.Point(4, 191);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(71, 19);
             this.metroLabel3.TabIndex = 43;
@@ -315,7 +322,7 @@ namespace biblioteca
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(4, 119);
+            this.metroLabel8.Location = new System.Drawing.Point(4, 108);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(94, 19);
             this.metroLabel8.TabIndex = 45;
@@ -324,18 +331,11 @@ namespace biblioteca
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(4, 159);
+            this.metroLabel6.Location = new System.Drawing.Point(4, 148);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(83, 19);
             this.metroLabel6.TabIndex = 44;
             this.metroLabel6.Text = "Hora de fim:";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 3);
-            this.monthCalendar1.Location = new System.Drawing.Point(2, 35);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 14;
             // 
             // Calendario
             // 

@@ -41,8 +41,6 @@ namespace biblioteca
             this.btEquipamentos = new MetroFramework.Controls.MetroTile();
             this.btUtilizadores = new MetroFramework.Controls.MetroTile();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.btBiblioNet = new MetroFramework.Controls.MetroTile();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +67,6 @@ namespace biblioteca
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btBiblioNet);
             this.panel1.Location = new System.Drawing.Point(23, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1394, 698);
@@ -235,31 +232,6 @@ namespace biblioteca
             this.picLogo.TabStop = false;
             this.picLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btBiblioNet
-            // 
-            this.btBiblioNet.AccessibleName = "biblio.net - Base de dados";
-            this.btBiblioNet.ActiveControl = null;
-            this.btBiblioNet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btBiblioNet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btBiblioNet.Location = new System.Drawing.Point(404, 19);
-            this.btBiblioNet.Name = "btBiblioNet";
-            this.btBiblioNet.PaintTileCount = false;
-            this.btBiblioNet.Size = new System.Drawing.Size(109, 93);
-            this.btBiblioNet.Style = MetroFramework.MetroColorStyle.Teal;
-            this.btBiblioNet.TabIndex = 14;
-            this.btBiblioNet.Text = "Biblio.net";
-            this.btBiblioNet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btBiblioNet.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btBiblioNet.TileImage = global::biblioteca.Properties.Resources.biblio7;
-            this.btBiblioNet.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btBiblioNet.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btBiblioNet.UseCustomForeColor = true;
-            this.btBiblioNet.UseSelectable = true;
-            this.btBiblioNet.UseStyleColors = true;
-            this.btBiblioNet.UseTileImage = true;
-            this.btBiblioNet.Visible = false;
-            this.btBiblioNet.Click += new System.EventHandler(this.btBiblioNet_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,7 +252,6 @@ namespace biblioteca
             this.Name = "Menu";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
@@ -301,7 +272,6 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTile btSair;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroTile btBiblioNet;
         private System.Windows.Forms.PictureBox biblionet;
     }
 }

@@ -29,11 +29,11 @@ namespace biblioteca
 
         private void Defaults()
         {
-            tbDesignacao.Text = "";
-            nudMax.Value = 1;
-            tbInicio.Text = "";
-            tbFim.Text = "";
-            tbNotas.Text = "";
+            tbEspDesignacao.Text = "";
+            nudEspMax.Value = 1;
+            tbEspAbertura.Text = "";
+            tbEspEncerramento.Text = "";
+            tbEspAdicionais.Text = "";
         }
     }
 }

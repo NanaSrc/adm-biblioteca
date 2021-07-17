@@ -75,6 +75,7 @@
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
     <Compile Include="Equipamento.cs" />
+    <Compile Include="EquipamentoRegisto.cs" />
     <Compile Include="Equipamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +96,7 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nota.cs" />
     <Compile Include="Notas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -61,6 +61,7 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aluno.cs" />
     <Compile Include="Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +74,7 @@
     <Compile Include="Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Equipamento.cs" />
     <Compile Include="Equipamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +82,7 @@
       <DependentUpon>Equipamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Espaco.cs" />
+    <Compile Include="EspacoRegisto.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +116,7 @@
     <Compile Include="Turmas.Designer.cs">
       <DependentUpon>Turmas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor.cs" />
     <Compile Include="Utilizadores.cs">
       <SubType>Form</SubType>
     </Compile>

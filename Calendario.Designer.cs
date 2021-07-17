@@ -335,7 +335,7 @@ namespace biblioteca
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(83, 19);
             this.metroLabel6.TabIndex = 44;
-            this.metroLabel6.Text = "Hora de fim:";
+            this.metroLabel6.Text = "Hora de encerramento:";
             // 
             // Calendario
             // 

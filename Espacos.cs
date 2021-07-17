@@ -24,16 +24,41 @@ namespace biblioteca
 
         private void btLimpar_Click(object sender, EventArgs e)
         {
-            Defaults();
+            EspDefaults();
         }
 
-        private void Defaults()
+        private void EspDefaults()
         {
             tbEspDesignacao.Text = "";
             nudEspMax.Value = 1;
             tbEspAbertura.Text = "";
             tbEspEncerramento.Text = "";
             tbEspAdicionais.Text = "";
+        }
+
+        private void tgEspPessoas_CheckedChanged(object sender, EventArgs e)
+        {
+            if(tgEspPessoas.Checked)
+                nudEspMax.Enabled = true;
+            else
+                nudEspMax.Enabled = false;
+        }
+
+        private void btRegLimpar_Click(object sender, EventArgs e)
+        {
+            RegDefaults();
+        }
+
+        private void RegDefaults()
+        {
+            cbRegNome.SelectedIndex = -1;
+            cbRegNome.Text = "";
+            tbRegTurma.Text = "";
+            nudRegPessoas.Value = 0;
+            tbRegEntrada.Text = "";
+            tbRegSaida.Text = "";
+            dtRegData.Value = DateTime.Today;
+            tbRegAdicionais.Text = "";
         }
     }
 }

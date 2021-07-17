@@ -29,26 +29,18 @@ namespace biblioteca
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
-            this.tabEspaco = new MetroFramework.Controls.MetroTabPage();
-            this.btEspSubmeter = new MetroFramework.Controls.MetroButton();
-            this.btEspLimpar = new MetroFramework.Controls.MetroButton();
-            this.tbEspEncerramento = new MetroFramework.Controls.MetroTextBox();
-            this.tbEspAbertura = new MetroFramework.Controls.MetroTextBox();
-            this.tbEspAdicionais = new MetroFramework.Controls.MetroTextBox();
-            this.tbEspDesignacao = new MetroFramework.Controls.MetroTextBox();
-            this.lbDesignacao = new MetroFramework.Controls.MetroLabel();
-            this.lbMax = new MetroFramework.Controls.MetroLabel();
-            this.lbAdicionais = new MetroFramework.Controls.MetroLabel();
-            this.lbInicio = new MetroFramework.Controls.MetroLabel();
-            this.lbFim = new MetroFramework.Controls.MetroLabel();
             this.tabNovoRegisto = new MetroFramework.Controls.MetroTabPage();
+            this.dtRegData = new MetroFramework.Controls.MetroDateTime();
+            this.lbRegData = new MetroFramework.Controls.MetroLabel();
+            this.tbRegSaida = new MetroFramework.Controls.MetroTextBox();
+            this.lbSaida = new MetroFramework.Controls.MetroLabel();
             this.cbRegNome = new System.Windows.Forms.ComboBox();
             this.btRegSubmeter = new MetroFramework.Controls.MetroButton();
             this.btRegLimpar = new MetroFramework.Controls.MetroButton();
@@ -61,6 +53,20 @@ namespace biblioteca
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.lbEntrada = new MetroFramework.Controls.MetroLabel();
             this.lbRegTurma = new MetroFramework.Controls.MetroLabel();
+            this.tabEspaco = new MetroFramework.Controls.MetroTabPage();
+            this.tgEspPessoas = new MetroFramework.Controls.MetroToggle();
+            this.nudEspMax = new System.Windows.Forms.NumericUpDown();
+            this.btEspSubmeter = new MetroFramework.Controls.MetroButton();
+            this.btEspLimpar = new MetroFramework.Controls.MetroButton();
+            this.tbEspEncerramento = new MetroFramework.Controls.MetroTextBox();
+            this.tbEspAbertura = new MetroFramework.Controls.MetroTextBox();
+            this.tbEspAdicionais = new MetroFramework.Controls.MetroTextBox();
+            this.tbEspDesignacao = new MetroFramework.Controls.MetroTextBox();
+            this.lbDesignacao = new MetroFramework.Controls.MetroLabel();
+            this.lbMax = new MetroFramework.Controls.MetroLabel();
+            this.lbAdicionais = new MetroFramework.Controls.MetroLabel();
+            this.lbInicio = new MetroFramework.Controls.MetroLabel();
+            this.lbFim = new MetroFramework.Controls.MetroLabel();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
             this.btAlterar = new MetroFramework.Controls.MetroButton();
             this.gridLista = new MetroFramework.Controls.MetroGrid();
@@ -68,22 +74,16 @@ namespace biblioteca
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
             this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
             this.gridAtivos = new MetroFramework.Controls.MetroGrid();
-            this.tbRegSaida = new MetroFramework.Controls.MetroTextBox();
-            this.lbSaida = new MetroFramework.Controls.MetroLabel();
-            this.lbRegData = new MetroFramework.Controls.MetroLabel();
-            this.dtRegData = new MetroFramework.Controls.MetroDateTime();
-            this.nudEspMax = new System.Windows.Forms.NumericUpDown();
-            this.tgEspPessoas = new MetroFramework.Controls.MetroToggle();
             this.tabRegisto.SuspendLayout();
-            this.tabEspaco.SuspendLayout();
             this.tabNovoRegisto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegPessoas)).BeginInit();
+            this.tabEspaco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEspMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLista)).BeginInit();
             this.tabLista.SuspendLayout();
             this.tabLista1.SuspendLayout();
             this.tabAtivos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridAtivos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEspMax)).BeginInit();
             this.SuspendLayout();
             // 
             // tabRegisto
@@ -92,231 +92,11 @@ namespace biblioteca
             this.tabRegisto.Controls.Add(this.tabEspaco);
             this.tabRegisto.Location = new System.Drawing.Point(23, 63);
             this.tabRegisto.Name = "tabRegisto";
-            this.tabRegisto.SelectedIndex = 0;
+            this.tabRegisto.SelectedIndex = 1;
             this.tabRegisto.Size = new System.Drawing.Size(714, 606);
             this.tabRegisto.Style = MetroFramework.MetroColorStyle.Teal;
             this.tabRegisto.TabIndex = 0;
             this.tabRegisto.UseSelectable = true;
-            // 
-            // tabEspaco
-            // 
-            this.tabEspaco.Controls.Add(this.tgEspPessoas);
-            this.tabEspaco.Controls.Add(this.nudEspMax);
-            this.tabEspaco.Controls.Add(this.btEspSubmeter);
-            this.tabEspaco.Controls.Add(this.btEspLimpar);
-            this.tabEspaco.Controls.Add(this.tbEspEncerramento);
-            this.tabEspaco.Controls.Add(this.tbEspAbertura);
-            this.tabEspaco.Controls.Add(this.tbEspAdicionais);
-            this.tabEspaco.Controls.Add(this.tbEspDesignacao);
-            this.tabEspaco.Controls.Add(this.lbDesignacao);
-            this.tabEspaco.Controls.Add(this.lbMax);
-            this.tabEspaco.Controls.Add(this.lbAdicionais);
-            this.tabEspaco.Controls.Add(this.lbInicio);
-            this.tabEspaco.Controls.Add(this.lbFim);
-            this.tabEspaco.HorizontalScrollbarBarColor = true;
-            this.tabEspaco.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabEspaco.HorizontalScrollbarSize = 10;
-            this.tabEspaco.Location = new System.Drawing.Point(4, 38);
-            this.tabEspaco.Name = "tabEspaco";
-            this.tabEspaco.Size = new System.Drawing.Size(706, 564);
-            this.tabEspaco.TabIndex = 1;
-            this.tabEspaco.Text = "Novo espaço";
-            this.tabEspaco.VerticalScrollbarBarColor = true;
-            this.tabEspaco.VerticalScrollbarHighlightOnWheel = false;
-            this.tabEspaco.VerticalScrollbarSize = 10;
-            // 
-            // btEspSubmeter
-            // 
-            this.btEspSubmeter.Location = new System.Drawing.Point(412, 518);
-            this.btEspSubmeter.Name = "btEspSubmeter";
-            this.btEspSubmeter.Size = new System.Drawing.Size(280, 30);
-            this.btEspSubmeter.TabIndex = 12;
-            this.btEspSubmeter.Text = "Submeter";
-            this.btEspSubmeter.UseSelectable = true;
-            // 
-            // btEspLimpar
-            // 
-            this.btEspLimpar.Location = new System.Drawing.Point(125, 518);
-            this.btEspLimpar.Name = "btEspLimpar";
-            this.btEspLimpar.Size = new System.Drawing.Size(281, 30);
-            this.btEspLimpar.TabIndex = 13;
-            this.btEspLimpar.Text = "Limpar";
-            this.btEspLimpar.UseSelectable = true;
-            this.btEspLimpar.Click += new System.EventHandler(this.btLimpar_Click);
-            // 
-            // tbEspEncerramento
-            // 
-            // 
-            // 
-            // 
-            this.tbEspEncerramento.CustomButton.Image = null;
-            this.tbEspEncerramento.CustomButton.Location = new System.Drawing.Point(545, 1);
-            this.tbEspEncerramento.CustomButton.Name = "";
-            this.tbEspEncerramento.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbEspEncerramento.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbEspEncerramento.CustomButton.TabIndex = 1;
-            this.tbEspEncerramento.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbEspEncerramento.CustomButton.UseSelectable = true;
-            this.tbEspEncerramento.CustomButton.Visible = false;
-            this.tbEspEncerramento.Lines = new string[0];
-            this.tbEspEncerramento.Location = new System.Drawing.Point(125, 117);
-            this.tbEspEncerramento.MaxLength = 32767;
-            this.tbEspEncerramento.Name = "tbEspEncerramento";
-            this.tbEspEncerramento.PasswordChar = '\0';
-            this.tbEspEncerramento.PromptText = "Hora de encerramento";
-            this.tbEspEncerramento.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbEspEncerramento.SelectedText = "";
-            this.tbEspEncerramento.SelectionLength = 0;
-            this.tbEspEncerramento.SelectionStart = 0;
-            this.tbEspEncerramento.ShortcutsEnabled = true;
-            this.tbEspEncerramento.Size = new System.Drawing.Size(567, 23);
-            this.tbEspEncerramento.TabIndex = 53;
-            this.tbEspEncerramento.UseSelectable = true;
-            this.tbEspEncerramento.WaterMark = "Hora de encerramento";
-            this.tbEspEncerramento.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbEspEncerramento.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbEspAbertura
-            // 
-            // 
-            // 
-            // 
-            this.tbEspAbertura.CustomButton.Image = null;
-            this.tbEspAbertura.CustomButton.Location = new System.Drawing.Point(545, 1);
-            this.tbEspAbertura.CustomButton.Name = "";
-            this.tbEspAbertura.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbEspAbertura.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbEspAbertura.CustomButton.TabIndex = 1;
-            this.tbEspAbertura.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbEspAbertura.CustomButton.UseSelectable = true;
-            this.tbEspAbertura.CustomButton.Visible = false;
-            this.tbEspAbertura.Lines = new string[0];
-            this.tbEspAbertura.Location = new System.Drawing.Point(125, 75);
-            this.tbEspAbertura.MaxLength = 32767;
-            this.tbEspAbertura.Name = "tbEspAbertura";
-            this.tbEspAbertura.PasswordChar = '\0';
-            this.tbEspAbertura.PromptText = "Hora de abertura";
-            this.tbEspAbertura.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbEspAbertura.SelectedText = "";
-            this.tbEspAbertura.SelectionLength = 0;
-            this.tbEspAbertura.SelectionStart = 0;
-            this.tbEspAbertura.ShortcutsEnabled = true;
-            this.tbEspAbertura.Size = new System.Drawing.Size(567, 23);
-            this.tbEspAbertura.TabIndex = 52;
-            this.tbEspAbertura.UseSelectable = true;
-            this.tbEspAbertura.WaterMark = "Hora de abertura";
-            this.tbEspAbertura.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbEspAbertura.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbEspAdicionais
-            // 
-            // 
-            // 
-            // 
-            this.tbEspAdicionais.CustomButton.Image = null;
-            this.tbEspAdicionais.CustomButton.Location = new System.Drawing.Point(279, 2);
-            this.tbEspAdicionais.CustomButton.Name = "";
-            this.tbEspAdicionais.CustomButton.Size = new System.Drawing.Size(285, 285);
-            this.tbEspAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbEspAdicionais.CustomButton.TabIndex = 1;
-            this.tbEspAdicionais.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbEspAdicionais.CustomButton.UseSelectable = true;
-            this.tbEspAdicionais.CustomButton.Visible = false;
-            this.tbEspAdicionais.Lines = new string[0];
-            this.tbEspAdicionais.Location = new System.Drawing.Point(125, 205);
-            this.tbEspAdicionais.MaxLength = 32767;
-            this.tbEspAdicionais.Multiline = true;
-            this.tbEspAdicionais.Name = "tbEspAdicionais";
-            this.tbEspAdicionais.PasswordChar = '\0';
-            this.tbEspAdicionais.PromptText = "Anotações adicionais";
-            this.tbEspAdicionais.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbEspAdicionais.SelectedText = "";
-            this.tbEspAdicionais.SelectionLength = 0;
-            this.tbEspAdicionais.SelectionStart = 0;
-            this.tbEspAdicionais.ShortcutsEnabled = true;
-            this.tbEspAdicionais.Size = new System.Drawing.Size(567, 290);
-            this.tbEspAdicionais.TabIndex = 50;
-            this.tbEspAdicionais.UseSelectable = true;
-            this.tbEspAdicionais.WaterMark = "Anotações adicionais";
-            this.tbEspAdicionais.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbEspAdicionais.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbEspDesignacao
-            // 
-            // 
-            // 
-            // 
-            this.tbEspDesignacao.CustomButton.Image = null;
-            this.tbEspDesignacao.CustomButton.Location = new System.Drawing.Point(545, 1);
-            this.tbEspDesignacao.CustomButton.Name = "";
-            this.tbEspDesignacao.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbEspDesignacao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbEspDesignacao.CustomButton.TabIndex = 1;
-            this.tbEspDesignacao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbEspDesignacao.CustomButton.UseSelectable = true;
-            this.tbEspDesignacao.CustomButton.Visible = false;
-            this.tbEspDesignacao.Lines = new string[0];
-            this.tbEspDesignacao.Location = new System.Drawing.Point(125, 31);
-            this.tbEspDesignacao.MaxLength = 32767;
-            this.tbEspDesignacao.Name = "tbEspDesignacao";
-            this.tbEspDesignacao.PasswordChar = '\0';
-            this.tbEspDesignacao.PromptText = "Designação do espaço";
-            this.tbEspDesignacao.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbEspDesignacao.SelectedText = "";
-            this.tbEspDesignacao.SelectionLength = 0;
-            this.tbEspDesignacao.SelectionStart = 0;
-            this.tbEspDesignacao.ShortcutsEnabled = true;
-            this.tbEspDesignacao.Size = new System.Drawing.Size(567, 23);
-            this.tbEspDesignacao.TabIndex = 47;
-            this.tbEspDesignacao.UseSelectable = true;
-            this.tbEspDesignacao.WaterMark = "Designação do espaço";
-            this.tbEspDesignacao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbEspDesignacao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lbDesignacao
-            // 
-            this.lbDesignacao.AutoSize = true;
-            this.lbDesignacao.Location = new System.Drawing.Point(15, 31);
-            this.lbDesignacao.Name = "lbDesignacao";
-            this.lbDesignacao.Size = new System.Drawing.Size(89, 19);
-            this.lbDesignacao.TabIndex = 42;
-            this.lbDesignacao.Text = "Designação: ⁎";
-            // 
-            // lbMax
-            // 
-            this.lbMax.AutoSize = true;
-            this.lbMax.Location = new System.Drawing.Point(15, 161);
-            this.lbMax.Name = "lbMax";
-            this.lbMax.Size = new System.Drawing.Size(88, 19);
-            this.lbMax.TabIndex = 46;
-            this.lbMax.Text = "Máx. Pessoas:";
-            // 
-            // lbAdicionais
-            // 
-            this.lbAdicionais.AutoSize = true;
-            this.lbAdicionais.Location = new System.Drawing.Point(15, 205);
-            this.lbAdicionais.Name = "lbAdicionais";
-            this.lbAdicionais.Size = new System.Drawing.Size(71, 19);
-            this.lbAdicionais.TabIndex = 43;
-            this.lbAdicionais.Text = "Adicionais:";
-            // 
-            // lbInicio
-            // 
-            this.lbInicio.AutoSize = true;
-            this.lbInicio.Location = new System.Drawing.Point(15, 75);
-            this.lbInicio.Name = "lbInicio";
-            this.lbInicio.Size = new System.Drawing.Size(94, 19);
-            this.lbInicio.TabIndex = 45;
-            this.lbInicio.Text = "Hora de início:";
-            // 
-            // lbFim
-            // 
-            this.lbFim.AutoSize = true;
-            this.lbFim.Location = new System.Drawing.Point(15, 117);
-            this.lbFim.Name = "lbFim";
-            this.lbFim.Size = new System.Drawing.Size(83, 19);
-            this.lbFim.TabIndex = 44;
-            this.lbFim.Text = "Hora de fim:";
             // 
             // tabNovoRegisto
             // 
@@ -348,6 +128,66 @@ namespace biblioteca
             this.tabNovoRegisto.VerticalScrollbarHighlightOnWheel = false;
             this.tabNovoRegisto.VerticalScrollbarSize = 10;
             // 
+            // dtRegData
+            // 
+            this.dtRegData.Location = new System.Drawing.Point(125, 152);
+            this.dtRegData.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
+            this.dtRegData.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dtRegData.Name = "dtRegData";
+            this.dtRegData.Size = new System.Drawing.Size(231, 29);
+            this.dtRegData.Style = MetroFramework.MetroColorStyle.Teal;
+            this.dtRegData.TabIndex = 70;
+            // 
+            // lbRegData
+            // 
+            this.lbRegData.AutoSize = true;
+            this.lbRegData.Location = new System.Drawing.Point(15, 152);
+            this.lbRegData.Name = "lbRegData";
+            this.lbRegData.Size = new System.Drawing.Size(49, 19);
+            this.lbRegData.TabIndex = 69;
+            this.lbRegData.Text = "Data: ⁎";
+            // 
+            // tbRegSaida
+            // 
+            // 
+            // 
+            // 
+            this.tbRegSaida.CustomButton.Image = null;
+            this.tbRegSaida.CustomButton.Location = new System.Drawing.Point(209, 1);
+            this.tbRegSaida.CustomButton.Name = "";
+            this.tbRegSaida.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbRegSaida.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbRegSaida.CustomButton.TabIndex = 1;
+            this.tbRegSaida.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbRegSaida.CustomButton.UseSelectable = true;
+            this.tbRegSaida.CustomButton.Visible = false;
+            this.tbRegSaida.Lines = new string[0];
+            this.tbRegSaida.Location = new System.Drawing.Point(461, 109);
+            this.tbRegSaida.MaxLength = 32767;
+            this.tbRegSaida.Name = "tbRegSaida";
+            this.tbRegSaida.PasswordChar = '\0';
+            this.tbRegSaida.PromptText = "Saída";
+            this.tbRegSaida.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbRegSaida.SelectedText = "";
+            this.tbRegSaida.SelectionLength = 0;
+            this.tbRegSaida.SelectionStart = 0;
+            this.tbRegSaida.ShortcutsEnabled = true;
+            this.tbRegSaida.Size = new System.Drawing.Size(231, 23);
+            this.tbRegSaida.TabIndex = 68;
+            this.tbRegSaida.UseSelectable = true;
+            this.tbRegSaida.WaterMark = "Saída";
+            this.tbRegSaida.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbRegSaida.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lbSaida
+            // 
+            this.lbSaida.AutoSize = true;
+            this.lbSaida.Location = new System.Drawing.Point(362, 109);
+            this.lbSaida.Name = "lbSaida";
+            this.lbSaida.Size = new System.Drawing.Size(93, 19);
+            this.lbSaida.TabIndex = 67;
+            this.lbSaida.Text = "Hora de fim: ⁎";
+            // 
             // cbRegNome
             // 
             this.cbRegNome.FormattingEnabled = true;
@@ -373,6 +213,7 @@ namespace biblioteca
             this.btRegLimpar.TabIndex = 55;
             this.btRegLimpar.Text = "Limpar";
             this.btRegLimpar.UseSelectable = true;
+            this.btRegLimpar.Click += new System.EventHandler(this.btRegLimpar_Click);
             // 
             // tbRegTurma
             // 
@@ -497,7 +338,7 @@ namespace biblioteca
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(372, 67);
+            this.metroLabel2.Location = new System.Drawing.Point(376, 67);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(79, 19);
             this.metroLabel2.TabIndex = 60;
@@ -517,9 +358,9 @@ namespace biblioteca
             this.lbEntrada.AutoSize = true;
             this.lbEntrada.Location = new System.Drawing.Point(15, 109);
             this.lbEntrada.Name = "lbEntrada";
-            this.lbEntrada.Size = new System.Drawing.Size(94, 19);
+            this.lbEntrada.Size = new System.Drawing.Size(104, 19);
             this.lbEntrada.TabIndex = 59;
-            this.lbEntrada.Text = "Hora de início:";
+            this.lbEntrada.Text = "Hora de início: ⁎";
             // 
             // lbRegTurma
             // 
@@ -529,6 +370,263 @@ namespace biblioteca
             this.lbRegTurma.Size = new System.Drawing.Size(48, 19);
             this.lbRegTurma.TabIndex = 58;
             this.lbRegTurma.Text = "Turma:";
+            // 
+            // tabEspaco
+            // 
+            this.tabEspaco.Controls.Add(this.tgEspPessoas);
+            this.tabEspaco.Controls.Add(this.nudEspMax);
+            this.tabEspaco.Controls.Add(this.btEspSubmeter);
+            this.tabEspaco.Controls.Add(this.btEspLimpar);
+            this.tabEspaco.Controls.Add(this.tbEspEncerramento);
+            this.tabEspaco.Controls.Add(this.tbEspAbertura);
+            this.tabEspaco.Controls.Add(this.tbEspAdicionais);
+            this.tabEspaco.Controls.Add(this.tbEspDesignacao);
+            this.tabEspaco.Controls.Add(this.lbDesignacao);
+            this.tabEspaco.Controls.Add(this.lbMax);
+            this.tabEspaco.Controls.Add(this.lbAdicionais);
+            this.tabEspaco.Controls.Add(this.lbInicio);
+            this.tabEspaco.Controls.Add(this.lbFim);
+            this.tabEspaco.HorizontalScrollbarBarColor = true;
+            this.tabEspaco.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabEspaco.HorizontalScrollbarSize = 10;
+            this.tabEspaco.Location = new System.Drawing.Point(4, 38);
+            this.tabEspaco.Name = "tabEspaco";
+            this.tabEspaco.Size = new System.Drawing.Size(706, 564);
+            this.tabEspaco.TabIndex = 1;
+            this.tabEspaco.Text = "Novo espaço";
+            this.tabEspaco.VerticalScrollbarBarColor = true;
+            this.tabEspaco.VerticalScrollbarHighlightOnWheel = false;
+            this.tabEspaco.VerticalScrollbarSize = 10;
+            // 
+            // tgEspPessoas
+            // 
+            this.tgEspPessoas.AutoSize = true;
+            this.tgEspPessoas.Location = new System.Drawing.Point(125, 163);
+            this.tgEspPessoas.Name = "tgEspPessoas";
+            this.tgEspPessoas.Size = new System.Drawing.Size(80, 17);
+            this.tgEspPessoas.Style = MetroFramework.MetroColorStyle.Teal;
+            this.tgEspPessoas.TabIndex = 65;
+            this.tgEspPessoas.Text = "Off";
+            this.tgEspPessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tgEspPessoas.UseSelectable = true;
+            this.tgEspPessoas.CheckedChanged += new System.EventHandler(this.tgEspPessoas_CheckedChanged);
+            // 
+            // nudEspMax
+            // 
+            this.nudEspMax.Enabled = false;
+            this.nudEspMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudEspMax.Location = new System.Drawing.Point(226, 161);
+            this.nudEspMax.Maximum = new decimal(new int[] {
+            2500,
+            0,
+            0,
+            0});
+            this.nudEspMax.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudEspMax.Name = "nudEspMax";
+            this.nudEspMax.Size = new System.Drawing.Size(466, 22);
+            this.nudEspMax.TabIndex = 64;
+            this.nudEspMax.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // btEspSubmeter
+            // 
+            this.btEspSubmeter.Location = new System.Drawing.Point(412, 518);
+            this.btEspSubmeter.Name = "btEspSubmeter";
+            this.btEspSubmeter.Size = new System.Drawing.Size(280, 30);
+            this.btEspSubmeter.TabIndex = 12;
+            this.btEspSubmeter.Text = "Submeter";
+            this.btEspSubmeter.UseSelectable = true;
+            // 
+            // btEspLimpar
+            // 
+            this.btEspLimpar.Location = new System.Drawing.Point(125, 518);
+            this.btEspLimpar.Name = "btEspLimpar";
+            this.btEspLimpar.Size = new System.Drawing.Size(281, 30);
+            this.btEspLimpar.TabIndex = 13;
+            this.btEspLimpar.Text = "Limpar";
+            this.btEspLimpar.UseSelectable = true;
+            this.btEspLimpar.Click += new System.EventHandler(this.btLimpar_Click);
+            // 
+            // tbEspEncerramento
+            // 
+            // 
+            // 
+            // 
+            this.tbEspEncerramento.CustomButton.Image = null;
+            this.tbEspEncerramento.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbEspEncerramento.CustomButton.Name = "";
+            this.tbEspEncerramento.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbEspEncerramento.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbEspEncerramento.CustomButton.TabIndex = 1;
+            this.tbEspEncerramento.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbEspEncerramento.CustomButton.UseSelectable = true;
+            this.tbEspEncerramento.CustomButton.Visible = false;
+            this.tbEspEncerramento.Lines = new string[0];
+            this.tbEspEncerramento.Location = new System.Drawing.Point(125, 117);
+            this.tbEspEncerramento.MaxLength = 32767;
+            this.tbEspEncerramento.Name = "tbEspEncerramento";
+            this.tbEspEncerramento.PasswordChar = '\0';
+            this.tbEspEncerramento.PromptText = "Horário de encerramento";
+            this.tbEspEncerramento.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbEspEncerramento.SelectedText = "";
+            this.tbEspEncerramento.SelectionLength = 0;
+            this.tbEspEncerramento.SelectionStart = 0;
+            this.tbEspEncerramento.ShortcutsEnabled = true;
+            this.tbEspEncerramento.Size = new System.Drawing.Size(567, 23);
+            this.tbEspEncerramento.TabIndex = 53;
+            this.tbEspEncerramento.UseSelectable = true;
+            this.tbEspEncerramento.WaterMark = "Horário de encerramento";
+            this.tbEspEncerramento.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbEspEncerramento.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbEspAbertura
+            // 
+            // 
+            // 
+            // 
+            this.tbEspAbertura.CustomButton.Image = null;
+            this.tbEspAbertura.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbEspAbertura.CustomButton.Name = "";
+            this.tbEspAbertura.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbEspAbertura.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbEspAbertura.CustomButton.TabIndex = 1;
+            this.tbEspAbertura.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbEspAbertura.CustomButton.UseSelectable = true;
+            this.tbEspAbertura.CustomButton.Visible = false;
+            this.tbEspAbertura.Lines = new string[0];
+            this.tbEspAbertura.Location = new System.Drawing.Point(125, 75);
+            this.tbEspAbertura.MaxLength = 32767;
+            this.tbEspAbertura.Name = "tbEspAbertura";
+            this.tbEspAbertura.PasswordChar = '\0';
+            this.tbEspAbertura.PromptText = "Horário de abertura";
+            this.tbEspAbertura.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbEspAbertura.SelectedText = "";
+            this.tbEspAbertura.SelectionLength = 0;
+            this.tbEspAbertura.SelectionStart = 0;
+            this.tbEspAbertura.ShortcutsEnabled = true;
+            this.tbEspAbertura.Size = new System.Drawing.Size(567, 23);
+            this.tbEspAbertura.TabIndex = 52;
+            this.tbEspAbertura.UseSelectable = true;
+            this.tbEspAbertura.WaterMark = "Horário de abertura";
+            this.tbEspAbertura.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbEspAbertura.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbEspAdicionais
+            // 
+            // 
+            // 
+            // 
+            this.tbEspAdicionais.CustomButton.Image = null;
+            this.tbEspAdicionais.CustomButton.Location = new System.Drawing.Point(279, 2);
+            this.tbEspAdicionais.CustomButton.Name = "";
+            this.tbEspAdicionais.CustomButton.Size = new System.Drawing.Size(285, 285);
+            this.tbEspAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbEspAdicionais.CustomButton.TabIndex = 1;
+            this.tbEspAdicionais.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbEspAdicionais.CustomButton.UseSelectable = true;
+            this.tbEspAdicionais.CustomButton.Visible = false;
+            this.tbEspAdicionais.Lines = new string[0];
+            this.tbEspAdicionais.Location = new System.Drawing.Point(125, 205);
+            this.tbEspAdicionais.MaxLength = 32767;
+            this.tbEspAdicionais.Multiline = true;
+            this.tbEspAdicionais.Name = "tbEspAdicionais";
+            this.tbEspAdicionais.PasswordChar = '\0';
+            this.tbEspAdicionais.PromptText = "Anotações adicionais";
+            this.tbEspAdicionais.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbEspAdicionais.SelectedText = "";
+            this.tbEspAdicionais.SelectionLength = 0;
+            this.tbEspAdicionais.SelectionStart = 0;
+            this.tbEspAdicionais.ShortcutsEnabled = true;
+            this.tbEspAdicionais.Size = new System.Drawing.Size(567, 290);
+            this.tbEspAdicionais.TabIndex = 50;
+            this.tbEspAdicionais.UseSelectable = true;
+            this.tbEspAdicionais.WaterMark = "Anotações adicionais";
+            this.tbEspAdicionais.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbEspAdicionais.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbEspDesignacao
+            // 
+            // 
+            // 
+            // 
+            this.tbEspDesignacao.CustomButton.Image = null;
+            this.tbEspDesignacao.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbEspDesignacao.CustomButton.Name = "";
+            this.tbEspDesignacao.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbEspDesignacao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbEspDesignacao.CustomButton.TabIndex = 1;
+            this.tbEspDesignacao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbEspDesignacao.CustomButton.UseSelectable = true;
+            this.tbEspDesignacao.CustomButton.Visible = false;
+            this.tbEspDesignacao.Lines = new string[0];
+            this.tbEspDesignacao.Location = new System.Drawing.Point(125, 31);
+            this.tbEspDesignacao.MaxLength = 32767;
+            this.tbEspDesignacao.Name = "tbEspDesignacao";
+            this.tbEspDesignacao.PasswordChar = '\0';
+            this.tbEspDesignacao.PromptText = "Designação do espaço";
+            this.tbEspDesignacao.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbEspDesignacao.SelectedText = "";
+            this.tbEspDesignacao.SelectionLength = 0;
+            this.tbEspDesignacao.SelectionStart = 0;
+            this.tbEspDesignacao.ShortcutsEnabled = true;
+            this.tbEspDesignacao.Size = new System.Drawing.Size(567, 23);
+            this.tbEspDesignacao.TabIndex = 47;
+            this.tbEspDesignacao.UseSelectable = true;
+            this.tbEspDesignacao.WaterMark = "Designação do espaço";
+            this.tbEspDesignacao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbEspDesignacao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lbDesignacao
+            // 
+            this.lbDesignacao.AutoSize = true;
+            this.lbDesignacao.Location = new System.Drawing.Point(15, 31);
+            this.lbDesignacao.Name = "lbDesignacao";
+            this.lbDesignacao.Size = new System.Drawing.Size(89, 19);
+            this.lbDesignacao.TabIndex = 42;
+            this.lbDesignacao.Text = "Designação: ⁎";
+            // 
+            // lbMax
+            // 
+            this.lbMax.AutoSize = true;
+            this.lbMax.Location = new System.Drawing.Point(15, 161);
+            this.lbMax.Name = "lbMax";
+            this.lbMax.Size = new System.Drawing.Size(88, 19);
+            this.lbMax.TabIndex = 46;
+            this.lbMax.Text = "Máx. Pessoas:";
+            // 
+            // lbAdicionais
+            // 
+            this.lbAdicionais.AutoSize = true;
+            this.lbAdicionais.Location = new System.Drawing.Point(15, 205);
+            this.lbAdicionais.Name = "lbAdicionais";
+            this.lbAdicionais.Size = new System.Drawing.Size(71, 19);
+            this.lbAdicionais.TabIndex = 43;
+            this.lbAdicionais.Text = "Adicionais:";
+            // 
+            // lbInicio
+            // 
+            this.lbInicio.AutoSize = true;
+            this.lbInicio.Location = new System.Drawing.Point(15, 75);
+            this.lbInicio.Name = "lbInicio";
+            this.lbInicio.Size = new System.Drawing.Size(94, 19);
+            this.lbInicio.TabIndex = 45;
+            this.lbInicio.Text = "Hora de início:";
+            // 
+            // lbFim
+            // 
+            this.lbFim.AutoSize = true;
+            this.lbFim.Location = new System.Drawing.Point(15, 117);
+            this.lbFim.Name = "lbFim";
+            this.lbFim.Size = new System.Drawing.Size(83, 19);
+            this.lbFim.TabIndex = 44;
+            this.lbFim.Text = "Hora de fim:";
             // 
             // btDeletar
             // 
@@ -555,37 +653,37 @@ namespace biblioteca
             this.gridLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.gridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridLista.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridLista.DefaultCellStyle = dataGridViewCellStyle32;
             this.gridLista.EnableHeadersVisualStyles = false;
             this.gridLista.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridLista.Location = new System.Drawing.Point(17, 18);
             this.gridLista.Name = "gridLista";
             this.gridLista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.gridLista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridLista.Size = new System.Drawing.Size(573, 477);
@@ -598,8 +696,8 @@ namespace biblioteca
             this.tabLista.Controls.Add(this.tabAtivos);
             this.tabLista.Location = new System.Drawing.Point(743, 63);
             this.tabLista.Name = "tabLista";
-            this.tabLista.SelectedIndex = 1;
-            this.tabLista.Size = new System.Drawing.Size(614, 606);
+            this.tabLista.SelectedIndex = 0;
+            this.tabLista.Size = new System.Drawing.Size(618, 606);
             this.tabLista.Style = MetroFramework.MetroColorStyle.Teal;
             this.tabLista.TabIndex = 14;
             this.tabLista.UseSelectable = true;
@@ -614,7 +712,7 @@ namespace biblioteca
             this.tabLista1.HorizontalScrollbarSize = 10;
             this.tabLista1.Location = new System.Drawing.Point(4, 38);
             this.tabLista1.Name = "tabLista1";
-            this.tabLista1.Size = new System.Drawing.Size(606, 564);
+            this.tabLista1.Size = new System.Drawing.Size(610, 564);
             this.tabLista1.TabIndex = 0;
             this.tabLista1.Text = "Lista";
             this.tabLista1.VerticalScrollbarBarColor = true;
@@ -629,7 +727,7 @@ namespace biblioteca
             this.tabAtivos.HorizontalScrollbarSize = 10;
             this.tabAtivos.Location = new System.Drawing.Point(4, 38);
             this.tabAtivos.Name = "tabAtivos";
-            this.tabAtivos.Size = new System.Drawing.Size(606, 564);
+            this.tabAtivos.Size = new System.Drawing.Size(610, 564);
             this.tabAtivos.TabIndex = 1;
             this.tabAtivos.Text = "Empréstimos ativos";
             this.tabAtivos.VerticalScrollbarBarColor = true;
@@ -643,137 +741,42 @@ namespace biblioteca
             this.gridAtivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridAtivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridAtivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.gridAtivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle35;
             this.gridAtivos.EnableHeadersVisualStyles = false;
             this.gridAtivos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridAtivos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridAtivos.Location = new System.Drawing.Point(17, 18);
             this.gridAtivos.Name = "gridAtivos";
             this.gridAtivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.gridAtivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridAtivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridAtivos.Size = new System.Drawing.Size(573, 477);
             this.gridAtivos.TabIndex = 2;
             this.gridAtivos.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // tbRegSaida
-            // 
-            // 
-            // 
-            // 
-            this.tbRegSaida.CustomButton.Image = null;
-            this.tbRegSaida.CustomButton.Location = new System.Drawing.Point(209, 1);
-            this.tbRegSaida.CustomButton.Name = "";
-            this.tbRegSaida.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbRegSaida.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbRegSaida.CustomButton.TabIndex = 1;
-            this.tbRegSaida.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbRegSaida.CustomButton.UseSelectable = true;
-            this.tbRegSaida.CustomButton.Visible = false;
-            this.tbRegSaida.Lines = new string[0];
-            this.tbRegSaida.Location = new System.Drawing.Point(461, 109);
-            this.tbRegSaida.MaxLength = 32767;
-            this.tbRegSaida.Name = "tbRegSaida";
-            this.tbRegSaida.PasswordChar = '\0';
-            this.tbRegSaida.PromptText = "Saída";
-            this.tbRegSaida.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbRegSaida.SelectedText = "";
-            this.tbRegSaida.SelectionLength = 0;
-            this.tbRegSaida.SelectionStart = 0;
-            this.tbRegSaida.ShortcutsEnabled = true;
-            this.tbRegSaida.Size = new System.Drawing.Size(231, 23);
-            this.tbRegSaida.TabIndex = 68;
-            this.tbRegSaida.UseSelectable = true;
-            this.tbRegSaida.WaterMark = "Saída";
-            this.tbRegSaida.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbRegSaida.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lbSaida
-            // 
-            this.lbSaida.AutoSize = true;
-            this.lbSaida.Location = new System.Drawing.Point(372, 109);
-            this.lbSaida.Name = "lbSaida";
-            this.lbSaida.Size = new System.Drawing.Size(83, 19);
-            this.lbSaida.TabIndex = 67;
-            this.lbSaida.Text = "Hora de fim:";
-            // 
-            // lbRegData
-            // 
-            this.lbRegData.AutoSize = true;
-            this.lbRegData.Location = new System.Drawing.Point(15, 158);
-            this.lbRegData.Name = "lbRegData";
-            this.lbRegData.Size = new System.Drawing.Size(39, 19);
-            this.lbRegData.TabIndex = 69;
-            this.lbRegData.Text = "Data:";
-            // 
-            // dtRegData
-            // 
-            this.dtRegData.Location = new System.Drawing.Point(125, 152);
-            this.dtRegData.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            this.dtRegData.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dtRegData.Name = "dtRegData";
-            this.dtRegData.Size = new System.Drawing.Size(231, 29);
-            this.dtRegData.TabIndex = 70;
-            // 
-            // nudEspMax
-            // 
-            this.nudEspMax.Enabled = false;
-            this.nudEspMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudEspMax.Location = new System.Drawing.Point(226, 161);
-            this.nudEspMax.Maximum = new decimal(new int[] {
-            2500,
-            0,
-            0,
-            0});
-            this.nudEspMax.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudEspMax.Name = "nudEspMax";
-            this.nudEspMax.Size = new System.Drawing.Size(466, 22);
-            this.nudEspMax.TabIndex = 64;
-            this.nudEspMax.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // tgEspPessoas
-            // 
-            this.tgEspPessoas.AutoSize = true;
-            this.tgEspPessoas.Location = new System.Drawing.Point(125, 163);
-            this.tgEspPessoas.Name = "tgEspPessoas";
-            this.tgEspPessoas.Size = new System.Drawing.Size(80, 17);
-            this.tgEspPessoas.Style = MetroFramework.MetroColorStyle.Teal;
-            this.tgEspPessoas.TabIndex = 65;
-            this.tgEspPessoas.Text = "Off";
-            this.tgEspPessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tgEspPessoas.UseSelectable = true;
             // 
             // Espacos
             // 
@@ -794,17 +797,17 @@ namespace biblioteca
             this.Text = "Espaços";
             this.Load += new System.EventHandler(this.Salas_Load);
             this.tabRegisto.ResumeLayout(false);
-            this.tabEspaco.ResumeLayout(false);
-            this.tabEspaco.PerformLayout();
             this.tabNovoRegisto.ResumeLayout(false);
             this.tabNovoRegisto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegPessoas)).EndInit();
+            this.tabEspaco.ResumeLayout(false);
+            this.tabEspaco.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEspMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLista)).EndInit();
             this.tabLista.ResumeLayout(false);
             this.tabLista1.ResumeLayout(false);
             this.tabAtivos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridAtivos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEspMax)).EndInit();
             this.ResumeLayout(false);
 
         }

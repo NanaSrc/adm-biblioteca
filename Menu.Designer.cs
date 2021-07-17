@@ -249,7 +249,9 @@ namespace biblioteca
             this.Controls.Add(this.btUtilizadores);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Menu";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).EndInit();

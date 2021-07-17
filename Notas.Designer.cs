@@ -34,6 +34,12 @@ namespace biblioteca
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.pageNova = new MetroFramework.Controls.MetroTabPage();
+            this.tbSubtitulo = new MetroFramework.Controls.MetroTextBox();
+            this.tbConteudo = new MetroFramework.Controls.MetroTextBox();
+            this.tbTitulo = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
@@ -41,12 +47,8 @@ namespace biblioteca
             this.gridLista = new MetroFramework.Controls.MetroGrid();
             this.btSubmeter = new MetroFramework.Controls.MetroButton();
             this.btLimpar = new MetroFramework.Controls.MetroButton();
-            this.tbCodigo = new MetroFramework.Controls.MetroTextBox();
-            this.tbNotas = new MetroFramework.Controls.MetroTextBox();
-            this.tbDesignacao = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.tbAutor = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.tabRegisto.SuspendLayout();
             this.pageNova.SuspendLayout();
             this.tabLista.SuspendLayout();
@@ -67,9 +69,11 @@ namespace biblioteca
             // 
             // pageNova
             // 
-            this.pageNova.Controls.Add(this.tbCodigo);
-            this.pageNova.Controls.Add(this.tbNotas);
-            this.pageNova.Controls.Add(this.tbDesignacao);
+            this.pageNova.Controls.Add(this.tbAutor);
+            this.pageNova.Controls.Add(this.metroLabel1);
+            this.pageNova.Controls.Add(this.tbSubtitulo);
+            this.pageNova.Controls.Add(this.tbConteudo);
+            this.pageNova.Controls.Add(this.tbTitulo);
             this.pageNova.Controls.Add(this.metroLabel10);
             this.pageNova.Controls.Add(this.metroLabel9);
             this.pageNova.Controls.Add(this.metroLabel3);
@@ -84,6 +88,130 @@ namespace biblioteca
             this.pageNova.VerticalScrollbarBarColor = true;
             this.pageNova.VerticalScrollbarHighlightOnWheel = false;
             this.pageNova.VerticalScrollbarSize = 10;
+            // 
+            // tbSubtitulo
+            // 
+            // 
+            // 
+            // 
+            this.tbSubtitulo.CustomButton.Image = null;
+            this.tbSubtitulo.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbSubtitulo.CustomButton.Name = "";
+            this.tbSubtitulo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbSubtitulo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbSubtitulo.CustomButton.TabIndex = 1;
+            this.tbSubtitulo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbSubtitulo.CustomButton.UseSelectable = true;
+            this.tbSubtitulo.CustomButton.Visible = false;
+            this.tbSubtitulo.Lines = new string[0];
+            this.tbSubtitulo.Location = new System.Drawing.Point(112, 111);
+            this.tbSubtitulo.MaxLength = 32767;
+            this.tbSubtitulo.Name = "tbSubtitulo";
+            this.tbSubtitulo.PasswordChar = '\0';
+            this.tbSubtitulo.PromptText = "Subtítulo";
+            this.tbSubtitulo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbSubtitulo.SelectedText = "";
+            this.tbSubtitulo.SelectionLength = 0;
+            this.tbSubtitulo.SelectionStart = 0;
+            this.tbSubtitulo.ShortcutsEnabled = true;
+            this.tbSubtitulo.Size = new System.Drawing.Size(567, 23);
+            this.tbSubtitulo.TabIndex = 74;
+            this.tbSubtitulo.UseSelectable = true;
+            this.tbSubtitulo.WaterMark = "Subtítulo";
+            this.tbSubtitulo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbSubtitulo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbConteudo
+            // 
+            // 
+            // 
+            // 
+            this.tbConteudo.CustomButton.Image = null;
+            this.tbConteudo.CustomButton.Location = new System.Drawing.Point(228, 2);
+            this.tbConteudo.CustomButton.Name = "";
+            this.tbConteudo.CustomButton.Size = new System.Drawing.Size(337, 337);
+            this.tbConteudo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbConteudo.CustomButton.TabIndex = 1;
+            this.tbConteudo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbConteudo.CustomButton.UseSelectable = true;
+            this.tbConteudo.CustomButton.Visible = false;
+            this.tbConteudo.Lines = new string[0];
+            this.tbConteudo.Location = new System.Drawing.Point(112, 153);
+            this.tbConteudo.MaxLength = 32767;
+            this.tbConteudo.Multiline = true;
+            this.tbConteudo.Name = "tbConteudo";
+            this.tbConteudo.PasswordChar = '\0';
+            this.tbConteudo.PromptText = "Conteúdo da anotação";
+            this.tbConteudo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbConteudo.SelectedText = "";
+            this.tbConteudo.SelectionLength = 0;
+            this.tbConteudo.SelectionStart = 0;
+            this.tbConteudo.ShortcutsEnabled = true;
+            this.tbConteudo.Size = new System.Drawing.Size(568, 342);
+            this.tbConteudo.TabIndex = 72;
+            this.tbConteudo.UseSelectable = true;
+            this.tbConteudo.WaterMark = "Conteúdo da anotação";
+            this.tbConteudo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbConteudo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tbTitulo
+            // 
+            // 
+            // 
+            // 
+            this.tbTitulo.CustomButton.Image = null;
+            this.tbTitulo.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbTitulo.CustomButton.Name = "";
+            this.tbTitulo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbTitulo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbTitulo.CustomButton.TabIndex = 1;
+            this.tbTitulo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbTitulo.CustomButton.UseSelectable = true;
+            this.tbTitulo.CustomButton.Visible = false;
+            this.tbTitulo.Lines = new string[0];
+            this.tbTitulo.Location = new System.Drawing.Point(112, 73);
+            this.tbTitulo.MaxLength = 32767;
+            this.tbTitulo.Name = "tbTitulo";
+            this.tbTitulo.PasswordChar = '\0';
+            this.tbTitulo.PromptText = "Título";
+            this.tbTitulo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbTitulo.SelectedText = "";
+            this.tbTitulo.SelectionLength = 0;
+            this.tbTitulo.SelectionStart = 0;
+            this.tbTitulo.ShortcutsEnabled = true;
+            this.tbTitulo.Size = new System.Drawing.Size(567, 23);
+            this.tbTitulo.TabIndex = 71;
+            this.tbTitulo.UseSelectable = true;
+            this.tbTitulo.WaterMark = "Título";
+            this.tbTitulo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbTitulo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(17, 73);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel10.TabIndex = 67;
+            this.metroLabel10.Text = "Título: ⁎";
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(17, 111);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(63, 19);
+            this.metroLabel9.TabIndex = 70;
+            this.metroLabel9.Text = "Subtítulo:";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(17, 153);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(80, 19);
+            this.metroLabel3.TabIndex = 68;
+            this.metroLabel3.Text = "Conteúdo: ⁎";
             // 
             // tabLista
             // 
@@ -193,129 +321,46 @@ namespace biblioteca
             this.btLimpar.Text = "Limpar";
             this.btLimpar.UseSelectable = true;
             // 
-            // tbCodigo
+            // tbAutor
             // 
             // 
             // 
             // 
-            this.tbCodigo.CustomButton.Image = null;
-            this.tbCodigo.CustomButton.Location = new System.Drawing.Point(545, 1);
-            this.tbCodigo.CustomButton.Name = "";
-            this.tbCodigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbCodigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbCodigo.CustomButton.TabIndex = 1;
-            this.tbCodigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbCodigo.CustomButton.UseSelectable = true;
-            this.tbCodigo.CustomButton.Visible = false;
-            this.tbCodigo.Lines = new string[0];
-            this.tbCodigo.Location = new System.Drawing.Point(113, 81);
-            this.tbCodigo.MaxLength = 32767;
-            this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.PasswordChar = '\0';
-            this.tbCodigo.PromptText = "Subtítulo";
-            this.tbCodigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbCodigo.SelectedText = "";
-            this.tbCodigo.SelectionLength = 0;
-            this.tbCodigo.SelectionStart = 0;
-            this.tbCodigo.ShortcutsEnabled = true;
-            this.tbCodigo.Size = new System.Drawing.Size(567, 23);
-            this.tbCodigo.TabIndex = 74;
-            this.tbCodigo.UseSelectable = true;
-            this.tbCodigo.WaterMark = "Subtítulo";
-            this.tbCodigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbCodigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tbAutor.CustomButton.Image = null;
+            this.tbAutor.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbAutor.CustomButton.Name = "";
+            this.tbAutor.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbAutor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbAutor.CustomButton.TabIndex = 1;
+            this.tbAutor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbAutor.CustomButton.UseSelectable = true;
+            this.tbAutor.CustomButton.Visible = false;
+            this.tbAutor.Lines = new string[0];
+            this.tbAutor.Location = new System.Drawing.Point(112, 33);
+            this.tbAutor.MaxLength = 32767;
+            this.tbAutor.Name = "tbAutor";
+            this.tbAutor.PasswordChar = '\0';
+            this.tbAutor.PromptText = "Título";
+            this.tbAutor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbAutor.SelectedText = "";
+            this.tbAutor.SelectionLength = 0;
+            this.tbAutor.SelectionStart = 0;
+            this.tbAutor.ShortcutsEnabled = true;
+            this.tbAutor.Size = new System.Drawing.Size(567, 23);
+            this.tbAutor.TabIndex = 76;
+            this.tbAutor.UseSelectable = true;
+            this.tbAutor.WaterMark = "Título";
+            this.tbAutor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbAutor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // tbNotas
+            // metroLabel1
             // 
-            // 
-            // 
-            // 
-            this.tbNotas.CustomButton.Image = null;
-            this.tbNotas.CustomButton.Location = new System.Drawing.Point(196, 2);
-            this.tbNotas.CustomButton.Name = "";
-            this.tbNotas.CustomButton.Size = new System.Drawing.Size(369, 369);
-            this.tbNotas.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbNotas.CustomButton.TabIndex = 1;
-            this.tbNotas.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbNotas.CustomButton.UseSelectable = true;
-            this.tbNotas.CustomButton.Visible = false;
-            this.tbNotas.Lines = new string[0];
-            this.tbNotas.Location = new System.Drawing.Point(112, 121);
-            this.tbNotas.MaxLength = 32767;
-            this.tbNotas.Multiline = true;
-            this.tbNotas.Name = "tbNotas";
-            this.tbNotas.PasswordChar = '\0';
-            this.tbNotas.PromptText = "Conteúdo da anotação";
-            this.tbNotas.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbNotas.SelectedText = "";
-            this.tbNotas.SelectionLength = 0;
-            this.tbNotas.SelectionStart = 0;
-            this.tbNotas.ShortcutsEnabled = true;
-            this.tbNotas.Size = new System.Drawing.Size(568, 374);
-            this.tbNotas.TabIndex = 72;
-            this.tbNotas.UseSelectable = true;
-            this.tbNotas.WaterMark = "Conteúdo da anotação";
-            this.tbNotas.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbNotas.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbDesignacao
-            // 
-            // 
-            // 
-            // 
-            this.tbDesignacao.CustomButton.Image = null;
-            this.tbDesignacao.CustomButton.Location = new System.Drawing.Point(545, 1);
-            this.tbDesignacao.CustomButton.Name = "";
-            this.tbDesignacao.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbDesignacao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbDesignacao.CustomButton.TabIndex = 1;
-            this.tbDesignacao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbDesignacao.CustomButton.UseSelectable = true;
-            this.tbDesignacao.CustomButton.Visible = false;
-            this.tbDesignacao.Lines = new string[0];
-            this.tbDesignacao.Location = new System.Drawing.Point(113, 46);
-            this.tbDesignacao.MaxLength = 32767;
-            this.tbDesignacao.Name = "tbDesignacao";
-            this.tbDesignacao.PasswordChar = '\0';
-            this.tbDesignacao.PromptText = "Título";
-            this.tbDesignacao.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbDesignacao.SelectedText = "";
-            this.tbDesignacao.SelectionLength = 0;
-            this.tbDesignacao.SelectionStart = 0;
-            this.tbDesignacao.ShortcutsEnabled = true;
-            this.tbDesignacao.Size = new System.Drawing.Size(567, 23);
-            this.tbDesignacao.TabIndex = 71;
-            this.tbDesignacao.UseSelectable = true;
-            this.tbDesignacao.WaterMark = "Título";
-            this.tbDesignacao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbDesignacao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel10
-            // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(3, 46);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(54, 19);
-            this.metroLabel10.TabIndex = 67;
-            this.metroLabel10.Text = "Título: ⁎";
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(3, 81);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(63, 19);
-            this.metroLabel9.TabIndex = 70;
-            this.metroLabel9.Text = "Subtítulo:";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(3, 121);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(70, 19);
-            this.metroLabel3.TabIndex = 68;
-            this.metroLabel3.Text = "Conteúdo:";
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(17, 33);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(56, 19);
+            this.metroLabel1.TabIndex = 75;
+            this.metroLabel1.Text = "Autor: ⁎";
             // 
             // Notas
             // 
@@ -358,11 +403,13 @@ namespace biblioteca
         private MetroFramework.Controls.MetroGrid gridLista;
         private MetroFramework.Controls.MetroButton btSubmeter;
         private MetroFramework.Controls.MetroButton btLimpar;
-        private MetroFramework.Controls.MetroTextBox tbCodigo;
-        private MetroFramework.Controls.MetroTextBox tbNotas;
-        private MetroFramework.Controls.MetroTextBox tbDesignacao;
+        private MetroFramework.Controls.MetroTextBox tbSubtitulo;
+        private MetroFramework.Controls.MetroTextBox tbConteudo;
+        private MetroFramework.Controls.MetroTextBox tbTitulo;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroTextBox tbAutor;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

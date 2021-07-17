@@ -26,5 +26,26 @@ namespace biblioteca
         {
 
         }
+
+        private void btAluLimpar_Click(object sender, EventArgs e)
+        {
+            AluDefaults();
+        }
+
+        private void AluDefaults()
+        {
+            tbAluNome.Text = "";
+            tbAluTurma.Text = "";
+            tbAluProcesso.Text = "";
+            cbAluAno.SelectedIndex = -1;
+            tbAluAdicionais.Text = "";
+        }
+
+        private void btProfLimpar_Click(object sender, EventArgs e)
+        {
+            tbProfNome.Text = "";
+            tbProfProcesso.Text = "";
+            tbProfAdicionais.Text = "";
+        }
     }
 }

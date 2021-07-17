@@ -34,6 +34,7 @@ namespace biblioteca
             tbEspAbertura.Text = "";
             tbEspEncerramento.Text = "";
             tbEspAdicionais.Text = "";
+            tgEspPessoas.Checked = false;
         }
 
         private void tgEspPessoas_CheckedChanged(object sender, EventArgs e)
@@ -53,12 +54,24 @@ namespace biblioteca
         {
             cbRegNome.SelectedIndex = -1;
             cbRegNome.Text = "";
+            cbRegEspaco.Text = "";
+            cbRegEspaco.SelectedIndex = -1;
             tbRegTurma.Text = "";
             nudRegPessoas.Value = 0;
             tbRegEntrada.Text = "";
             tbRegSaida.Text = "";
             dtRegData.Value = DateTime.Today;
             tbRegAdicionais.Text = "";
+        }
+
+        private void tabNovoRegisto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudEspMax_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

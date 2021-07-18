@@ -17,6 +17,8 @@ namespace biblioteca
         public Utilizadores()
         {
             InitializeComponent();
+            alunos = new List<Aluno>();
+            professores = new List<Professor>();
         }
 
         private void Utilizadores_Load(object sender, EventArgs e)
@@ -114,9 +116,12 @@ namespace biblioteca
             if (AluPreenchido())
             {
                 Aluno novo = new Aluno(tbAluNome.Text, tbAluProcesso.Text, cbAluAno.Text, tbAluTurma.Text, tbAluAdicionais.Text);
+                PreencherCampos(novo);
                 alunos.Add(novo);
 
-
+                listUtilizadores.DataSource = null;
+                listUtilizadores.DataSource = alunos;
+                AluDefaults();
             }
             else
             {
@@ -126,6 +131,18 @@ namespace biblioteca
             //Guardar a lista
             //Atualizar a lista
             //Limpar campos
+        }
+
+        private void PreencherCampos(Aluno aluno)
+        {
+            if (aluno.Processo == "")
+                aluno.Processo = "N/A";
+
+            if (aluno.Ano == "")
+                aluno.Ano = "-";
+
+            if (aluno.Turma == "")
+                aluno.Turma = "-";
         }
 
         private bool AluPreenchido()

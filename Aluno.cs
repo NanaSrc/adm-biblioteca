@@ -33,5 +33,22 @@ namespace biblioteca
         {
             this.nome = nome;
         }
+
+        public override string ToString()
+        {
+            string comentario;
+
+            if (Adicionais != "")
+            {
+                comentario = "Possui 1 comentário";
+                
+            }
+            else
+            {
+                comentario = "Possui 0 comentários";
+            }
+
+            return string.Format("[A] {0,-30}    ({1})    {3,20}{2}     {4,20}", Nome.ToUpper(), Processo.ToUpper(), Turma.ToUpper(), Ano, comentario);
+        }
     }
 }

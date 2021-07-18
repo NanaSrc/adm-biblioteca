@@ -17,6 +17,8 @@ namespace biblioteca
         public Espacos()
         {
             InitializeComponent();
+            espacos = new List<Espaco>();
+            registos = new List<EspacoRegisto>();
         }
 
         private void Salas_Load(object sender, EventArgs e)
@@ -101,6 +103,26 @@ namespace biblioteca
             //Guardar a lista
             //Atualizar a lista
             //Limpar campos
+
+            if (RegPreenchido())
+            {
+                EspacoRegisto novo = new EspacoRegisto((string)cbRegNome.SelectedItem, (Espaco)cbRegEspaco.SelectedItem, tbRegEntrada.Text, tbRegSaida.Text, dtRegData.Value);
+                //PreencherCampos(novo);
+                registos.Add(novo);
+
+                listRegistos.DataSource = null;
+                listRegistos.DataSource = registos;
+                RegDefaults();
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios." + Environment.NewLine + "Campos marcados com o asterisco '⚹'", "Erro ao submeter formulário", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+            }
+        }
+
+        private bool RegPreenchido()
+        {
+            throw new NotImplementedException();
         }
 
         private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -12,6 +12,8 @@ namespace biblioteca
 {
     public partial class Utilizadores : MetroFramework.Forms.MetroForm
     {
+        List<Aluno> alunos;
+        List<Professor> professores;
         public Utilizadores()
         {
             InitializeComponent();
@@ -19,12 +21,27 @@ namespace biblioteca
 
         private void Utilizadores_Load(object sender, EventArgs e)
         {
+            tbAluNome.Focus();
+            CarregaUtilizadores();
+            CarregaEmprestimos();
+        }
 
+        private void CarregaEmprestimos()
+        {
+            //Carregar empréstimos
+        }
+
+        private void CarregaUtilizadores()
+        {
+            //Carregar utilizadores
         }
 
         private void btSubmeter_Click(object sender, EventArgs e)
         {
-
+            //Adicionar a lista
+            //Guardar a lista
+            //Atualizar a lista
+            //Limpar campos
         }
 
         private void btAluLimpar_Click(object sender, EventArgs e)
@@ -39,13 +56,84 @@ namespace biblioteca
             tbAluProcesso.Text = "";
             cbAluAno.SelectedIndex = -1;
             tbAluAdicionais.Text = "";
+            tbAluNome.Focus();
         }
 
         private void btProfLimpar_Click(object sender, EventArgs e)
         {
+            ProfDefaults();
+        }
+
+        private void ProfDefaults()
+        {
             tbProfNome.Text = "";
             tbProfProcesso.Text = "";
             tbProfAdicionais.Text = "";
+            tbProfNome.Focus();
+        }
+
+        private void Utilizadores_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Guardar listas
+        }
+
+        private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Mostrar os dados do item selecionado
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+            //Alterar os dados do item selecionado
+        }
+
+        private void btDeletar_Click(object sender, EventArgs e)
+        {
+            //Deletar os dados do item selecionado
+        }
+
+        private void gridAtivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Mostrar os dados do item selecionado
+        }
+
+        private void btEmpAlterar_Click(object sender, EventArgs e)
+        {
+            //Alterar os dados do item selecionado
+        }
+
+        private void btEmpDeletar_Click(object sender, EventArgs e)
+        {
+            //Deletar os dados do item selecionado
+        }
+
+        private void btAluSubmeter_Click(object sender, EventArgs e)
+        {
+            //Adicionar a lista
+
+            if (AluPreenchido())
+            {
+                Aluno novo = new Aluno(tbAluNome.Text, tbAluProcesso.Text, cbAluAno.Text, tbAluTurma.Text, tbAluAdicionais.Text);
+                alunos.Add(novo);
+
+
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios." + Environment.NewLine + "Campos marcados com o asterisco '⚹'", "Erro ao submeter formulário", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+            }
+
+            //Guardar a lista
+            //Atualizar a lista
+            //Limpar campos
+        }
+
+        private bool AluPreenchido()
+        {
+            if (tbAluNome.Text != "")
+                return true;
+            else
+                return false;
         }
     }
 }

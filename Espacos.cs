@@ -12,6 +12,8 @@ namespace biblioteca
 {
     public partial class Espacos : MetroFramework.Forms.MetroForm
     {
+        List<Espaco> espacos;
+        List<EspacoRegisto> registos;
         public Espacos()
         {
             InitializeComponent();
@@ -19,7 +21,18 @@ namespace biblioteca
 
         private void Salas_Load(object sender, EventArgs e)
         {
+            CarregaEspacos();
+            CarregaEmprestimos();
+        }
 
+        private void CarregaEmprestimos()
+        {
+            //Carrega a lista de empréstimos ativos
+        }
+
+        private void CarregaEspacos()
+        {
+            //Carrega a lista de espaços disponíveis
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
@@ -66,12 +79,43 @@ namespace biblioteca
 
         private void tabNovoRegisto_Click(object sender, EventArgs e)
         {
-
+            //Deletar função
         }
 
         private void nudEspMax_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btEspSubmeter_Click(object sender, EventArgs e)
+        {
+            //Adicionar a lista
+            //Guardar a lista
+            //Atualizar a lista
+            //Limpar campos
+        }
+
+        private void btRegSubmeter_Click(object sender, EventArgs e)
+        {
+            //Adicionar a lista
+            //Guardar a lista
+            //Atualizar a lista
+            //Limpar campos
+        }
+
+        private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Mostrar no formulário os dados do item selecionado
+        }
+
+        private void gridAtivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Mostrar no formulário os dados do item selecionado
+        }
+
+        private void btListaAlterar_Click(object sender, EventArgs e)
+        {
+            //Alterar os dados do item selecionado
         }
     }
 }

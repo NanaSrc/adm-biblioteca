@@ -12,6 +12,8 @@ namespace biblioteca
 {
     public partial class Equipamentos : MetroFramework.Forms.MetroForm
     {
+        List<Equipamento> equipamentos;
+        List<EquipamentoRegisto> registos;
         public Equipamentos()
         {
             InitializeComponent();

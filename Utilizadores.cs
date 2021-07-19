@@ -44,6 +44,33 @@ namespace biblioteca
             //Guardar a lista
             //Atualizar a lista
             //Limpar campos
+
+            if (ProfPreenchido())
+            {
+                Professor novo = new Professor(tbProfNome.Text, tbProfProcesso.Text, tbProfAdicionais.Text);
+                PreencherCampos(novo);
+                professores.Add(novo);
+
+                listUtilizadores.DataSource = null;
+                listUtilizadores.DataSource = professores;
+                AluDefaults();
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios." + Environment.NewLine + "Campos marcados com o asterisco '⚹'", "Erro ao submeter formulário", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+            }
+
+        }
+
+        private void PreencherCampos(Professor professor)
+        {
+            if (professor.Processo == "")
+                professor.Processo = "N/A";
+        }
+
+        private bool ProfPreenchido()
+        {
+            throw new NotImplementedException();
         }
 
         private void btAluLimpar_Click(object sender, EventArgs e)

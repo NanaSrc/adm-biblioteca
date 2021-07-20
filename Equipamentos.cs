@@ -61,5 +61,15 @@ namespace biblioteca
             tgEquipQuantidade.Checked = false;
             tbEquipAdicionais.Text = "";
         }
+
+        private void btRegSubmeter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEquipAdicionais_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

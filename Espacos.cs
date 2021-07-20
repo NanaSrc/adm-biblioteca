@@ -71,7 +71,7 @@ namespace biblioteca
             cbRegNome.Text = "";
             cbRegEspaco.Text = "";
             cbRegEspaco.SelectedIndex = -1;
-            tbRegTurma.Text = "";
+            //tbRegTurma.Text = "";
             nudRegPessoas.Value = 0;
             tbRegEntrada.Text = "";
             tbRegSaida.Text = "";

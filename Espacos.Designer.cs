@@ -29,12 +29,12 @@ namespace biblioteca
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.tabNovoRegisto = new MetroFramework.Controls.MetroTabPage();
             this.cbRegEspaco = new System.Windows.Forms.ComboBox();
@@ -46,7 +46,6 @@ namespace biblioteca
             this.cbRegNome = new System.Windows.Forms.ComboBox();
             this.btRegSubmeter = new MetroFramework.Controls.MetroButton();
             this.btRegLimpar = new MetroFramework.Controls.MetroButton();
-            this.tbRegTurma = new MetroFramework.Controls.MetroTextBox();
             this.tbRegEntrada = new MetroFramework.Controls.MetroTextBox();
             this.nudRegPessoas = new System.Windows.Forms.NumericUpDown();
             this.tbRegAdicionais = new MetroFramework.Controls.MetroTextBox();
@@ -54,7 +53,6 @@ namespace biblioteca
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.lbEntrada = new MetroFramework.Controls.MetroLabel();
-            this.lbRegTurma = new MetroFramework.Controls.MetroLabel();
             this.tabEspaco = new MetroFramework.Controls.MetroTabPage();
             this.tgEspPessoas = new MetroFramework.Controls.MetroToggle();
             this.nudEspMax = new System.Windows.Forms.NumericUpDown();
@@ -74,12 +72,12 @@ namespace biblioteca
             this.gridLista = new MetroFramework.Controls.MetroGrid();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
+            this.listRegistos = new System.Windows.Forms.ListBox();
             this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
+            this.listAtivos = new System.Windows.Forms.ListBox();
             this.btEmpAlterar = new MetroFramework.Controls.MetroButton();
             this.btEmpDeletar = new MetroFramework.Controls.MetroButton();
             this.gridAtivos = new MetroFramework.Controls.MetroGrid();
-            this.listRegistos = new System.Windows.Forms.ListBox();
-            this.listAtivos = new System.Windows.Forms.ListBox();
             this.tabRegisto.SuspendLayout();
             this.tabNovoRegisto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegPessoas)).BeginInit();
@@ -99,7 +97,7 @@ namespace biblioteca
             this.tabRegisto.Location = new System.Drawing.Point(23, 63);
             this.tabRegisto.Name = "tabRegisto";
             this.tabRegisto.SelectedIndex = 0;
-            this.tabRegisto.Size = new System.Drawing.Size(714, 606);
+            this.tabRegisto.Size = new System.Drawing.Size(569, 540);
             this.tabRegisto.Style = MetroFramework.MetroColorStyle.Teal;
             this.tabRegisto.TabIndex = 0;
             this.tabRegisto.UseSelectable = true;
@@ -115,7 +113,6 @@ namespace biblioteca
             this.tabNovoRegisto.Controls.Add(this.cbRegNome);
             this.tabNovoRegisto.Controls.Add(this.btRegSubmeter);
             this.tabNovoRegisto.Controls.Add(this.btRegLimpar);
-            this.tabNovoRegisto.Controls.Add(this.tbRegTurma);
             this.tabNovoRegisto.Controls.Add(this.tbRegEntrada);
             this.tabNovoRegisto.Controls.Add(this.nudRegPessoas);
             this.tabNovoRegisto.Controls.Add(this.tbRegAdicionais);
@@ -123,13 +120,12 @@ namespace biblioteca
             this.tabNovoRegisto.Controls.Add(this.metroLabel2);
             this.tabNovoRegisto.Controls.Add(this.metroLabel4);
             this.tabNovoRegisto.Controls.Add(this.lbEntrada);
-            this.tabNovoRegisto.Controls.Add(this.lbRegTurma);
             this.tabNovoRegisto.HorizontalScrollbarBarColor = true;
             this.tabNovoRegisto.HorizontalScrollbarHighlightOnWheel = false;
             this.tabNovoRegisto.HorizontalScrollbarSize = 10;
             this.tabNovoRegisto.Location = new System.Drawing.Point(4, 38);
             this.tabNovoRegisto.Name = "tabNovoRegisto";
-            this.tabNovoRegisto.Size = new System.Drawing.Size(706, 564);
+            this.tabNovoRegisto.Size = new System.Drawing.Size(561, 498);
             this.tabNovoRegisto.TabIndex = 2;
             this.tabNovoRegisto.Text = "Novo registo";
             this.tabNovoRegisto.VerticalScrollbarBarColor = true;
@@ -142,15 +138,15 @@ namespace biblioteca
             this.cbRegEspaco.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbRegEspaco.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbRegEspaco.FormattingEnabled = true;
-            this.cbRegEspaco.Location = new System.Drawing.Point(125, 74);
+            this.cbRegEspaco.Location = new System.Drawing.Point(102, 59);
             this.cbRegEspaco.Name = "cbRegEspaco";
-            this.cbRegEspaco.Size = new System.Drawing.Size(231, 21);
+            this.cbRegEspaco.Size = new System.Drawing.Size(442, 21);
             this.cbRegEspaco.TabIndex = 72;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(15, 76);
+            this.metroLabel1.Location = new System.Drawing.Point(15, 61);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.TabIndex = 71;
@@ -158,18 +154,18 @@ namespace biblioteca
             // 
             // dtRegData
             // 
-            this.dtRegData.Location = new System.Drawing.Point(125, 115);
+            this.dtRegData.Location = new System.Drawing.Point(102, 100);
             this.dtRegData.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             this.dtRegData.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtRegData.Name = "dtRegData";
-            this.dtRegData.Size = new System.Drawing.Size(231, 29);
+            this.dtRegData.Size = new System.Drawing.Size(169, 29);
             this.dtRegData.Style = MetroFramework.MetroColorStyle.Teal;
             this.dtRegData.TabIndex = 70;
             // 
             // lbRegData
             // 
             this.lbRegData.AutoSize = true;
-            this.lbRegData.Location = new System.Drawing.Point(15, 121);
+            this.lbRegData.Location = new System.Drawing.Point(15, 106);
             this.lbRegData.Name = "lbRegData";
             this.lbRegData.Size = new System.Drawing.Size(49, 19);
             this.lbRegData.TabIndex = 69;
@@ -190,7 +186,7 @@ namespace biblioteca
             this.tbRegSaida.CustomButton.UseSelectable = true;
             this.tbRegSaida.CustomButton.Visible = false;
             this.tbRegSaida.Lines = new string[0];
-            this.tbRegSaida.Location = new System.Drawing.Point(461, 161);
+            this.tbRegSaida.Location = new System.Drawing.Point(375, 146);
             this.tbRegSaida.MaxLength = 32767;
             this.tbRegSaida.Name = "tbRegSaida";
             this.tbRegSaida.PasswordChar = '\0';
@@ -200,7 +196,7 @@ namespace biblioteca
             this.tbRegSaida.SelectionLength = 0;
             this.tbRegSaida.SelectionStart = 0;
             this.tbRegSaida.ShortcutsEnabled = true;
-            this.tbRegSaida.Size = new System.Drawing.Size(231, 23);
+            this.tbRegSaida.Size = new System.Drawing.Size(169, 23);
             this.tbRegSaida.TabIndex = 68;
             this.tbRegSaida.UseSelectable = true;
             this.tbRegSaida.WaterMark = "Saída";
@@ -210,7 +206,7 @@ namespace biblioteca
             // lbSaida
             // 
             this.lbSaida.AutoSize = true;
-            this.lbSaida.Location = new System.Drawing.Point(362, 161);
+            this.lbSaida.Location = new System.Drawing.Point(277, 146);
             this.lbSaida.Name = "lbSaida";
             this.lbSaida.Size = new System.Drawing.Size(94, 19);
             this.lbSaida.TabIndex = 67;
@@ -226,16 +222,16 @@ namespace biblioteca
             "Marcia",
             "José",
             "Ana"});
-            this.cbRegNome.Location = new System.Drawing.Point(125, 36);
+            this.cbRegNome.Location = new System.Drawing.Point(102, 23);
             this.cbRegNome.Name = "cbRegNome";
-            this.cbRegNome.Size = new System.Drawing.Size(567, 21);
+            this.cbRegNome.Size = new System.Drawing.Size(442, 21);
             this.cbRegNome.TabIndex = 66;
             // 
             // btRegSubmeter
             // 
-            this.btRegSubmeter.Location = new System.Drawing.Point(412, 518);
+            this.btRegSubmeter.Location = new System.Drawing.Point(325, 461);
             this.btRegSubmeter.Name = "btRegSubmeter";
-            this.btRegSubmeter.Size = new System.Drawing.Size(280, 30);
+            this.btRegSubmeter.Size = new System.Drawing.Size(219, 30);
             this.btRegSubmeter.TabIndex = 54;
             this.btRegSubmeter.Text = "Submeter";
             this.btRegSubmeter.UseSelectable = true;
@@ -243,45 +239,13 @@ namespace biblioteca
             // 
             // btRegLimpar
             // 
-            this.btRegLimpar.Location = new System.Drawing.Point(125, 518);
+            this.btRegLimpar.Location = new System.Drawing.Point(102, 461);
             this.btRegLimpar.Name = "btRegLimpar";
-            this.btRegLimpar.Size = new System.Drawing.Size(281, 30);
+            this.btRegLimpar.Size = new System.Drawing.Size(219, 30);
             this.btRegLimpar.TabIndex = 55;
             this.btRegLimpar.Text = "Limpar campos";
             this.btRegLimpar.UseSelectable = true;
             this.btRegLimpar.Click += new System.EventHandler(this.btRegLimpar_Click);
-            // 
-            // tbRegTurma
-            // 
-            // 
-            // 
-            // 
-            this.tbRegTurma.CustomButton.Image = null;
-            this.tbRegTurma.CustomButton.Location = new System.Drawing.Point(209, 1);
-            this.tbRegTurma.CustomButton.Name = "";
-            this.tbRegTurma.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbRegTurma.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbRegTurma.CustomButton.TabIndex = 1;
-            this.tbRegTurma.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbRegTurma.CustomButton.UseSelectable = true;
-            this.tbRegTurma.CustomButton.Visible = false;
-            this.tbRegTurma.Lines = new string[0];
-            this.tbRegTurma.Location = new System.Drawing.Point(461, 72);
-            this.tbRegTurma.MaxLength = 32767;
-            this.tbRegTurma.Name = "tbRegTurma";
-            this.tbRegTurma.PasswordChar = '\0';
-            this.tbRegTurma.PromptText = "Turma que irá utilizar o espaço";
-            this.tbRegTurma.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbRegTurma.SelectedText = "";
-            this.tbRegTurma.SelectionLength = 0;
-            this.tbRegTurma.SelectionStart = 0;
-            this.tbRegTurma.ShortcutsEnabled = true;
-            this.tbRegTurma.Size = new System.Drawing.Size(231, 23);
-            this.tbRegTurma.TabIndex = 65;
-            this.tbRegTurma.UseSelectable = true;
-            this.tbRegTurma.WaterMark = "Turma que irá utilizar o espaço";
-            this.tbRegTurma.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbRegTurma.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // tbRegEntrada
             // 
@@ -298,7 +262,7 @@ namespace biblioteca
             this.tbRegEntrada.CustomButton.UseSelectable = true;
             this.tbRegEntrada.CustomButton.Visible = false;
             this.tbRegEntrada.Lines = new string[0];
-            this.tbRegEntrada.Location = new System.Drawing.Point(125, 161);
+            this.tbRegEntrada.Location = new System.Drawing.Point(102, 146);
             this.tbRegEntrada.MaxLength = 32767;
             this.tbRegEntrada.Name = "tbRegEntrada";
             this.tbRegEntrada.PasswordChar = '\0';
@@ -308,7 +272,7 @@ namespace biblioteca
             this.tbRegEntrada.SelectionLength = 0;
             this.tbRegEntrada.SelectionStart = 0;
             this.tbRegEntrada.ShortcutsEnabled = true;
-            this.tbRegEntrada.Size = new System.Drawing.Size(231, 23);
+            this.tbRegEntrada.Size = new System.Drawing.Size(169, 23);
             this.tbRegEntrada.TabIndex = 64;
             this.tbRegEntrada.UseSelectable = true;
             this.tbRegEntrada.WaterMark = "Entrada";
@@ -318,14 +282,14 @@ namespace biblioteca
             // nudRegPessoas
             // 
             this.nudRegPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRegPessoas.Location = new System.Drawing.Point(461, 118);
+            this.nudRegPessoas.Location = new System.Drawing.Point(376, 103);
             this.nudRegPessoas.Maximum = new decimal(new int[] {
             2500,
             0,
             0,
             0});
             this.nudRegPessoas.Name = "nudRegPessoas";
-            this.nudRegPessoas.Size = new System.Drawing.Size(231, 22);
+            this.nudRegPessoas.Size = new System.Drawing.Size(168, 22);
             this.nudRegPessoas.TabIndex = 63;
             this.nudRegPessoas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -344,7 +308,7 @@ namespace biblioteca
             this.tbRegAdicionais.CustomButton.UseSelectable = true;
             this.tbRegAdicionais.CustomButton.Visible = false;
             this.tbRegAdicionais.Lines = new string[0];
-            this.tbRegAdicionais.Location = new System.Drawing.Point(125, 203);
+            this.tbRegAdicionais.Location = new System.Drawing.Point(102, 188);
             this.tbRegAdicionais.MaxLength = 32767;
             this.tbRegAdicionais.Multiline = true;
             this.tbRegAdicionais.Name = "tbRegAdicionais";
@@ -355,7 +319,7 @@ namespace biblioteca
             this.tbRegAdicionais.SelectionLength = 0;
             this.tbRegAdicionais.SelectionStart = 0;
             this.tbRegAdicionais.ShortcutsEnabled = true;
-            this.tbRegAdicionais.Size = new System.Drawing.Size(567, 292);
+            this.tbRegAdicionais.Size = new System.Drawing.Size(442, 266);
             this.tbRegAdicionais.TabIndex = 62;
             this.tbRegAdicionais.UseSelectable = true;
             this.tbRegAdicionais.WaterMark = "Anotações adicionais";
@@ -365,7 +329,7 @@ namespace biblioteca
             // lbRegNome
             // 
             this.lbRegNome.AutoSize = true;
-            this.lbRegNome.Location = new System.Drawing.Point(15, 38);
+            this.lbRegNome.Location = new System.Drawing.Point(15, 23);
             this.lbRegNome.Name = "lbRegNome";
             this.lbRegNome.Size = new System.Drawing.Size(59, 19);
             this.lbRegNome.TabIndex = 56;
@@ -374,7 +338,7 @@ namespace biblioteca
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(362, 118);
+            this.metroLabel2.Location = new System.Drawing.Point(277, 103);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(79, 19);
             this.metroLabel2.TabIndex = 60;
@@ -383,7 +347,7 @@ namespace biblioteca
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(15, 203);
+            this.metroLabel4.Location = new System.Drawing.Point(15, 188);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(71, 19);
             this.metroLabel4.TabIndex = 57;
@@ -392,20 +356,11 @@ namespace biblioteca
             // lbEntrada
             // 
             this.lbEntrada.AutoSize = true;
-            this.lbEntrada.Location = new System.Drawing.Point(15, 161);
+            this.lbEntrada.Location = new System.Drawing.Point(15, 146);
             this.lbEntrada.Name = "lbEntrada";
-            this.lbEntrada.Size = new System.Drawing.Size(105, 19);
+            this.lbEntrada.Size = new System.Drawing.Size(51, 19);
             this.lbEntrada.TabIndex = 59;
-            this.lbEntrada.Text = "Hora do início: ⁎";
-            // 
-            // lbRegTurma
-            // 
-            this.lbRegTurma.AutoSize = true;
-            this.lbRegTurma.Location = new System.Drawing.Point(362, 76);
-            this.lbRegTurma.Name = "lbRegTurma";
-            this.lbRegTurma.Size = new System.Drawing.Size(61, 19);
-            this.lbRegTurma.TabIndex = 58;
-            this.lbRegTurma.Text = "Turma(s):";
+            this.lbEntrada.Text = "Hora: ⁎";
             // 
             // tabEspaco
             // 
@@ -427,7 +382,7 @@ namespace biblioteca
             this.tabEspaco.HorizontalScrollbarSize = 10;
             this.tabEspaco.Location = new System.Drawing.Point(4, 38);
             this.tabEspaco.Name = "tabEspaco";
-            this.tabEspaco.Size = new System.Drawing.Size(706, 564);
+            this.tabEspaco.Size = new System.Drawing.Size(561, 548);
             this.tabEspaco.TabIndex = 1;
             this.tabEspaco.Text = "Novo espaço";
             this.tabEspaco.VerticalScrollbarBarColor = true;
@@ -692,37 +647,37 @@ namespace biblioteca
             this.gridLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.gridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridLista.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridLista.DefaultCellStyle = dataGridViewCellStyle56;
             this.gridLista.EnableHeadersVisualStyles = false;
             this.gridLista.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridLista.Location = new System.Drawing.Point(17, 18);
             this.gridLista.Name = "gridLista";
             this.gridLista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle57;
             this.gridLista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridLista.Size = new System.Drawing.Size(573, 477);
@@ -734,7 +689,7 @@ namespace biblioteca
             // 
             this.tabLista.Controls.Add(this.tabLista1);
             this.tabLista.Controls.Add(this.tabAtivos);
-            this.tabLista.Location = new System.Drawing.Point(743, 63);
+            this.tabLista.Location = new System.Drawing.Point(609, 63);
             this.tabLista.Name = "tabLista";
             this.tabLista.SelectedIndex = 1;
             this.tabLista.Size = new System.Drawing.Size(618, 606);
@@ -760,6 +715,14 @@ namespace biblioteca
             this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
             this.tabLista1.VerticalScrollbarSize = 10;
             // 
+            // listRegistos
+            // 
+            this.listRegistos.FormattingEnabled = true;
+            this.listRegistos.Location = new System.Drawing.Point(17, 23);
+            this.listRegistos.Name = "listRegistos";
+            this.listRegistos.Size = new System.Drawing.Size(573, 472);
+            this.listRegistos.TabIndex = 15;
+            // 
             // tabAtivos
             // 
             this.tabAtivos.Controls.Add(this.listAtivos);
@@ -778,9 +741,17 @@ namespace biblioteca
             this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
             this.tabAtivos.VerticalScrollbarSize = 10;
             // 
+            // listAtivos
+            // 
+            this.listAtivos.FormattingEnabled = true;
+            this.listAtivos.Location = new System.Drawing.Point(17, 23);
+            this.listAtivos.Name = "listAtivos";
+            this.listAtivos.Size = new System.Drawing.Size(573, 446);
+            this.listAtivos.TabIndex = 15;
+            // 
             // btEmpAlterar
             // 
-            this.btEmpAlterar.Location = new System.Drawing.Point(17, 518);
+            this.btEmpAlterar.Location = new System.Drawing.Point(17, 476);
             this.btEmpAlterar.Name = "btEmpAlterar";
             this.btEmpAlterar.Size = new System.Drawing.Size(289, 30);
             this.btEmpAlterar.TabIndex = 15;
@@ -789,7 +760,7 @@ namespace biblioteca
             // 
             // btEmpDeletar
             // 
-            this.btEmpDeletar.Location = new System.Drawing.Point(312, 518);
+            this.btEmpDeletar.Location = new System.Drawing.Point(312, 476);
             this.btEmpDeletar.Name = "btEmpDeletar";
             this.btEmpDeletar.Size = new System.Drawing.Size(278, 30);
             this.btEmpDeletar.TabIndex = 16;
@@ -803,37 +774,37 @@ namespace biblioteca
             this.gridAtivos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridAtivos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridAtivos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
             this.gridAtivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridAtivos.DefaultCellStyle = dataGridViewCellStyle59;
             this.gridAtivos.EnableHeadersVisualStyles = false;
             this.gridAtivos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridAtivos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridAtivos.Location = new System.Drawing.Point(17, 18);
             this.gridAtivos.Name = "gridAtivos";
             this.gridAtivos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAtivos.RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
             this.gridAtivos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridAtivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridAtivos.Size = new System.Drawing.Size(573, 477);
@@ -841,27 +812,11 @@ namespace biblioteca
             this.gridAtivos.Theme = MetroFramework.MetroThemeStyle.Light;
             this.gridAtivos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridAtivos_CellContentClick);
             // 
-            // listRegistos
-            // 
-            this.listRegistos.FormattingEnabled = true;
-            this.listRegistos.Location = new System.Drawing.Point(17, 23);
-            this.listRegistos.Name = "listRegistos";
-            this.listRegistos.Size = new System.Drawing.Size(573, 472);
-            this.listRegistos.TabIndex = 15;
-            // 
-            // listAtivos
-            // 
-            this.listAtivos.FormattingEnabled = true;
-            this.listAtivos.Location = new System.Drawing.Point(17, 23);
-            this.listAtivos.Name = "listAtivos";
-            this.listAtivos.Size = new System.Drawing.Size(573, 472);
-            this.listAtivos.TabIndex = 15;
-            // 
             // Espacos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1394, 698);
+            this.ClientSize = new System.Drawing.Size(1250, 630);
             this.ControlBox = false;
             this.Controls.Add(this.tabLista);
             this.Controls.Add(this.tabRegisto);
@@ -916,7 +871,6 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTabPage tabNovoRegisto;
         private MetroFramework.Controls.MetroButton btRegSubmeter;
         private MetroFramework.Controls.MetroButton btRegLimpar;
-        private MetroFramework.Controls.MetroTextBox tbRegTurma;
         private MetroFramework.Controls.MetroTextBox tbRegEntrada;
         private System.Windows.Forms.NumericUpDown nudRegPessoas;
         private MetroFramework.Controls.MetroTextBox tbRegAdicionais;
@@ -924,7 +878,6 @@ namespace biblioteca
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel lbEntrada;
-        private MetroFramework.Controls.MetroLabel lbRegTurma;
         private System.Windows.Forms.ComboBox cbRegNome;
         private MetroFramework.Controls.MetroTextBox tbRegSaida;
         private MetroFramework.Controls.MetroLabel lbSaida;

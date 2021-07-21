@@ -40,6 +40,7 @@ namespace biblioteca
             this.btEquipamentos = new MetroFramework.Controls.MetroTile();
             this.btUtilizadores = new MetroFramework.Controls.MetroTile();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +69,7 @@ namespace biblioteca
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(23, 135);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1250, 630);
+            this.panel1.Size = new System.Drawing.Size(1250, 576);
             this.panel1.TabIndex = 0;
             // 
             // biblionet
@@ -213,11 +214,21 @@ namespace biblioteca
             this.picLogo.TabStop = false;
             this.picLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(1119, 714);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(120, 19);
+            this.metroLabel3.TabIndex = 16;
+            this.metroLabel3.Text = "Booking - By Nana";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 788);
+            this.ClientSize = new System.Drawing.Size(1293, 747);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.biblionet);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -254,6 +265,7 @@ namespace biblioteca
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.PictureBox biblionet;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }
 

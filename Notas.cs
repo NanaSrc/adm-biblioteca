@@ -66,8 +66,7 @@ namespace biblioteca
                 Nota novo = new Nota(tbAutor.Text, tbTitulo.Text, tbSubtitulo.Text, tbConteudo.Text);
                 notas.Add(novo);
 
-                listLista.DataSource = null;
-                listLista.DataSource = notas;
+                ListRefresh();
                 Defaults();
                 GuardarDados();
             }
@@ -116,6 +115,31 @@ namespace biblioteca
         private void btDeletar_Click(object sender, EventArgs e)
         {
             //Apagar a nota selecionada
+            Nota selec = (Nota)listLista.SelectedItem;
+            notas.Remove(selec);
+
+            ListRefresh();
+            Defaults();
+            GuardarDados();
+        }
+
+        private void ListRefresh()
+        {
+            listLista.DataSource = null;
+            listLista.DataSource = notas;
+        }
+
+        private void listLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Nota selec = (Nota)listLista.SelectedItem;
+
+            if (selec != null)
+            {
+                tbAutor.Text = selec.Autor;
+                tbTitulo.Text = selec.Titulo;
+                tbSubtitulo.Text = selec.Subtitulo;
+                tbConteudo.Text = selec.Conteudo;
+            }
         }
     }
 }

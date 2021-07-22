@@ -307,6 +307,7 @@ namespace biblioteca
             this.listLista.Name = "listLista";
             this.listLista.Size = new System.Drawing.Size(573, 381);
             this.listLista.TabIndex = 7;
+            this.listLista.SelectedIndexChanged += new System.EventHandler(this.listLista_SelectedIndexChanged);
             // 
             // btDeletar
             // 

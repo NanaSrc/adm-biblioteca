@@ -42,8 +42,7 @@ namespace biblioteca
                 BinaryFormatter bin = new BinaryFormatter();
                 utilizadores = (List<Utilizador>)bin.Deserialize(stream);
                 stream.Close();
-                listUtilizadores.DataSource = null;
-                listUtilizadores.DataSource = utilizadores;
+                ListRefresh();
             }
         }
 
@@ -97,6 +96,18 @@ namespace biblioteca
         private void btDeletar_Click(object sender, EventArgs e)
         {
             //Deletar os dados do item selecionado
+            Utilizador selec = (Utilizador)listUtilizadores.SelectedItem;
+            utilizadores.Remove(selec);
+
+            ListRefresh();
+            Defaults();
+            GuardarDados();
+        }
+
+        private void ListRefresh()
+        {
+            listUtilizadores.DataSource = null;
+            listUtilizadores.DataSource = utilizadores;
         }
 
         private void gridAtivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -186,12 +197,16 @@ namespace biblioteca
         private void listUtilizadores_SelectedIndexChanged(object sender, EventArgs e)
         {
             Utilizador selec = (Utilizador)listUtilizadores.SelectedItem;
-            tbNome.Text = selec.Nome;
-            cbFuncao.SelectedItem = selec.Funcao;
-            tbProcesso.Text = selec.Processo;
-            tbAluTurma.Text = selec.Turma;
-            cbAluAno.SelectedItem = selec.Ano;
-            tbAdicionais.Text = selec.Adicionais;
+
+            if (selec != null)
+            {
+                tbNome.Text = selec.Nome;
+                cbFuncao.SelectedItem = selec.Funcao;
+                tbProcesso.Text = selec.Processo;
+                tbAluTurma.Text = selec.Turma;
+                cbAluAno.SelectedItem = selec.Ano;
+                tbAdicionais.Text = selec.Adicionais;
+            }
         }
     }
 }

@@ -619,6 +619,7 @@ namespace biblioteca
             this.btListaDeletar.TabIndex = 13;
             this.btListaDeletar.Text = "Deletar";
             this.btListaDeletar.UseSelectable = true;
+            this.btListaDeletar.Click += new System.EventHandler(this.btListaDeletar_Click);
             // 
             // btListaAlterar
             // 
@@ -711,6 +712,7 @@ namespace biblioteca
             this.btEmpDeletar.TabIndex = 23;
             this.btEmpDeletar.Text = "Deletar";
             this.btEmpDeletar.UseSelectable = true;
+            this.btEmpDeletar.Click += new System.EventHandler(this.btEmpDeletar_Click);
             // 
             // Espacos
             // 

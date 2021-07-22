@@ -237,29 +237,69 @@ namespace biblioteca
         private void listRegisto_SelectedIndexChanged(object sender, EventArgs e)
         {
             EspacoRegisto selec = (EspacoRegisto)listRegisto.SelectedItem;
-            cbRegNome.SelectedItem = selec.Utilizador;
-            cbRegEspaco.SelectedItem = selec.Espaco;
-            dtRegData.Value = selec.Data;
-            nudRegPessoas.Value = selec.NumPessoas;
-            tbRegEntrada.Text = selec.Entrada;
-            tbRegSaida.Text = selec.Saida;
-            tbRegAdicionais.Text = selec.Adicionais;
+
+            if(selec != null)
+            {
+                cbRegNome.SelectedItem = selec.Utilizador;
+                cbRegEspaco.SelectedItem = selec.Espaco;
+                dtRegData.Value = selec.Data;
+                nudRegPessoas.Value = selec.NumPessoas;
+                tbRegEntrada.Text = selec.Entrada;
+                tbRegSaida.Text = selec.Saida;
+                tbRegAdicionais.Text = selec.Adicionais;
+            }
         }
 
         private void listEspacos_SelectedIndexChanged(object sender, EventArgs e)
         {
             Espaco selec = (Espaco)listEspacos.SelectedItem;
-            tbEspDesignacao.Text = selec.Designacao;
-            tbEspAbertura.Text = selec.Abertura;
-            tbEspEncerramento.Text = selec.Encerramento;
 
-            if (selec.MaxPessoas > 1)
+            if (selec != null)
             {
-                tgEspPessoas.Checked = true;
-                nudEspMax.Value = selec.MaxPessoas;
-            }
+                tbEspDesignacao.Text = selec.Designacao;
+                tbEspAbertura.Text = selec.Abertura;
+                tbEspEncerramento.Text = selec.Encerramento;
 
-            tbEspAdicionais.Text = selec.Adicionais;
+                if (selec.MaxPessoas > 1)
+                {
+                    tgEspPessoas.Checked = true;
+                    nudEspMax.Value = selec.MaxPessoas;
+                }
+
+                tbEspAdicionais.Text = selec.Adicionais;
+            }
+        }
+
+        private void btEmpDeletar_Click(object sender, EventArgs e)
+        {
+            EspacoRegisto selec = (EspacoRegisto)listRegisto.SelectedItem;
+            registos.Remove(selec);
+
+            ListRegRefresh();
+            RegDefaults();
+            GuardarDados();
+        }
+
+        private void ListRegRefresh()
+        {
+            listRegisto.DataSource = null;
+            listRegisto.DataSource = registos;
+        }
+
+        private void btListaDeletar_Click(object sender, EventArgs e)
+        {
+            Espaco selec = (Espaco)listEspacos.SelectedItem;
+            espacos.Remove(selec);
+
+            ListEspRefresh();
+            EspDefaults();
+            GuardarDados();
+        }
+
+        private void ListEspRefresh()
+        {
+            listEspacos.DataSource = null;
+            listEspacos.DataSource = espacos;
         }
     }
 }

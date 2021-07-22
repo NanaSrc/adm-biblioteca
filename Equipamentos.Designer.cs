@@ -526,6 +526,7 @@ namespace biblioteca
             this.btDeletar.TabIndex = 19;
             this.btDeletar.Text = "Deletar";
             this.btDeletar.UseSelectable = true;
+            this.btDeletar.Click += new System.EventHandler(this.btDeletar_Click);
             // 
             // btAlterar
             // 
@@ -570,6 +571,7 @@ namespace biblioteca
             this.btAtivDeletar.TabIndex = 9;
             this.btAtivDeletar.Text = "Deletar";
             this.btAtivDeletar.UseSelectable = true;
+            this.btAtivDeletar.Click += new System.EventHandler(this.btAtivDeletar_Click);
             // 
             // btAtivAlterar
             // 

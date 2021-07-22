@@ -128,9 +128,7 @@ namespace biblioteca
                 EquipamentoRegisto novo = new EquipamentoRegisto((Utilizador)cbRegNome.SelectedItem, (Equipamento)cbRegEquipamento.SelectedItem, (int)nudEquipQuantidade.Value, tbRegExemplares.Text, tbEquipAdicionais.Text);
                 registos.Add(novo);
 
-                listAtivos.DataSource = null;
-                listAtivos.DataSource = registos;
-
+                ListRegRefresh();
                 RegDefaults();
                 GuardarDados();
             }
@@ -225,16 +223,63 @@ namespace biblioteca
         private void listAtivos_SelectedIndexChanged(object sender, EventArgs e)
         {
             EquipamentoRegisto selec = (EquipamentoRegisto)listAtivos.SelectedItem;
-            cbRegNome.SelectedItem = selec.Utilizador;
-            cbRegEquipamento.SelectedItem = selec.Equipamento;
-            tbRegExemplares.Text = selec.Exemplares;
-            tbRegAdicionais.Text = selec.Adicionais;
+
+            if (selec != null)
+            {
+                cbRegNome.SelectedItem = selec.Utilizador;
+                cbRegEquipamento.SelectedItem = selec.Equipamento;
+                tbRegExemplares.Text = selec.Exemplares;
+                tbRegAdicionais.Text = selec.Adicionais;
+            }
         }
 
         private void listLista_SelectedIndexChanged(object sender, EventArgs e)
         {
             Equipamento selec = (Equipamento)listAtivos.SelectedItem;
 
+            if (selec != null)
+            {
+                tbEquipDesignacao.Text = selec.Designacao;
+                tbEquipCodigo.Text = selec.Codigo;
+
+                if (selec.Quantidade > 1)
+                    tgEquipQuantidade.Checked = true;
+
+                nudEquipQuantidade.Value = selec.Quantidade;
+                tbEquipAdicionais.Text = selec.Adicionais;
+            }
+        }
+
+        private void btAtivDeletar_Click(object sender, EventArgs e)
+        {
+            EquipamentoRegisto selec = (EquipamentoRegisto)listAtivos.SelectedItem;
+            registos.Remove(selec);
+
+            ListRegRefresh();
+            RegDefaults();
+            GuardarDados();
+        }
+
+        private void ListRegRefresh()
+        {
+            listAtivos.DataSource = null;
+            listAtivos.DataSource = registos;
+        }
+
+        private void btDeletar_Click(object sender, EventArgs e)
+        {
+            Equipamento selec = (Equipamento)listLista.SelectedItem;
+            equipamentos.Remove(selec);
+
+            ListEquipRefresh();
+            EquipDefaults();
+            GuardarDados();
+        }
+
+        private void ListEquipRefresh()
+        {
+            listLista.DataSource = null;
+            listLista.DataSource = equipamentos;
         }
     }
 }

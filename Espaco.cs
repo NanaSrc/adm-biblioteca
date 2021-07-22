@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace biblioteca
 {
+    [Serializable]
     class Espaco
     {
         private string designacao;
@@ -28,10 +29,34 @@ namespace biblioteca
             this.encerramento = encerramento;
             this.adicionais = adicionais;
         }
+        public Espaco(string designacao, string abertura, string encerramento, string adicionais)
+        {
+            this.designacao = designacao;
+            this.abertura = abertura;
+            this.encerramento = encerramento;
+            this.adicionais = adicionais;
+        }
 
         public Espaco(string designacao)
         {
             this.designacao = designacao;
+        }
+
+        public override string ToString()
+        {
+            string comentario;
+
+            if (Adicionais != "")
+            {
+                comentario = "Possui 1 comentário";
+
+            }
+            else
+            {
+                comentario = "Possui 0 comentários";
+            }
+
+            return string.Format(" {0,-30}         ({1} - {2})         {3,20}", Designacao.ToUpper(), abertura, encerramento, comentario);
         }
     }
 }

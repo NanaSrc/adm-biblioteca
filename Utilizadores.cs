@@ -18,20 +18,20 @@ namespace biblioteca
         public Utilizadores()
         {
             InitializeComponent();
-            utilizadores = new List<Utilizador>();;
+            utilizadores = new List<Utilizador>();
         }
 
         private void Utilizadores_Load(object sender, EventArgs e)
         {
             tbNome.Focus();
             CarregaUtilizadores();
-            CarregaEmprestimos();
+            //CarregaEmprestimos();
         }
 
-        private void CarregaEmprestimos()
+        /*private void CarregaEmprestimos()
         {
             //Carregar empréstimos
-        }
+        }*/
 
         private void CarregaUtilizadores()
         {
@@ -42,14 +42,9 @@ namespace biblioteca
                 BinaryFormatter bin = new BinaryFormatter();
                 utilizadores = (List<Utilizador>)bin.Deserialize(stream);
                 stream.Close();
+                listUtilizadores.DataSource = null;
                 listUtilizadores.DataSource = utilizadores;
             }
-        }
-
-        private void PreencherCampos(Professor professor)
-        {
-            if (professor.Processo == "")
-                professor.Processo = "N/A";
         }
 
         private bool ProfPreenchido()
@@ -75,10 +70,18 @@ namespace biblioteca
         private void Utilizadores_FormClosing(object sender, FormClosingEventArgs e)
         {
             //Guardar listas
-            FileStream stream = new FileStream("utilizadores.dat", FileMode.Create, FileAccess.Write);
-            BinaryFormatter bin = new BinaryFormatter();
-            bin.Serialize(stream, utilizadores);
-            stream.Close();
+            GuardarDados();
+        }
+
+        private void GuardarDados()
+        {
+            if (utilizadores != null)
+            {
+                FileStream stream = new FileStream("utilizadores.dat", FileMode.Create, FileAccess.Write);
+                BinaryFormatter bin = new BinaryFormatter();
+                bin.Serialize(stream, utilizadores);
+                stream.Close();
+            }
         }
 
         private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -124,6 +127,7 @@ namespace biblioteca
                 listUtilizadores.DataSource = null;
                 listUtilizadores.DataSource = utilizadores;
                 Defaults();
+                GuardarDados();
             }
             else
             {
@@ -170,6 +174,11 @@ namespace biblioteca
         }
 
         private void cbAluAno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pageReg_Click(object sender, EventArgs e)
         {
 
         }

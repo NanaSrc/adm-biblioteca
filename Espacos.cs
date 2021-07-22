@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +16,7 @@ namespace biblioteca
     {
         List<Espaco> espacos;
         List<EspacoRegisto> registos;
+        List<Utilizador> utilizadores;
         public Espacos()
         {
             InitializeComponent();
@@ -25,6 +28,21 @@ namespace biblioteca
         {
             CarregaEspacos();
             CarregaEmprestimos();
+            CarregaUtilizadores();
+        }
+
+        private void CarregaUtilizadores()
+        {
+            if (File.Exists("utilizadores.dat"))
+            {
+                FileStream stream = new FileStream("utilizadores.dat", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bin = new BinaryFormatter();
+                utilizadores = (List<Utilizador>)bin.Deserialize(stream);
+                stream.Close();
+
+                cbRegNome.DataSource = null;
+                cbRegNome.DataSource = utilizadores;
+            }
         }
 
         private void CarregaEmprestimos()
@@ -35,6 +53,17 @@ namespace biblioteca
         private void CarregaEspacos()
         {
             //Carrega a lista de espaços disponíveis
+            if (File.Exists("espacos.dat"))
+            {
+                FileStream stream = new FileStream("espacos.dat", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bin = new BinaryFormatter();
+                espacos = (List<Espaco>)bin.Deserialize(stream);
+                stream.Close();
+
+                listRegistos.DataSource = null;
+                listRegistos.DataSource = espacos;
+                cbRegEspaco.DataSource = espacos;
+            }
         }
 
         private void btLimpar_Click(object sender, EventArgs e)
@@ -91,10 +120,36 @@ namespace biblioteca
 
         private void btEspSubmeter_Click(object sender, EventArgs e)
         {
-            //Adicionar a lista
-            //Guardar a lista
-            //Atualizar a lista
-            //Limpar campos
+            if (EspPreenchido())
+            {
+                if (tgEspPessoas.Checked == true)
+                {
+                    Espaco novo = new Espaco(tbEspDesignacao.Text, (int)nudEspMax.Value, tbEspAbertura.Text, tbEspEncerramento.Text, tbEspAdicionais.Text);
+                    espacos.Add(novo);
+                }
+                else
+                {
+                    Espaco novo = new Espaco(tbEspDesignacao.Text, tbEspAbertura.Text, tbEspEncerramento.Text, tbEspAdicionais.Text);
+                    espacos.Add(novo);
+                }
+                listRegistos.DataSource = null;
+                listRegistos.DataSource = espacos;
+
+                EspDefaults();
+                GuardarDados();
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios." + Environment.NewLine + "Campos marcados com o asterisco '⚹'", "Erro ao submeter formulário", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
+            }
+        }
+
+        private bool EspPreenchido()
+        {
+            if (tbEspDesignacao.Text != "")
+                return true;
+            else
+                return false;
         }
 
         private void btRegSubmeter_Click(object sender, EventArgs e)
@@ -103,16 +158,16 @@ namespace biblioteca
             //Guardar a lista
             //Atualizar a lista
             //Limpar campos
-
             if (RegPreenchido())
             {
-                EspacoRegisto novo = new EspacoRegisto((string)cbRegNome.SelectedItem, (Espaco)cbRegEspaco.SelectedItem, tbRegEntrada.Text, tbRegSaida.Text, dtRegData.Value);
+                EspacoRegisto novo = new EspacoRegisto((Utilizador)cbRegNome.SelectedItem, (Espaco)cbRegEspaco.SelectedItem, tbRegEntrada.Text, tbRegSaida.Text, dtRegData.Value, (int)nudRegPessoas.Value, tbEspAdicionais.Text);
                 //PreencherCampos(novo);
                 registos.Add(novo);
 
                 listRegistos.DataSource = null;
                 listRegistos.DataSource = registos;
                 RegDefaults();
+                GuardarDados();
             }
             else
             {
@@ -138,6 +193,30 @@ namespace biblioteca
         private void btListaAlterar_Click(object sender, EventArgs e)
         {
             //Alterar os dados do item selecionado
+        }
+
+        private void Espacos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GuardarDados();
+        }
+
+        private void GuardarDados()
+        {
+            if (espacos != null)
+            {
+                FileStream stream = new FileStream("espacos.dat", FileMode.Create, FileAccess.Write);
+                BinaryFormatter bin = new BinaryFormatter();
+                bin.Serialize(stream, espacos);
+                stream.Close();
+            }
+
+            if (registos != null)
+            {
+                FileStream stream = new FileStream("esppregistos.dat", FileMode.Create, FileAccess.Write);
+                BinaryFormatter bin = new BinaryFormatter();
+                bin.Serialize(stream, registos);
+                stream.Close();
+            }
         }
     }
 }

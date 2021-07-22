@@ -167,7 +167,7 @@ namespace biblioteca
             // 
             // 
             this.tbRegSaida.CustomButton.Image = null;
-            this.tbRegSaida.CustomButton.Location = new System.Drawing.Point(147, 1);
+            this.tbRegSaida.CustomButton.Location = new System.Drawing.Point(146, 1);
             this.tbRegSaida.CustomButton.Name = "";
             this.tbRegSaida.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbRegSaida.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -243,7 +243,7 @@ namespace biblioteca
             // 
             // 
             this.tbRegEntrada.CustomButton.Image = null;
-            this.tbRegEntrada.CustomButton.Location = new System.Drawing.Point(147, 1);
+            this.tbRegEntrada.CustomButton.Location = new System.Drawing.Point(146, 1);
             this.tbRegEntrada.CustomButton.Name = "";
             this.tbRegEntrada.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbRegEntrada.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -289,7 +289,7 @@ namespace biblioteca
             // 
             // 
             this.tbRegAdicionais.CustomButton.Image = null;
-            this.tbRegAdicionais.CustomButton.Location = new System.Drawing.Point(228, 2);
+            this.tbRegAdicionais.CustomButton.Location = new System.Drawing.Point(230, 2);
             this.tbRegAdicionais.CustomButton.Name = "";
             this.tbRegAdicionais.CustomButton.Size = new System.Drawing.Size(211, 211);
             this.tbRegAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -443,7 +443,7 @@ namespace biblioteca
             // 
             // 
             this.tbEspEncerramento.CustomButton.Image = null;
-            this.tbEspEncerramento.CustomButton.Location = new System.Drawing.Point(397, 1);
+            this.tbEspEncerramento.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbEspEncerramento.CustomButton.Name = "";
             this.tbEspEncerramento.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbEspEncerramento.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -475,7 +475,7 @@ namespace biblioteca
             // 
             // 
             this.tbEspAbertura.CustomButton.Image = null;
-            this.tbEspAbertura.CustomButton.Location = new System.Drawing.Point(397, 1);
+            this.tbEspAbertura.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbEspAbertura.CustomButton.Name = "";
             this.tbEspAbertura.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbEspAbertura.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -507,7 +507,7 @@ namespace biblioteca
             // 
             // 
             this.tbEspAdicionais.CustomButton.Image = null;
-            this.tbEspAdicionais.CustomButton.Location = new System.Drawing.Point(211, 1);
+            this.tbEspAdicionais.CustomButton.Location = new System.Drawing.Point(236, 1);
             this.tbEspAdicionais.CustomButton.Name = "";
             this.tbEspAdicionais.CustomButton.Size = new System.Drawing.Size(207, 207);
             this.tbEspAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -540,7 +540,7 @@ namespace biblioteca
             // 
             // 
             this.tbEspDesignacao.CustomButton.Image = null;
-            this.tbEspDesignacao.CustomButton.Location = new System.Drawing.Point(397, 1);
+            this.tbEspDesignacao.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbEspDesignacao.CustomButton.Name = "";
             this.tbEspDesignacao.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbEspDesignacao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -636,7 +636,7 @@ namespace biblioteca
             this.tabLista.Controls.Add(this.tabAtivos);
             this.tabLista.Location = new System.Drawing.Point(609, 63);
             this.tabLista.Name = "tabLista";
-            this.tabLista.SelectedIndex = 1;
+            this.tabLista.SelectedIndex = 0;
             this.tabLista.Size = new System.Drawing.Size(618, 497);
             this.tabLista.Style = MetroFramework.MetroColorStyle.Teal;
             this.tabLista.TabIndex = 14;
@@ -652,9 +652,9 @@ namespace biblioteca
             this.tabLista1.HorizontalScrollbarSize = 10;
             this.tabLista1.Location = new System.Drawing.Point(4, 38);
             this.tabLista1.Name = "tabLista1";
-            this.tabLista1.Size = new System.Drawing.Size(610, 564);
+            this.tabLista1.Size = new System.Drawing.Size(610, 455);
             this.tabLista1.TabIndex = 0;
-            this.tabLista1.Text = "Lista";
+            this.tabLista1.Text = "Lista de espaços";
             this.tabLista1.VerticalScrollbarBarColor = true;
             this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
             this.tabLista1.VerticalScrollbarSize = 10;
@@ -679,7 +679,7 @@ namespace biblioteca
             this.tabAtivos.Name = "tabAtivos";
             this.tabAtivos.Size = new System.Drawing.Size(610, 455);
             this.tabAtivos.TabIndex = 1;
-            this.tabAtivos.Text = "Empréstimos ativos";
+            this.tabAtivos.Text = "Registos de empréstimos";
             this.tabAtivos.VerticalScrollbarBarColor = true;
             this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
             this.tabAtivos.VerticalScrollbarSize = 10;
@@ -727,6 +727,7 @@ namespace biblioteca
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Espaços";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Espacos_FormClosing);
             this.Load += new System.EventHandler(this.Salas_Load);
             this.tabRegisto.ResumeLayout(false);
             this.tabNovoRegisto.ResumeLayout(false);

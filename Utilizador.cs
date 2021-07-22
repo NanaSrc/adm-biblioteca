@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace biblioteca
 {
+    [Serializable]
     class Utilizador
     {
         private string nome;

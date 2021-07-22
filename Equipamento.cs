@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace biblioteca
 {
+    [Serializable]
     class Equipamento
     {
         private string designacao;
@@ -26,11 +27,11 @@ namespace biblioteca
             this.adicionais = adicionais;
         }
 
-        public Equipamento(string designacao, string codigo, int quantidade)
+        public Equipamento(string designacao, string codigo, string adicionais)
         {
             this.designacao = designacao;
             this.codigo = codigo;
-            this.quantidade = quantidade;
+            this.adicionais = adicionais;
         }
 
         public override string ToString()
@@ -47,7 +48,7 @@ namespace biblioteca
                 comentario = "Possui 0 comentários";
             }
 
-            return string.Format(" {0,-30}    ({1})    {2,20}     {3,20}", Designacao.ToUpper(), Codigo.ToUpper(), quantidade, comentario);
+            return string.Format(" {0,-30}    ({1})     Quant: {2,20}     {3,20}", Designacao.ToUpper(), Codigo.ToUpper(), quantidade, comentario);
         }
     }
 }

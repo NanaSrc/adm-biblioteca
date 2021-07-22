@@ -6,34 +6,39 @@ using System.Threading.Tasks;
 
 namespace biblioteca
 {
+    [Serializable]
     class EquipamentoRegisto
     {
-        private string nome;
+        private Utilizador utilizador;
         private Equipamento equipamento;
         private int quantidade;
         private string exemplares;
         private string adicionais;
-
-        public string Nome { get => nome; set => nome = value; }
+        private List<Utilizador> utilizadores;
+        private List<Equipamento> equipamentos;
+        public Utilizador Utilizador { get => utilizador; set => utilizador = value; }
         public Equipamento Equipamento { get => equipamento; set => equipamento = value; }
         public int Quantidade { get => quantidade; set => quantidade = value; }
         public string Exemplares { get => exemplares; set => exemplares = value; }
         public string Adicionais { get => adicionais; set => adicionais = value; }
+        public List<Utilizador> Utilizadores { get => utilizadores; set => utilizadores = value; }
+        public List<Equipamento> Equipamentos { get => equipamentos; set => equipamentos = value; }
 
-        public EquipamentoRegisto(string nome, Equipamento equipamento, int quantidade, string exemplares, string adicionais)
+        public EquipamentoRegisto(Utilizador utilizador, Equipamento equipamento, int quantidade, string exemplares, string adicionais)
         {
-            this.nome = nome;
+            this.utilizador = utilizador;
             this.equipamento = equipamento;
             this.quantidade = quantidade;
             this.exemplares = exemplares;
             this.adicionais = adicionais;
         }
 
-        public EquipamentoRegisto(string nome, Equipamento equipamento, int quantidade)
+        public EquipamentoRegisto(Utilizador utilizador, Equipamento equipamento, int quantidade, string adicionais)
         {
-            this.nome = nome;
+            this.utilizador = utilizador;
             this.equipamento = equipamento;
             this.quantidade = quantidade;
+            this.adicionais = adicionais;
         }
 
         public override string ToString()
@@ -50,7 +55,16 @@ namespace biblioteca
                 comentario = "Possui 0 comentários";
             }
 
-            return string.Format(" {0,-30}    ({1})    {2,20}     {3,20}", nome.ToUpper(), equipamento.Designacao.ToUpper(), quantidade, exemplares);
+            string exemplar;
+
+            if(exemplares != null)
+            {
+                exemplar = "Códigos atribuídos";
+            }
+            else
+                exemplar = "Código não atribuído";
+
+            return string.Format(" {0,-30}  -  {1,20}    Quant: {2,20}        ({3,20})", utilizador.Nome.ToUpper(), equipamento.Designacao.ToUpper(), quantidade, exemplar);
         }
     }
 }

@@ -32,8 +32,8 @@ namespace biblioteca
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.pageReg = new MetroFramework.Controls.MetroTabPage();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.cbFuncao = new MetroFramework.Controls.MetroComboBox();
             this.btLimpar = new MetroFramework.Controls.MetroButton();
+            this.cbFuncao = new MetroFramework.Controls.MetroComboBox();
             this.btSubmeter = new MetroFramework.Controls.MetroButton();
             this.cbAluAno = new MetroFramework.Controls.MetroComboBox();
             this.tbAdicionais = new MetroFramework.Controls.MetroTextBox();
@@ -101,6 +101,7 @@ namespace biblioteca
             this.pageReg.VerticalScrollbarBarColor = true;
             this.pageReg.VerticalScrollbarHighlightOnWheel = false;
             this.pageReg.VerticalScrollbarSize = 10;
+            this.pageReg.Click += new System.EventHandler(this.pageReg_Click);
             // 
             // metroLabel1
             // 
@@ -110,6 +111,16 @@ namespace biblioteca
             this.metroLabel1.Size = new System.Drawing.Size(64, 19);
             this.metroLabel1.TabIndex = 29;
             this.metroLabel1.Text = "Função: ⁎";
+            // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(106, 410);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(218, 30);
+            this.btLimpar.TabIndex = 7;
+            this.btLimpar.Text = "Limpar campos";
+            this.btLimpar.UseSelectable = true;
+            this.btLimpar.Click += new System.EventHandler(this.btAluLimpar_Click);
             // 
             // cbFuncao
             // 
@@ -124,16 +135,6 @@ namespace biblioteca
             this.cbFuncao.TabIndex = 2;
             this.cbFuncao.UseSelectable = true;
             this.cbFuncao.SelectedIndexChanged += new System.EventHandler(this.cbFuncao_SelectedIndexChanged);
-            // 
-            // btLimpar
-            // 
-            this.btLimpar.Location = new System.Drawing.Point(106, 410);
-            this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(218, 30);
-            this.btLimpar.TabIndex = 7;
-            this.btLimpar.Text = "Limpar campos";
-            this.btLimpar.UseSelectable = true;
-            this.btLimpar.Click += new System.EventHandler(this.btAluLimpar_Click);
             // 
             // btSubmeter
             // 
@@ -364,7 +365,7 @@ namespace biblioteca
             this.tabLista1.Name = "tabLista1";
             this.tabLista1.Size = new System.Drawing.Size(606, 455);
             this.tabLista1.TabIndex = 0;
-            this.tabLista1.Text = "Lista";
+            this.tabLista1.Text = "Lista de utilizadores";
             this.tabLista1.VerticalScrollbarBarColor = true;
             this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
             this.tabLista1.VerticalScrollbarSize = 10;
@@ -411,7 +412,7 @@ namespace biblioteca
             this.tabAtivos.Name = "tabAtivos";
             this.tabAtivos.Size = new System.Drawing.Size(606, 455);
             this.tabAtivos.TabIndex = 1;
-            this.tabAtivos.Text = "Empréstimos ativos";
+            this.tabAtivos.Text = "Registos de empréstimos";
             this.tabAtivos.VerticalScrollbarBarColor = true;
             this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
             this.tabAtivos.VerticalScrollbarSize = 10;

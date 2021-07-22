@@ -61,7 +61,7 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aluno.cs" />
+    <Compile Include="Utilizador.cs" />
     <Compile Include="Equipamento.cs" />
     <Compile Include="EquipamentoRegisto.cs" />
     <Compile Include="Equipamentos.cs">

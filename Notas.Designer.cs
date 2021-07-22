@@ -31,6 +31,8 @@ namespace biblioteca
         {
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.pageNova = new MetroFramework.Controls.MetroTabPage();
+            this.btSubmeter = new MetroFramework.Controls.MetroButton();
+            this.btLimpar = new MetroFramework.Controls.MetroButton();
             this.tbAutor = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.tbSubtitulo = new MetroFramework.Controls.MetroTextBox();
@@ -41,11 +43,9 @@ namespace biblioteca
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
+            this.listLista = new System.Windows.Forms.ListBox();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
             this.btAlterar = new MetroFramework.Controls.MetroButton();
-            this.btSubmeter = new MetroFramework.Controls.MetroButton();
-            this.btLimpar = new MetroFramework.Controls.MetroButton();
-            this.listLista = new System.Windows.Forms.ListBox();
             this.tabRegisto.SuspendLayout();
             this.pageNova.SuspendLayout();
             this.tabLista.SuspendLayout();
@@ -87,13 +87,33 @@ namespace biblioteca
             this.pageNova.VerticalScrollbarHighlightOnWheel = false;
             this.pageNova.VerticalScrollbarSize = 10;
             // 
+            // btSubmeter
+            // 
+            this.btSubmeter.Location = new System.Drawing.Point(336, 411);
+            this.btSubmeter.Name = "btSubmeter";
+            this.btSubmeter.Size = new System.Drawing.Size(219, 30);
+            this.btSubmeter.TabIndex = 6;
+            this.btSubmeter.Text = "Submeter";
+            this.btSubmeter.UseSelectable = true;
+            this.btSubmeter.Click += new System.EventHandler(this.btSubmeter_Click);
+            // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(111, 411);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(219, 30);
+            this.btLimpar.TabIndex = 5;
+            this.btLimpar.Text = "Limpar campos";
+            this.btLimpar.UseSelectable = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
+            // 
             // tbAutor
             // 
             // 
             // 
             // 
             this.tbAutor.CustomButton.Image = null;
-            this.tbAutor.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbAutor.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbAutor.CustomButton.Name = "";
             this.tbAutor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbAutor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -103,7 +123,7 @@ namespace biblioteca
             this.tbAutor.CustomButton.Visible = false;
             this.tbAutor.Lines = new string[0];
             this.tbAutor.Location = new System.Drawing.Point(111, 22);
-            this.tbAutor.MaxLength = 32767;
+            this.tbAutor.MaxLength = 60;
             this.tbAutor.Name = "tbAutor";
             this.tbAutor.PasswordChar = '\0';
             this.tbAutor.PromptText = "Título";
@@ -113,7 +133,7 @@ namespace biblioteca
             this.tbAutor.SelectionStart = 0;
             this.tbAutor.ShortcutsEnabled = true;
             this.tbAutor.Size = new System.Drawing.Size(444, 23);
-            this.tbAutor.TabIndex = 76;
+            this.tbAutor.TabIndex = 1;
             this.tbAutor.UseSelectable = true;
             this.tbAutor.WaterMark = "Título";
             this.tbAutor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -134,7 +154,7 @@ namespace biblioteca
             // 
             // 
             this.tbSubtitulo.CustomButton.Image = null;
-            this.tbSubtitulo.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbSubtitulo.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbSubtitulo.CustomButton.Name = "";
             this.tbSubtitulo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbSubtitulo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -144,7 +164,7 @@ namespace biblioteca
             this.tbSubtitulo.CustomButton.Visible = false;
             this.tbSubtitulo.Lines = new string[0];
             this.tbSubtitulo.Location = new System.Drawing.Point(111, 100);
-            this.tbSubtitulo.MaxLength = 32767;
+            this.tbSubtitulo.MaxLength = 70;
             this.tbSubtitulo.Name = "tbSubtitulo";
             this.tbSubtitulo.PasswordChar = '\0';
             this.tbSubtitulo.PromptText = "Subtítulo";
@@ -154,7 +174,7 @@ namespace biblioteca
             this.tbSubtitulo.SelectionStart = 0;
             this.tbSubtitulo.ShortcutsEnabled = true;
             this.tbSubtitulo.Size = new System.Drawing.Size(444, 23);
-            this.tbSubtitulo.TabIndex = 74;
+            this.tbSubtitulo.TabIndex = 3;
             this.tbSubtitulo.UseSelectable = true;
             this.tbSubtitulo.WaterMark = "Subtítulo";
             this.tbSubtitulo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -166,9 +186,9 @@ namespace biblioteca
             // 
             // 
             this.tbConteudo.CustomButton.Image = null;
-            this.tbConteudo.CustomButton.Location = new System.Drawing.Point(326, 2);
+            this.tbConteudo.CustomButton.Location = new System.Drawing.Point(184, 1);
             this.tbConteudo.CustomButton.Name = "";
-            this.tbConteudo.CustomButton.Size = new System.Drawing.Size(239, 239);
+            this.tbConteudo.CustomButton.Size = new System.Drawing.Size(259, 259);
             this.tbConteudo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbConteudo.CustomButton.TabIndex = 1;
             this.tbConteudo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -187,7 +207,7 @@ namespace biblioteca
             this.tbConteudo.SelectionStart = 0;
             this.tbConteudo.ShortcutsEnabled = true;
             this.tbConteudo.Size = new System.Drawing.Size(444, 261);
-            this.tbConteudo.TabIndex = 72;
+            this.tbConteudo.TabIndex = 4;
             this.tbConteudo.UseSelectable = true;
             this.tbConteudo.WaterMark = "Conteúdo da anotação";
             this.tbConteudo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -199,7 +219,7 @@ namespace biblioteca
             // 
             // 
             this.tbTitulo.CustomButton.Image = null;
-            this.tbTitulo.CustomButton.Location = new System.Drawing.Point(545, 1);
+            this.tbTitulo.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbTitulo.CustomButton.Name = "";
             this.tbTitulo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbTitulo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -209,7 +229,7 @@ namespace biblioteca
             this.tbTitulo.CustomButton.Visible = false;
             this.tbTitulo.Lines = new string[0];
             this.tbTitulo.Location = new System.Drawing.Point(111, 62);
-            this.tbTitulo.MaxLength = 32767;
+            this.tbTitulo.MaxLength = 70;
             this.tbTitulo.Name = "tbTitulo";
             this.tbTitulo.PasswordChar = '\0';
             this.tbTitulo.PromptText = "Título";
@@ -219,7 +239,7 @@ namespace biblioteca
             this.tbTitulo.SelectionStart = 0;
             this.tbTitulo.ShortcutsEnabled = true;
             this.tbTitulo.Size = new System.Drawing.Size(444, 23);
-            this.tbTitulo.TabIndex = 71;
+            this.tbTitulo.TabIndex = 2;
             this.tbTitulo.UseSelectable = true;
             this.tbTitulo.WaterMark = "Título";
             this.tbTitulo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -258,7 +278,7 @@ namespace biblioteca
             this.tabLista.Location = new System.Drawing.Point(613, 63);
             this.tabLista.Name = "tabLista";
             this.tabLista.SelectedIndex = 0;
-            this.tabLista.Size = new System.Drawing.Size(614, 514);
+            this.tabLista.Size = new System.Drawing.Size(614, 496);
             this.tabLista.Style = MetroFramework.MetroColorStyle.Purple;
             this.tabLista.TabIndex = 16;
             this.tabLista.UseSelectable = true;
@@ -273,19 +293,27 @@ namespace biblioteca
             this.tabLista1.HorizontalScrollbarSize = 10;
             this.tabLista1.Location = new System.Drawing.Point(4, 38);
             this.tabLista1.Name = "tabLista1";
-            this.tabLista1.Size = new System.Drawing.Size(606, 472);
+            this.tabLista1.Size = new System.Drawing.Size(606, 454);
             this.tabLista1.TabIndex = 0;
             this.tabLista1.Text = "Lista";
             this.tabLista1.VerticalScrollbarBarColor = true;
             this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
             this.tabLista1.VerticalScrollbarSize = 10;
             // 
+            // listLista
+            // 
+            this.listLista.FormattingEnabled = true;
+            this.listLista.Location = new System.Drawing.Point(19, 22);
+            this.listLista.Name = "listLista";
+            this.listLista.Size = new System.Drawing.Size(573, 381);
+            this.listLista.TabIndex = 7;
+            // 
             // btDeletar
             // 
             this.btDeletar.Location = new System.Drawing.Point(314, 411);
             this.btDeletar.Name = "btDeletar";
             this.btDeletar.Size = new System.Drawing.Size(278, 30);
-            this.btDeletar.TabIndex = 13;
+            this.btDeletar.TabIndex = 9;
             this.btDeletar.Text = "Deletar";
             this.btDeletar.UseSelectable = true;
             this.btDeletar.Click += new System.EventHandler(this.btDeletar_Click);
@@ -295,38 +323,10 @@ namespace biblioteca
             this.btAlterar.Location = new System.Drawing.Point(19, 411);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(289, 30);
-            this.btAlterar.TabIndex = 12;
+            this.btAlterar.TabIndex = 8;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseSelectable = true;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
-            // 
-            // btSubmeter
-            // 
-            this.btSubmeter.Location = new System.Drawing.Point(336, 411);
-            this.btSubmeter.Name = "btSubmeter";
-            this.btSubmeter.Size = new System.Drawing.Size(219, 30);
-            this.btSubmeter.TabIndex = 65;
-            this.btSubmeter.Text = "Submeter";
-            this.btSubmeter.UseSelectable = true;
-            this.btSubmeter.Click += new System.EventHandler(this.btSubmeter_Click);
-            // 
-            // btLimpar
-            // 
-            this.btLimpar.Location = new System.Drawing.Point(111, 411);
-            this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(219, 30);
-            this.btLimpar.TabIndex = 66;
-            this.btLimpar.Text = "Limpar campos";
-            this.btLimpar.UseSelectable = true;
-            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
-            // 
-            // listLista
-            // 
-            this.listLista.FormattingEnabled = true;
-            this.listLista.Location = new System.Drawing.Point(19, 22);
-            this.listLista.Name = "listLista";
-            this.listLista.Size = new System.Drawing.Size(573, 381);
-            this.listLista.TabIndex = 18;
             // 
             // Notas
             // 

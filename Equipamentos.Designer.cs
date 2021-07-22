@@ -486,7 +486,7 @@ namespace biblioteca
             this.tabLista.Controls.Add(this.tabLista1);
             this.tabLista.Location = new System.Drawing.Point(613, 63);
             this.tabLista.Name = "tabLista";
-            this.tabLista.SelectedIndex = 0;
+            this.tabLista.SelectedIndex = 1;
             this.tabLista.Size = new System.Drawing.Size(614, 500);
             this.tabLista.Style = MetroFramework.MetroColorStyle.Green;
             this.tabLista.TabIndex = 15;
@@ -516,6 +516,7 @@ namespace biblioteca
             this.listLista.Name = "listLista";
             this.listLista.Size = new System.Drawing.Size(573, 381);
             this.listLista.TabIndex = 17;
+            this.listLista.SelectedIndexChanged += new System.EventHandler(this.listLista_SelectedIndexChanged);
             // 
             // btDeletar
             // 
@@ -559,6 +560,7 @@ namespace biblioteca
             this.listAtivos.Name = "listAtivos";
             this.listAtivos.Size = new System.Drawing.Size(573, 381);
             this.listAtivos.TabIndex = 7;
+            this.listAtivos.SelectedIndexChanged += new System.EventHandler(this.listAtivos_SelectedIndexChanged);
             // 
             // btAtivDeletar
             // 

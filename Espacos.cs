@@ -48,6 +48,16 @@ namespace biblioteca
         private void CarregaEmprestimos()
         {
             //Carrega a lista de empréstimos ativos
+            if (File.Exists("espregistos.dat"))
+            {
+                FileStream stream = new FileStream("espregistos.dat", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bin = new BinaryFormatter();
+                registos = (List<EspacoRegisto>)bin.Deserialize(stream);
+                stream.Close();
+
+                listRegisto.DataSource = null;
+                listRegisto.DataSource = registos;
+            }
         }
 
         private void CarregaEspacos()
@@ -60,8 +70,8 @@ namespace biblioteca
                 espacos = (List<Espaco>)bin.Deserialize(stream);
                 stream.Close();
 
-                listRegistos.DataSource = null;
-                listRegistos.DataSource = espacos;
+                listEspacos.DataSource = null;
+                listEspacos.DataSource = espacos;
                 cbRegEspaco.DataSource = espacos;
             }
         }
@@ -132,8 +142,10 @@ namespace biblioteca
                     Espaco novo = new Espaco(tbEspDesignacao.Text, tbEspAbertura.Text, tbEspEncerramento.Text, tbEspAdicionais.Text);
                     espacos.Add(novo);
                 }
-                listRegistos.DataSource = null;
-                listRegistos.DataSource = espacos;
+                listEspacos.DataSource = null;
+                listEspacos.DataSource = espacos;
+                cbRegEspaco.DataSource = null;
+                cbRegEspaco.DataSource = espacos;
 
                 EspDefaults();
                 GuardarDados();
@@ -164,8 +176,8 @@ namespace biblioteca
                 //PreencherCampos(novo);
                 registos.Add(novo);
 
-                listRegistos.DataSource = null;
-                listRegistos.DataSource = registos;
+                listRegisto.DataSource = null;
+                listRegisto.DataSource = registos;
                 RegDefaults();
                 GuardarDados();
             }
@@ -177,7 +189,10 @@ namespace biblioteca
 
         private bool RegPreenchido()
         {
-            throw new NotImplementedException();
+            if (cbRegNome.SelectedIndex != -1 && cbRegEspaco.SelectedIndex != -1 && tbRegEntrada.Text != "" && tbRegSaida.Text != "")
+                return true;
+            else
+                return false;
         }
 
         private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -212,11 +227,39 @@ namespace biblioteca
 
             if (registos != null)
             {
-                FileStream stream = new FileStream("esppregistos.dat", FileMode.Create, FileAccess.Write);
+                FileStream stream = new FileStream("espregistos.dat", FileMode.Create, FileAccess.Write);
                 BinaryFormatter bin = new BinaryFormatter();
                 bin.Serialize(stream, registos);
                 stream.Close();
             }
+        }
+
+        private void listRegisto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EspacoRegisto selec = (EspacoRegisto)listRegisto.SelectedItem;
+            cbRegNome.SelectedItem = selec.Utilizador;
+            cbRegEspaco.SelectedItem = selec.Espaco;
+            dtRegData.Value = selec.Data;
+            nudRegPessoas.Value = selec.NumPessoas;
+            tbRegEntrada.Text = selec.Entrada;
+            tbRegSaida.Text = selec.Saida;
+            tbRegAdicionais.Text = selec.Adicionais;
+        }
+
+        private void listEspacos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Espaco selec = (Espaco)listEspacos.SelectedItem;
+            tbEspDesignacao.Text = selec.Designacao;
+            tbEspAbertura.Text = selec.Abertura;
+            tbEspEncerramento.Text = selec.Encerramento;
+
+            if (selec.MaxPessoas > 1)
+            {
+                tgEspPessoas.Checked = true;
+                nudEspMax.Value = selec.MaxPessoas;
+            }
+
+            tbEspAdicionais.Text = selec.Adicionais;
         }
     }
 }

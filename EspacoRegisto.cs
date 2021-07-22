@@ -44,5 +44,22 @@ namespace biblioteca
             this.saida = saida;
             this.data = data;
         }
+
+        public override string ToString()
+        {
+            string comentario;
+
+            if (Adicionais != "")
+            {
+                comentario = "Possui 1 comentário";
+
+            }
+            else
+            {
+                comentario = "Possui 0 comentários";
+            }
+
+            return string.Format(" {0,-25}  -  {4}   {5,5} ({1} - {2})   {3,15}", Utilizador.Nome.ToUpper(), entrada, saida, comentario, espaco, data.ToString());
+        }
     }
 }

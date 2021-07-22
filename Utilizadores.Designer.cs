@@ -50,17 +50,10 @@ namespace biblioteca
             this.listUtilizadores = new System.Windows.Forms.ListBox();
             this.btListaDeletar = new MetroFramework.Controls.MetroButton();
             this.btListaAlterar = new MetroFramework.Controls.MetroButton();
-            this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
-            this.btAtivDeletar = new MetroFramework.Controls.MetroButton();
-            this.btAtivAlterar = new MetroFramework.Controls.MetroButton();
-            this.listAtivos = new System.Windows.Forms.ListBox();
-            this.btEmpDeletar = new MetroFramework.Controls.MetroButton();
-            this.btEmpAlterar = new MetroFramework.Controls.MetroButton();
             this.tabRegisto.SuspendLayout();
             this.pageReg.SuspendLayout();
             this.tabLista.SuspendLayout();
             this.tabLista1.SuspendLayout();
-            this.tabAtivos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabRegisto
@@ -344,7 +337,6 @@ namespace biblioteca
             // tabLista
             // 
             this.tabLista.Controls.Add(this.tabLista1);
-            this.tabLista.Controls.Add(this.tabAtivos);
             this.tabLista.Location = new System.Drawing.Point(613, 63);
             this.tabLista.Name = "tabLista";
             this.tabLista.SelectedIndex = 0;
@@ -377,6 +369,7 @@ namespace biblioteca
             this.listUtilizadores.Name = "listUtilizadores";
             this.listUtilizadores.Size = new System.Drawing.Size(573, 381);
             this.listUtilizadores.TabIndex = 9;
+            this.listUtilizadores.SelectedIndexChanged += new System.EventHandler(this.listUtilizadores_SelectedIndexChanged);
             // 
             // btListaDeletar
             // 
@@ -397,71 +390,6 @@ namespace biblioteca
             this.btListaAlterar.Text = "Alterar";
             this.btListaAlterar.UseSelectable = true;
             this.btListaAlterar.Click += new System.EventHandler(this.btAlterar_Click);
-            // 
-            // tabAtivos
-            // 
-            this.tabAtivos.Controls.Add(this.btAtivDeletar);
-            this.tabAtivos.Controls.Add(this.btAtivAlterar);
-            this.tabAtivos.Controls.Add(this.listAtivos);
-            this.tabAtivos.Controls.Add(this.btEmpDeletar);
-            this.tabAtivos.Controls.Add(this.btEmpAlterar);
-            this.tabAtivos.HorizontalScrollbarBarColor = true;
-            this.tabAtivos.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabAtivos.HorizontalScrollbarSize = 10;
-            this.tabAtivos.Location = new System.Drawing.Point(4, 38);
-            this.tabAtivos.Name = "tabAtivos";
-            this.tabAtivos.Size = new System.Drawing.Size(606, 455);
-            this.tabAtivos.TabIndex = 1;
-            this.tabAtivos.Text = "Registos de empréstimos";
-            this.tabAtivos.VerticalScrollbarBarColor = true;
-            this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
-            this.tabAtivos.VerticalScrollbarSize = 10;
-            // 
-            // btAtivDeletar
-            // 
-            this.btAtivDeletar.Location = new System.Drawing.Point(312, 410);
-            this.btAtivDeletar.Name = "btAtivDeletar";
-            this.btAtivDeletar.Size = new System.Drawing.Size(278, 30);
-            this.btAtivDeletar.TabIndex = 17;
-            this.btAtivDeletar.Text = "Deletar";
-            this.btAtivDeletar.UseSelectable = true;
-            // 
-            // btAtivAlterar
-            // 
-            this.btAtivAlterar.Location = new System.Drawing.Point(17, 410);
-            this.btAtivAlterar.Name = "btAtivAlterar";
-            this.btAtivAlterar.Size = new System.Drawing.Size(289, 30);
-            this.btAtivAlterar.TabIndex = 16;
-            this.btAtivAlterar.Text = "Alterar";
-            this.btAtivAlterar.UseSelectable = true;
-            // 
-            // listAtivos
-            // 
-            this.listAtivos.FormattingEnabled = true;
-            this.listAtivos.Location = new System.Drawing.Point(17, 23);
-            this.listAtivos.Name = "listAtivos";
-            this.listAtivos.Size = new System.Drawing.Size(573, 381);
-            this.listAtivos.TabIndex = 16;
-            // 
-            // btEmpDeletar
-            // 
-            this.btEmpDeletar.Location = new System.Drawing.Point(312, 518);
-            this.btEmpDeletar.Name = "btEmpDeletar";
-            this.btEmpDeletar.Size = new System.Drawing.Size(278, 30);
-            this.btEmpDeletar.TabIndex = 17;
-            this.btEmpDeletar.Text = "Deletar";
-            this.btEmpDeletar.UseSelectable = true;
-            this.btEmpDeletar.Click += new System.EventHandler(this.btEmpDeletar_Click);
-            // 
-            // btEmpAlterar
-            // 
-            this.btEmpAlterar.Location = new System.Drawing.Point(17, 518);
-            this.btEmpAlterar.Name = "btEmpAlterar";
-            this.btEmpAlterar.Size = new System.Drawing.Size(289, 30);
-            this.btEmpAlterar.TabIndex = 16;
-            this.btEmpAlterar.Text = "Alterar";
-            this.btEmpAlterar.UseSelectable = true;
-            this.btEmpAlterar.Click += new System.EventHandler(this.btEmpAlterar_Click);
             // 
             // Utilizadores
             // 
@@ -486,7 +414,6 @@ namespace biblioteca
             this.pageReg.PerformLayout();
             this.tabLista.ResumeLayout(false);
             this.tabLista1.ResumeLayout(false);
-            this.tabAtivos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -506,14 +433,8 @@ namespace biblioteca
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroTabControl tabLista;
-        private MetroFramework.Controls.MetroTabPage tabAtivos;
         private MetroFramework.Controls.MetroButton btLimpar;
         private MetroFramework.Controls.MetroButton btSubmeter;
-        private MetroFramework.Controls.MetroButton btEmpDeletar;
-        private MetroFramework.Controls.MetroButton btEmpAlterar;
-        private System.Windows.Forms.ListBox listAtivos;
-        private MetroFramework.Controls.MetroButton btAtivDeletar;
-        private MetroFramework.Controls.MetroButton btAtivAlterar;
         private MetroFramework.Controls.MetroTabPage tabLista1;
         private System.Windows.Forms.ListBox listUtilizadores;
         private MetroFramework.Controls.MetroButton btListaDeletar;

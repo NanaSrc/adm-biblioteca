@@ -222,5 +222,19 @@ namespace biblioteca
             }
         }
 
+        private void listAtivos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EquipamentoRegisto selec = (EquipamentoRegisto)listAtivos.SelectedItem;
+            cbRegNome.SelectedItem = selec.Utilizador;
+            cbRegEquipamento.SelectedItem = selec.Equipamento;
+            tbRegExemplares.Text = selec.Exemplares;
+            tbRegAdicionais.Text = selec.Adicionais;
+        }
+
+        private void listLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Equipamento selec = (Equipamento)listAtivos.SelectedItem;
+
+        }
     }
 }

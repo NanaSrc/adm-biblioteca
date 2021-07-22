@@ -33,5 +33,10 @@ namespace biblioteca
             this.titulo = titulo;
             this.conteudo = conteudo;
         }
+
+        public override string ToString()
+        {
+            return string.Format(" {0,-30}   ({1})   Por: {2}", Titulo.ToUpper(), Subtitulo, Autor.ToUpper());
+        }
     }
 }

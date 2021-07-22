@@ -182,5 +182,16 @@ namespace biblioteca
         {
 
         }
+
+        private void listUtilizadores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Utilizador selec = (Utilizador)listUtilizadores.SelectedItem;
+            tbNome.Text = selec.Nome;
+            cbFuncao.SelectedItem = selec.Funcao;
+            tbProcesso.Text = selec.Processo;
+            tbAluTurma.Text = selec.Turma;
+            cbAluAno.SelectedItem = selec.Ano;
+            tbAdicionais.Text = selec.Adicionais;
+        }
     }
 }

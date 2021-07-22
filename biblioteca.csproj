@@ -62,18 +62,6 @@
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Aluno.cs" />
-    <Compile Include="Calendario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calendario.Designer.cs">
-      <DependentUpon>Calendario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Configuracoes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Configuracoes.Designer.cs">
-      <DependentUpon>Configuracoes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Equipamento.cs" />
     <Compile Include="EquipamentoRegisto.cs" />
     <Compile Include="Equipamentos.cs">
@@ -111,13 +99,6 @@
     <Compile Include="Espacos.Designer.cs">
       <DependentUpon>Espacos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Turma.cs" />
-    <Compile Include="Turmas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Turmas.Designer.cs">
-      <DependentUpon>Turmas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Professor.cs" />
     <Compile Include="Utilizadores.cs">
       <SubType>Form</SubType>
@@ -127,12 +108,6 @@
     </Compile>
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Calendario.resx">
-      <DependentUpon>Calendario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Configuracoes.resx">
-      <DependentUpon>Configuracoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Equipamentos.resx">
       <DependentUpon>Equipamentos.cs</DependentUpon>
@@ -158,9 +133,6 @@
     </Compile>
     <EmbeddedResource Include="Espacos.resx">
       <DependentUpon>Espacos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Turmas.resx">
-      <DependentUpon>Turmas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utilizadores.resx">
       <DependentUpon>Utilizadores.cs</DependentUpon>
@@ -338,6 +310,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar2x48x60 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,15 +29,12 @@ C:\Users\annas\OneDrive\Documentos\adm-biblioteca\bin\Debug\MetroFramework.dll
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.csprojAssemblyReference.cache
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Agenda.resources
-C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Calendario.resources
-C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Configuracoes.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Equipamentos.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Login.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Menu.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Notas.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Properties.Resources.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Espacos.resources
-C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Turmas.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.Utilizadores.resources
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.cache
 C:\Users\annas\OneDrive\Documentos\adm-biblioteca\obj\Debug\biblioteca.csproj.CoreCompileInputs.cache

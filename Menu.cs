@@ -23,12 +23,6 @@ namespace biblioteca
             this.Focus();
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-            Calendario form = new Calendario();
-            PanelShow(form);
-        }
-
         private void metroTile2_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
@@ -48,12 +42,6 @@ namespace biblioteca
             startInfo.Arguments = "/C start https://biblioteca.cm-tvedras.pt/Biblionet/";
             start.StartInfo = startInfo;
             start.Start();
-        }
-
-        private void btTurmas_Click(object sender, EventArgs e)
-        {
-            Turmas form = new Turmas();
-            PanelShow(form);
         }
         private void PanelShow(Form form)
         {
@@ -92,12 +80,6 @@ namespace biblioteca
         private void btNotas_Click(object sender, EventArgs e)
         {
             Notas form = new Notas();
-            PanelShow(form);
-        }
-
-        private void btConfigs_Click(object sender, EventArgs e)
-        {
-            Configuracoes form = new Configuracoes();
             PanelShow(form);
         }
 

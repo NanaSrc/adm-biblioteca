@@ -63,6 +63,16 @@ namespace biblioteca.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3D_stereoscopic_wallpaper_book_3d_wallpaper_living_room_3d_mural_designs_Home_Decoration_Wallpapers_for_living_jpg {
             get {
                 object obj = ResourceManager.GetObject("3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Dec" +
@@ -137,6 +147,26 @@ namespace biblioteca.Properties {
         internal static System.Drawing.Bitmap biblionet1 {
             get {
                 object obj = ResourceManager.GetObject("biblionet1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking {
+            get {
+                object obj = ResourceManager.GetObject("booking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking1 {
+            get {
+                object obj = ResourceManager.GetObject("booking1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -118,170 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="utilizadores1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Decoration-Wallpapers-for-living.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Decoration-Wallpapers-for-living.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="utilizadores6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="equipamentos6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eventos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eventos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="books.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\books.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emprestimos31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emprestimos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="utilizadores11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="biblio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biblio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salas3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users5x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users5x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users5ax64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users5ax64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar2x48x60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar2x48x60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emprestimos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emprestimos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="biblionet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biblionet11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="books1.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\books1.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notas52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="biblio7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biblio7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="equipamentos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendar2x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar2x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users5x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users5x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emprestimos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emprestimos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="equipamentos9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="utilizadores3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salas7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salas7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sair5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notas4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notas4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sair8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="equipamentos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="books2.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\books2.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emprestimos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emprestimos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="biblio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biblio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="utilizadores2_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores2_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="equipamentos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="utilizadores2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\utilizadores2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sair91" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="biblionet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\biblionet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar2x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar2x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users5ax48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users5ax48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emprestimos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emprestimos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="biblio6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\biblio6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,25 +145,178 @@
   <data name="sair6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sair6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sair11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sair11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salas7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salas7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notas21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sair9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eventos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eventos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emprestimos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emprestimos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="biblionet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biblionet11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="equipamentos0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\equipamentos0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="equipamentos6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biblio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biblio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="books1.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\books1.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipamentos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="booking1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calendar2x48x60 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar2x48x60 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emprestimos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emprestimos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores2_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores2_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipamentos9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users5x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users5x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Decoration-Wallpapers-for-living.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3D-stereoscopic-wallpaper-book-3d-wallpaper-living-room-3d-mural-designs-Home-Decoration-Wallpapers-for-living.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipamentos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar2x48x60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar2x48x60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biblio7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biblio7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar2x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar2x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users5x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users5x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="books2.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\books2.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salas6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biblio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biblio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eventos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eventos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biblionet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biblionet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipamentos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users5ax64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users5ax64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eventos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eventos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="booking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emprestimos31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emprestimos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users5ax48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users5ax48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notas41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notas4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salas3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="utilizadores6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\utilizadores6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

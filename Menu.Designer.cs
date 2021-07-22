@@ -32,15 +32,16 @@ namespace biblioteca
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.biblionet = new System.Windows.Forms.PictureBox();
             this.btSair = new MetroFramework.Controls.MetroTile();
             this.btNotas = new MetroFramework.Controls.MetroTile();
-            this.btEventos = new MetroFramework.Controls.MetroTile();
             this.btSalas = new MetroFramework.Controls.MetroTile();
             this.btEquipamentos = new MetroFramework.Controls.MetroTile();
             this.btUtilizadores = new MetroFramework.Controls.MetroTile();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -72,16 +73,38 @@ namespace biblioteca
             this.panel1.Size = new System.Drawing.Size(1250, 576);
             this.panel1.TabIndex = 0;
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(1073, 714);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(200, 19);
+            this.metroLabel3.TabIndex = 16;
+            this.metroLabel3.Text = "Booking - Developed by Nαnα™";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::biblioteca.Properties.Resources.booking1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.ErrorImage = global::biblioteca.Properties.Resources.biblio;
+            this.pictureBox1.InitialImage = global::biblioteca.Properties.Resources.biblio;
+            this.pictureBox1.Location = new System.Drawing.Point(349, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(290, 82);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // biblionet
             // 
-            this.biblionet.BackgroundImage = global::biblioteca.Properties.Resources.biblionet1;
+            this.biblionet.BackgroundImage = global::biblioteca.Properties.Resources.biblionet;
             this.biblionet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.biblionet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.biblionet.ErrorImage = global::biblioteca.Properties.Resources.biblio;
             this.biblionet.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.biblionet.Location = new System.Drawing.Point(213, 36);
+            this.biblionet.Location = new System.Drawing.Point(166, 36);
             this.biblionet.Name = "biblionet";
-            this.biblionet.Size = new System.Drawing.Size(307, 93);
+            this.biblionet.Size = new System.Drawing.Size(128, 93);
             this.biblionet.TabIndex = 15;
             this.biblionet.TabStop = false;
             this.biblionet.Click += new System.EventHandler(this.biblionet_Click);
@@ -122,30 +145,12 @@ namespace biblioteca
             this.btNotas.UseTileImage = true;
             this.btNotas.Click += new System.EventHandler(this.btNotas_Click);
             // 
-            // btEventos
-            // 
-            this.btEventos.AccessibleName = "Calendário";
-            this.btEventos.ActiveControl = null;
-            this.btEventos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEventos.Location = new System.Drawing.Point(928, 36);
-            this.btEventos.Name = "btEventos";
-            this.btEventos.Size = new System.Drawing.Size(111, 93);
-            this.btEventos.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btEventos.TabIndex = 5;
-            this.btEventos.Text = "Calendário";
-            this.btEventos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btEventos.TileImage = global::biblioteca.Properties.Resources.calendar2x48x60__1_;
-            this.btEventos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btEventos.UseSelectable = true;
-            this.btEventos.UseTileImage = true;
-            this.btEventos.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
             // btSalas
             // 
             this.btSalas.AccessibleName = "Espaços";
             this.btSalas.ActiveControl = null;
             this.btSalas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSalas.Location = new System.Drawing.Point(811, 36);
+            this.btSalas.Location = new System.Drawing.Point(928, 36);
             this.btSalas.Name = "btSalas";
             this.btSalas.Size = new System.Drawing.Size(111, 93);
             this.btSalas.Style = MetroFramework.MetroColorStyle.Orange;
@@ -163,7 +168,7 @@ namespace biblioteca
             this.btEquipamentos.AccessibleName = "Equipamentos";
             this.btEquipamentos.ActiveControl = null;
             this.btEquipamentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEquipamentos.Location = new System.Drawing.Point(694, 36);
+            this.btEquipamentos.Location = new System.Drawing.Point(811, 36);
             this.btEquipamentos.Name = "btEquipamentos";
             this.btEquipamentos.Size = new System.Drawing.Size(111, 93);
             this.btEquipamentos.Style = MetroFramework.MetroColorStyle.Orange;
@@ -182,7 +187,7 @@ namespace biblioteca
             this.btUtilizadores.ActiveControl = null;
             this.btUtilizadores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUtilizadores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btUtilizadores.Location = new System.Drawing.Point(577, 36);
+            this.btUtilizadores.Location = new System.Drawing.Point(694, 36);
             this.btUtilizadores.Name = "btUtilizadores";
             this.btUtilizadores.PaintTileCount = false;
             this.btUtilizadores.Size = new System.Drawing.Size(111, 93);
@@ -214,27 +219,18 @@ namespace biblioteca
             this.picLogo.TabStop = false;
             this.picLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(1119, 714);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(120, 19);
-            this.metroLabel3.TabIndex = 16;
-            this.metroLabel3.Text = "Booking - By Nana";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 747);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.biblionet);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btNotas);
-            this.Controls.Add(this.btEventos);
             this.Controls.Add(this.btSalas);
             this.Controls.Add(this.btEquipamentos);
             this.Controls.Add(this.btUtilizadores);
@@ -245,6 +241,7 @@ namespace biblioteca
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblionet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
@@ -259,13 +256,13 @@ namespace biblioteca
         private MetroFramework.Controls.MetroTile btUtilizadores;
         private MetroFramework.Controls.MetroTile btEquipamentos;
         private MetroFramework.Controls.MetroTile btSalas;
-        private MetroFramework.Controls.MetroTile btEventos;
         private MetroFramework.Controls.MetroTile btNotas;
         private MetroFramework.Controls.MetroTile btSair;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.PictureBox biblionet;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -31,6 +31,8 @@ namespace biblioteca
         {
             this.tabRegisto = new MetroFramework.Controls.MetroTabControl();
             this.pageReg = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.cbFuncao = new MetroFramework.Controls.MetroComboBox();
             this.btLimpar = new MetroFramework.Controls.MetroButton();
             this.btSubmeter = new MetroFramework.Controls.MetroButton();
             this.cbAluAno = new MetroFramework.Controls.MetroComboBox();
@@ -44,23 +46,21 @@ namespace biblioteca
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
+            this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
+            this.listUtilizadores = new System.Windows.Forms.ListBox();
+            this.btListaDeletar = new MetroFramework.Controls.MetroButton();
+            this.btListaAlterar = new MetroFramework.Controls.MetroButton();
             this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
             this.btAtivDeletar = new MetroFramework.Controls.MetroButton();
             this.btAtivAlterar = new MetroFramework.Controls.MetroButton();
             this.listAtivos = new System.Windows.Forms.ListBox();
             this.btEmpDeletar = new MetroFramework.Controls.MetroButton();
             this.btEmpAlterar = new MetroFramework.Controls.MetroButton();
-            this.btListaAlterar = new MetroFramework.Controls.MetroButton();
-            this.btListaDeletar = new MetroFramework.Controls.MetroButton();
-            this.listUtilizadores = new System.Windows.Forms.ListBox();
-            this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
-            this.cbFuncao = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.tabRegisto.SuspendLayout();
             this.pageReg.SuspendLayout();
             this.tabLista.SuspendLayout();
-            this.tabAtivos.SuspendLayout();
             this.tabLista1.SuspendLayout();
+            this.tabAtivos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabRegisto
@@ -77,8 +77,8 @@ namespace biblioteca
             // pageReg
             // 
             this.pageReg.Controls.Add(this.metroLabel1);
-            this.pageReg.Controls.Add(this.cbFuncao);
             this.pageReg.Controls.Add(this.btLimpar);
+            this.pageReg.Controls.Add(this.cbFuncao);
             this.pageReg.Controls.Add(this.btSubmeter);
             this.pageReg.Controls.Add(this.cbAluAno);
             this.pageReg.Controls.Add(this.tbAdicionais);
@@ -102,12 +102,35 @@ namespace biblioteca
             this.pageReg.VerticalScrollbarHighlightOnWheel = false;
             this.pageReg.VerticalScrollbarSize = 10;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(15, 65);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(64, 19);
+            this.metroLabel1.TabIndex = 29;
+            this.metroLabel1.Text = "Função: ⁎";
+            // 
+            // cbFuncao
+            // 
+            this.cbFuncao.FormattingEnabled = true;
+            this.cbFuncao.ItemHeight = 23;
+            this.cbFuncao.Items.AddRange(new object[] {
+            "Aluno",
+            "Professor"});
+            this.cbFuncao.Location = new System.Drawing.Point(106, 61);
+            this.cbFuncao.Name = "cbFuncao";
+            this.cbFuncao.Size = new System.Drawing.Size(442, 29);
+            this.cbFuncao.TabIndex = 2;
+            this.cbFuncao.UseSelectable = true;
+            this.cbFuncao.SelectedIndexChanged += new System.EventHandler(this.cbFuncao_SelectedIndexChanged);
+            // 
             // btLimpar
             // 
             this.btLimpar.Location = new System.Drawing.Point(106, 410);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(218, 30);
-            this.btLimpar.TabIndex = 27;
+            this.btLimpar.TabIndex = 7;
             this.btLimpar.Text = "Limpar campos";
             this.btLimpar.UseSelectable = true;
             this.btLimpar.Click += new System.EventHandler(this.btAluLimpar_Click);
@@ -117,7 +140,7 @@ namespace biblioteca
             this.btSubmeter.Location = new System.Drawing.Point(330, 410);
             this.btSubmeter.Name = "btSubmeter";
             this.btSubmeter.Size = new System.Drawing.Size(218, 30);
-            this.btSubmeter.TabIndex = 26;
+            this.btSubmeter.TabIndex = 8;
             this.btSubmeter.Text = "Submeter";
             this.btSubmeter.UseSelectable = true;
             this.btSubmeter.Click += new System.EventHandler(this.btAluSubmeter_Click);
@@ -138,8 +161,9 @@ namespace biblioteca
             this.cbAluAno.Location = new System.Drawing.Point(398, 148);
             this.cbAluAno.Name = "cbAluAno";
             this.cbAluAno.Size = new System.Drawing.Size(150, 29);
-            this.cbAluAno.TabIndex = 21;
+            this.cbAluAno.TabIndex = 5;
             this.cbAluAno.UseSelectable = true;
+            this.cbAluAno.SelectedIndexChanged += new System.EventHandler(this.cbAluAno_SelectedIndexChanged);
             // 
             // tbAdicionais
             // 
@@ -168,7 +192,7 @@ namespace biblioteca
             this.tbAdicionais.SelectionStart = 0;
             this.tbAdicionais.ShortcutsEnabled = true;
             this.tbAdicionais.Size = new System.Drawing.Size(442, 209);
-            this.tbAdicionais.TabIndex = 20;
+            this.tbAdicionais.TabIndex = 6;
             this.tbAdicionais.UseSelectable = true;
             this.tbAdicionais.WaterMark = "Anotações adicionais";
             this.tbAdicionais.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -191,7 +215,7 @@ namespace biblioteca
             this.tbAluTurma.Enabled = false;
             this.tbAluTurma.Lines = new string[0];
             this.tbAluTurma.Location = new System.Drawing.Point(106, 151);
-            this.tbAluTurma.MaxLength = 32767;
+            this.tbAluTurma.MaxLength = 8;
             this.tbAluTurma.Name = "tbAluTurma";
             this.tbAluTurma.PasswordChar = '\0';
             this.tbAluTurma.PromptText = "Designação da turma";
@@ -201,7 +225,7 @@ namespace biblioteca
             this.tbAluTurma.SelectionStart = 0;
             this.tbAluTurma.ShortcutsEnabled = true;
             this.tbAluTurma.Size = new System.Drawing.Size(240, 23);
-            this.tbAluTurma.TabIndex = 19;
+            this.tbAluTurma.TabIndex = 4;
             this.tbAluTurma.UseSelectable = true;
             this.tbAluTurma.WaterMark = "Designação da turma";
             this.tbAluTurma.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -222,8 +246,8 @@ namespace biblioteca
             this.tbProcesso.CustomButton.UseSelectable = true;
             this.tbProcesso.CustomButton.Visible = false;
             this.tbProcesso.Lines = new string[0];
-            this.tbProcesso.Location = new System.Drawing.Point(106, 63);
-            this.tbProcesso.MaxLength = 32767;
+            this.tbProcesso.Location = new System.Drawing.Point(106, 108);
+            this.tbProcesso.MaxLength = 8;
             this.tbProcesso.Name = "tbProcesso";
             this.tbProcesso.PasswordChar = '\0';
             this.tbProcesso.PromptText = "Número do processo escolar";
@@ -233,7 +257,7 @@ namespace biblioteca
             this.tbProcesso.SelectionStart = 0;
             this.tbProcesso.ShortcutsEnabled = true;
             this.tbProcesso.Size = new System.Drawing.Size(442, 23);
-            this.tbProcesso.TabIndex = 18;
+            this.tbProcesso.TabIndex = 3;
             this.tbProcesso.UseSelectable = true;
             this.tbProcesso.WaterMark = "Número do processo escolar";
             this.tbProcesso.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -255,7 +279,7 @@ namespace biblioteca
             this.tbNome.CustomButton.Visible = false;
             this.tbNome.Lines = new string[0];
             this.tbNome.Location = new System.Drawing.Point(106, 23);
-            this.tbNome.MaxLength = 32767;
+            this.tbNome.MaxLength = 70;
             this.tbNome.Name = "tbNome";
             this.tbNome.PasswordChar = '\0';
             this.tbNome.PromptText = "Nome completo";
@@ -265,7 +289,7 @@ namespace biblioteca
             this.tbNome.SelectionStart = 0;
             this.tbNome.ShortcutsEnabled = true;
             this.tbNome.Size = new System.Drawing.Size(442, 23);
-            this.tbNome.TabIndex = 17;
+            this.tbNome.TabIndex = 1;
             this.tbNome.UseSelectable = true;
             this.tbNome.WaterMark = "Nome completo";
             this.tbNome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -283,7 +307,7 @@ namespace biblioteca
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(15, 153);
+            this.metroLabel6.Location = new System.Drawing.Point(15, 151);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(52, 19);
             this.metroLabel6.TabIndex = 14;
@@ -301,7 +325,7 @@ namespace biblioteca
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(15, 63);
+            this.metroLabel9.Location = new System.Drawing.Point(15, 108);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(64, 19);
             this.metroLabel9.TabIndex = 16;
@@ -327,6 +351,51 @@ namespace biblioteca
             this.tabLista.Style = MetroFramework.MetroColorStyle.Blue;
             this.tabLista.TabIndex = 15;
             this.tabLista.UseSelectable = true;
+            // 
+            // tabLista1
+            // 
+            this.tabLista1.Controls.Add(this.listUtilizadores);
+            this.tabLista1.Controls.Add(this.btListaDeletar);
+            this.tabLista1.Controls.Add(this.btListaAlterar);
+            this.tabLista1.HorizontalScrollbarBarColor = true;
+            this.tabLista1.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabLista1.HorizontalScrollbarSize = 10;
+            this.tabLista1.Location = new System.Drawing.Point(4, 38);
+            this.tabLista1.Name = "tabLista1";
+            this.tabLista1.Size = new System.Drawing.Size(606, 455);
+            this.tabLista1.TabIndex = 0;
+            this.tabLista1.Text = "Lista";
+            this.tabLista1.VerticalScrollbarBarColor = true;
+            this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
+            this.tabLista1.VerticalScrollbarSize = 10;
+            // 
+            // listUtilizadores
+            // 
+            this.listUtilizadores.FormattingEnabled = true;
+            this.listUtilizadores.Location = new System.Drawing.Point(17, 23);
+            this.listUtilizadores.Name = "listUtilizadores";
+            this.listUtilizadores.Size = new System.Drawing.Size(573, 381);
+            this.listUtilizadores.TabIndex = 9;
+            // 
+            // btListaDeletar
+            // 
+            this.btListaDeletar.Location = new System.Drawing.Point(312, 410);
+            this.btListaDeletar.Name = "btListaDeletar";
+            this.btListaDeletar.Size = new System.Drawing.Size(278, 30);
+            this.btListaDeletar.TabIndex = 11;
+            this.btListaDeletar.Text = "Deletar";
+            this.btListaDeletar.UseSelectable = true;
+            this.btListaDeletar.Click += new System.EventHandler(this.btDeletar_Click);
+            // 
+            // btListaAlterar
+            // 
+            this.btListaAlterar.Location = new System.Drawing.Point(17, 410);
+            this.btListaAlterar.Name = "btListaAlterar";
+            this.btListaAlterar.Size = new System.Drawing.Size(289, 30);
+            this.btListaAlterar.TabIndex = 10;
+            this.btListaAlterar.Text = "Alterar";
+            this.btListaAlterar.UseSelectable = true;
+            this.btListaAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // tabAtivos
             // 
@@ -393,74 +462,6 @@ namespace biblioteca
             this.btEmpAlterar.UseSelectable = true;
             this.btEmpAlterar.Click += new System.EventHandler(this.btEmpAlterar_Click);
             // 
-            // btListaAlterar
-            // 
-            this.btListaAlterar.Location = new System.Drawing.Point(17, 410);
-            this.btListaAlterar.Name = "btListaAlterar";
-            this.btListaAlterar.Size = new System.Drawing.Size(289, 30);
-            this.btListaAlterar.TabIndex = 12;
-            this.btListaAlterar.Text = "Alterar";
-            this.btListaAlterar.UseSelectable = true;
-            this.btListaAlterar.Click += new System.EventHandler(this.btAlterar_Click);
-            // 
-            // btListaDeletar
-            // 
-            this.btListaDeletar.Location = new System.Drawing.Point(312, 410);
-            this.btListaDeletar.Name = "btListaDeletar";
-            this.btListaDeletar.Size = new System.Drawing.Size(278, 30);
-            this.btListaDeletar.TabIndex = 13;
-            this.btListaDeletar.Text = "Deletar";
-            this.btListaDeletar.UseSelectable = true;
-            this.btListaDeletar.Click += new System.EventHandler(this.btDeletar_Click);
-            // 
-            // listUtilizadores
-            // 
-            this.listUtilizadores.FormattingEnabled = true;
-            this.listUtilizadores.Location = new System.Drawing.Point(17, 23);
-            this.listUtilizadores.Name = "listUtilizadores";
-            this.listUtilizadores.Size = new System.Drawing.Size(573, 381);
-            this.listUtilizadores.TabIndex = 14;
-            // 
-            // tabLista1
-            // 
-            this.tabLista1.Controls.Add(this.listUtilizadores);
-            this.tabLista1.Controls.Add(this.btListaDeletar);
-            this.tabLista1.Controls.Add(this.btListaAlterar);
-            this.tabLista1.HorizontalScrollbarBarColor = true;
-            this.tabLista1.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabLista1.HorizontalScrollbarSize = 10;
-            this.tabLista1.Location = new System.Drawing.Point(4, 38);
-            this.tabLista1.Name = "tabLista1";
-            this.tabLista1.Size = new System.Drawing.Size(606, 455);
-            this.tabLista1.TabIndex = 0;
-            this.tabLista1.Text = "Lista";
-            this.tabLista1.VerticalScrollbarBarColor = true;
-            this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
-            this.tabLista1.VerticalScrollbarSize = 10;
-            // 
-            // cbFuncao
-            // 
-            this.cbFuncao.FormattingEnabled = true;
-            this.cbFuncao.ItemHeight = 23;
-            this.cbFuncao.Items.AddRange(new object[] {
-            "Aluno",
-            "Professor"});
-            this.cbFuncao.Location = new System.Drawing.Point(106, 103);
-            this.cbFuncao.Name = "cbFuncao";
-            this.cbFuncao.Size = new System.Drawing.Size(442, 29);
-            this.cbFuncao.TabIndex = 28;
-            this.cbFuncao.UseSelectable = true;
-            this.cbFuncao.SelectedIndexChanged += new System.EventHandler(this.cbFuncao_SelectedIndexChanged);
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(15, 107);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(54, 19);
-            this.metroLabel1.TabIndex = 29;
-            this.metroLabel1.Text = "Função:";
-            // 
             // Utilizadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,8 +484,8 @@ namespace biblioteca
             this.pageReg.ResumeLayout(false);
             this.pageReg.PerformLayout();
             this.tabLista.ResumeLayout(false);
-            this.tabAtivos.ResumeLayout(false);
             this.tabLista1.ResumeLayout(false);
+            this.tabAtivos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,6 +36,14 @@ namespace biblioteca
         private void CarregaUtilizadores()
         {
             //Carregar utilizadores
+            if (File.Exists("utilizadores.dat"))
+            {
+                FileStream stream = new FileStream("utilizadores.dat", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bin = new BinaryFormatter();
+                utilizadores = (List<Utilizador>)bin.Deserialize(stream);
+                stream.Close();
+                listUtilizadores.DataSource = utilizadores;
+            }
         }
 
         private void PreencherCampos(Professor professor)
@@ -49,10 +59,10 @@ namespace biblioteca
 
         private void btAluLimpar_Click(object sender, EventArgs e)
         {
-            AluDefaults();
+            Defaults();
         }
 
-        private void AluDefaults()
+        private void Defaults()
         {
             tbNome.Text = "";
             tbAluTurma.Text = "";
@@ -65,6 +75,10 @@ namespace biblioteca
         private void Utilizadores_FormClosing(object sender, FormClosingEventArgs e)
         {
             //Guardar listas
+            FileStream stream = new FileStream("utilizadores.dat", FileMode.Create, FileAccess.Write);
+            BinaryFormatter bin = new BinaryFormatter();
+            bin.Serialize(stream, utilizadores);
+            stream.Close();
         }
 
         private void gridLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -101,15 +115,15 @@ namespace biblioteca
         {
             //Adicionar a lista
 
-            if (AluPreenchido())
+            if (Preenchido())
             {
-                Utilizador novo = new Utilizador(tbNome.Text, tbProcesso.Text, cbAluAno.Text, tbAluTurma.Text, tbAdicionais.Text);
+                Utilizador novo = new Utilizador(tbNome.Text, tbProcesso.Text, (String)cbFuncao.SelectedItem, cbAluAno.Text, tbAluTurma.Text, tbAdicionais.Text);
                 PreencherCampos(novo);
                 utilizadores.Add(novo);
 
                 listUtilizadores.DataSource = null;
                 listUtilizadores.DataSource = utilizadores;
-                AluDefaults();
+                Defaults();
             }
             else
             {
@@ -133,9 +147,9 @@ namespace biblioteca
                 aluno.Turma = "-";
         }
 
-        private bool AluPreenchido()
+        private bool Preenchido()
         {
-            if (tbNome.Text != "")
+            if (tbNome.Text != "" && cbFuncao.SelectedIndex != -1)
                 return true;
             else
                 return false;
@@ -143,7 +157,7 @@ namespace biblioteca
 
         private void cbFuncao_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbFuncao.SelectedText == "Aluno")
+            if ((string)cbFuncao.SelectedItem == "Aluno")
             {
                 tbAluTurma.Enabled = true;
                 cbAluAno.Enabled = true;
@@ -153,6 +167,11 @@ namespace biblioteca
                 tbAluTurma.Enabled = false;
                 cbAluAno.Enabled = false;
             }
+        }
+
+        private void cbAluAno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

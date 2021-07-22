@@ -20,7 +20,8 @@ namespace biblioteca
         private void Form1_Load(object sender, EventArgs e)
         {
             btUtilizadores_Click(btUtilizadores,e);
-            this.Focus();
+            Focus();
+            BringToFront();
         }
 
         private void metroTile2_Click_1(object sender, EventArgs e)

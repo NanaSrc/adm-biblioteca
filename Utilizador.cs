@@ -22,10 +22,11 @@ namespace biblioteca
         public string Turma { get => turma; set => turma = value; }
         public string Adicionais { get => adicionais; set => adicionais = value; }
 
-        public Utilizador(string nome, string processo, string ano, string turma, string adicionais)
+        public Utilizador(string nome, string processo, string funcao, string ano, string turma, string adicionais)
         {
             this.nome = nome;
             this.processo = processo;
+            this.funcao = funcao;
             this.ano = ano;
             this.turma = turma;
             this.adicionais = adicionais;
@@ -36,8 +37,22 @@ namespace biblioteca
             this.nome = nome;
         }
 
+        public Utilizador(string nome, string processo, string adicionais)
+        {
+            this.nome = nome;
+            this.processo = processo;
+            this.adicionais = adicionais;
+        }
+
         public override string ToString()
         {
+            string letra;
+
+            if (Funcao == "Aluno")
+                letra = "A";
+            else
+                letra = "P";
+
             string comentario;
 
             if (Adicionais != "")
@@ -50,7 +65,7 @@ namespace biblioteca
                 comentario = "Possui 0 comentários";
             }
 
-            return string.Format("[A] {0,-30}    ({1})    {3,20}{2}     {4,20}", Nome.ToUpper(), Processo.ToUpper(), Turma.ToUpper(), Ano, comentario);
+            return string.Format("[{5}] {0,-30}    ({1})    {3,20}{2}     {4,20}", Nome.ToUpper(), Processo.ToUpper(), Turma.ToUpper(), Ano, comentario, letra);
         }
     }
 }

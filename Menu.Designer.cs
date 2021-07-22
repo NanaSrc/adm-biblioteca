@@ -76,11 +76,11 @@ namespace biblioteca
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(1073, 714);
+            this.metroLabel3.Location = new System.Drawing.Point(1057, 714);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(200, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(216, 19);
             this.metroLabel3.TabIndex = 16;
-            this.metroLabel3.Text = "Booking - Developed by Nαnα™";
+            this.metroLabel3.Text = "Booking - Developed by Nαnα™ ©";
             // 
             // pictureBox1
             // 

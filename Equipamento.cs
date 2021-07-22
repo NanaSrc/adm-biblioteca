@@ -32,5 +32,22 @@ namespace biblioteca
             this.codigo = codigo;
             this.quantidade = quantidade;
         }
+
+        public override string ToString()
+        {
+            string comentario;
+
+            if (Adicionais != "")
+            {
+                comentario = "Possui 1 comentário";
+
+            }
+            else
+            {
+                comentario = "Possui 0 comentários";
+            }
+
+            return string.Format(" {0,-30}    ({1})    {2,20}     {3,20}", Designacao.ToUpper(), Codigo.ToUpper(), quantidade, comentario);
+        }
     }
 }

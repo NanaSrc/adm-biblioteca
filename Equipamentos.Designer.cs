@@ -58,13 +58,13 @@ namespace biblioteca
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.tabLista = new MetroFramework.Controls.MetroTabControl();
             this.tabLista1 = new MetroFramework.Controls.MetroTabPage();
+            this.listLista = new System.Windows.Forms.ListBox();
             this.btDeletar = new MetroFramework.Controls.MetroButton();
             this.btAlterar = new MetroFramework.Controls.MetroButton();
             this.tabAtivos = new MetroFramework.Controls.MetroTabPage();
+            this.listAtivos = new System.Windows.Forms.ListBox();
             this.btAtivDeletar = new MetroFramework.Controls.MetroButton();
             this.btAtivAlterar = new MetroFramework.Controls.MetroButton();
-            this.listAtivos = new System.Windows.Forms.ListBox();
-            this.listLista = new System.Windows.Forms.ListBox();
             this.tabRegisto.SuspendLayout();
             this.tabReg.SuspendLayout();
             this.tabEquipamentos.SuspendLayout();
@@ -81,7 +81,7 @@ namespace biblioteca
             this.tabRegisto.Location = new System.Drawing.Point(23, 63);
             this.tabRegisto.Name = "tabRegisto";
             this.tabRegisto.SelectedIndex = 1;
-            this.tabRegisto.Size = new System.Drawing.Size(569, 571);
+            this.tabRegisto.Size = new System.Drawing.Size(584, 500);
             this.tabRegisto.Style = MetroFramework.MetroColorStyle.Green;
             this.tabRegisto.TabIndex = 0;
             this.tabRegisto.UseSelectable = true;
@@ -106,7 +106,7 @@ namespace biblioteca
             this.tabReg.HorizontalScrollbarSize = 10;
             this.tabReg.Location = new System.Drawing.Point(4, 38);
             this.tabReg.Name = "tabReg";
-            this.tabReg.Size = new System.Drawing.Size(561, 529);
+            this.tabReg.Size = new System.Drawing.Size(576, 529);
             this.tabReg.TabIndex = 2;
             this.tabReg.Text = "Novo registo";
             this.tabReg.VerticalScrollbarBarColor = true;
@@ -118,15 +118,15 @@ namespace biblioteca
             this.listRegSelecionados.Font = new System.Drawing.Font("Cascadia Code Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listRegSelecionados.FormattingEnabled = true;
             this.listRegSelecionados.ItemHeight = 17;
-            this.listRegSelecionados.Location = new System.Drawing.Point(359, 104);
+            this.listRegSelecionados.Location = new System.Drawing.Point(367, 104);
             this.listRegSelecionados.Name = "listRegSelecionados";
             this.listRegSelecionados.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listRegSelecionados.Size = new System.Drawing.Size(173, 140);
+            this.listRegSelecionados.Size = new System.Drawing.Size(190, 140);
             this.listRegSelecionados.TabIndex = 86;
             // 
             // btRegDeselecionar
             // 
-            this.btRegDeselecionar.Location = new System.Drawing.Point(302, 191);
+            this.btRegDeselecionar.Location = new System.Drawing.Point(310, 191);
             this.btRegDeselecionar.Name = "btRegDeselecionar";
             this.btRegDeselecionar.Size = new System.Drawing.Size(51, 29);
             this.btRegDeselecionar.TabIndex = 85;
@@ -135,7 +135,7 @@ namespace biblioteca
             // 
             // btRegSelecionar
             // 
-            this.btRegSelecionar.Location = new System.Drawing.Point(302, 134);
+            this.btRegSelecionar.Location = new System.Drawing.Point(310, 133);
             this.btRegSelecionar.Name = "btRegSelecionar";
             this.btRegSelecionar.Size = new System.Drawing.Size(51, 29);
             this.btRegSelecionar.TabIndex = 84;
@@ -147,10 +147,10 @@ namespace biblioteca
             this.listRegLista.Font = new System.Drawing.Font("Cascadia Code Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listRegLista.FormattingEnabled = true;
             this.listRegLista.ItemHeight = 17;
-            this.listRegLista.Location = new System.Drawing.Point(123, 104);
+            this.listRegLista.Location = new System.Drawing.Point(115, 104);
             this.listRegLista.Name = "listRegLista";
             this.listRegLista.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listRegLista.Size = new System.Drawing.Size(173, 140);
+            this.listRegLista.Size = new System.Drawing.Size(189, 140);
             this.listRegLista.TabIndex = 83;
             // 
             // cbRegEquipamento
@@ -158,15 +158,15 @@ namespace biblioteca
             this.cbRegEquipamento.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbRegEquipamento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbRegEquipamento.FormattingEnabled = true;
-            this.cbRegEquipamento.Location = new System.Drawing.Point(123, 61);
+            this.cbRegEquipamento.Location = new System.Drawing.Point(115, 61);
             this.cbRegEquipamento.Name = "cbRegEquipamento";
-            this.cbRegEquipamento.Size = new System.Drawing.Size(411, 21);
+            this.cbRegEquipamento.Size = new System.Drawing.Size(442, 21);
             this.cbRegEquipamento.TabIndex = 81;
             // 
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(14, 61);
+            this.metroLabel6.Location = new System.Drawing.Point(3, 61);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(100, 19);
             this.metroLabel6.TabIndex = 80;
@@ -177,16 +177,16 @@ namespace biblioteca
             this.cbRegNome.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbRegNome.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbRegNome.FormattingEnabled = true;
-            this.cbRegNome.Location = new System.Drawing.Point(123, 24);
+            this.cbRegNome.Location = new System.Drawing.Point(115, 24);
             this.cbRegNome.Name = "cbRegNome";
-            this.cbRegNome.Size = new System.Drawing.Size(411, 21);
+            this.cbRegNome.Size = new System.Drawing.Size(442, 21);
             this.cbRegNome.TabIndex = 79;
             // 
             // btRegSubmeter
             // 
-            this.btRegSubmeter.Location = new System.Drawing.Point(330, 468);
+            this.btRegSubmeter.Location = new System.Drawing.Point(339, 411);
             this.btRegSubmeter.Name = "btRegSubmeter";
-            this.btRegSubmeter.Size = new System.Drawing.Size(202, 30);
+            this.btRegSubmeter.Size = new System.Drawing.Size(218, 30);
             this.btRegSubmeter.TabIndex = 68;
             this.btRegSubmeter.Text = "Submeter";
             this.btRegSubmeter.UseSelectable = true;
@@ -195,7 +195,7 @@ namespace biblioteca
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(14, 24);
+            this.metroLabel1.Location = new System.Drawing.Point(3, 24);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(59, 19);
             this.metroLabel1.TabIndex = 70;
@@ -203,9 +203,9 @@ namespace biblioteca
             // 
             // btRegLimpar
             // 
-            this.btRegLimpar.Location = new System.Drawing.Point(123, 468);
+            this.btRegLimpar.Location = new System.Drawing.Point(115, 411);
             this.btRegLimpar.Name = "btRegLimpar";
-            this.btRegLimpar.Size = new System.Drawing.Size(202, 30);
+            this.btRegLimpar.Size = new System.Drawing.Size(218, 30);
             this.btRegLimpar.TabIndex = 69;
             this.btRegLimpar.Text = "Limpar";
             this.btRegLimpar.UseSelectable = true;
@@ -214,7 +214,7 @@ namespace biblioteca
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(14, 262);
+            this.metroLabel4.Location = new System.Drawing.Point(3, 262);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(71, 19);
             this.metroLabel4.TabIndex = 71;
@@ -226,16 +226,16 @@ namespace biblioteca
             // 
             // 
             this.tbRegAdicionais.CustomButton.Image = null;
-            this.tbRegAdicionais.CustomButton.Location = new System.Drawing.Point(215, 1);
+            this.tbRegAdicionais.CustomButton.Location = new System.Drawing.Point(300, 1);
             this.tbRegAdicionais.CustomButton.Name = "";
-            this.tbRegAdicionais.CustomButton.Size = new System.Drawing.Size(193, 193);
+            this.tbRegAdicionais.CustomButton.Size = new System.Drawing.Size(141, 141);
             this.tbRegAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbRegAdicionais.CustomButton.TabIndex = 1;
             this.tbRegAdicionais.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tbRegAdicionais.CustomButton.UseSelectable = true;
             this.tbRegAdicionais.CustomButton.Visible = false;
             this.tbRegAdicionais.Lines = new string[0];
-            this.tbRegAdicionais.Location = new System.Drawing.Point(123, 262);
+            this.tbRegAdicionais.Location = new System.Drawing.Point(115, 262);
             this.tbRegAdicionais.MaxLength = 32767;
             this.tbRegAdicionais.Multiline = true;
             this.tbRegAdicionais.Name = "tbRegAdicionais";
@@ -246,7 +246,7 @@ namespace biblioteca
             this.tbRegAdicionais.SelectionLength = 0;
             this.tbRegAdicionais.SelectionStart = 0;
             this.tbRegAdicionais.ShortcutsEnabled = true;
-            this.tbRegAdicionais.Size = new System.Drawing.Size(409, 195);
+            this.tbRegAdicionais.Size = new System.Drawing.Size(442, 143);
             this.tbRegAdicionais.TabIndex = 75;
             this.tbRegAdicionais.UseSelectable = true;
             this.tbRegAdicionais.WaterMark = "Anotações adicionais";
@@ -256,7 +256,7 @@ namespace biblioteca
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(14, 104);
+            this.metroLabel2.Location = new System.Drawing.Point(3, 104);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(97, 19);
             this.metroLabel2.TabIndex = 73;
@@ -280,7 +280,7 @@ namespace biblioteca
             this.tabEquipamentos.HorizontalScrollbarSize = 10;
             this.tabEquipamentos.Location = new System.Drawing.Point(4, 38);
             this.tabEquipamentos.Name = "tabEquipamentos";
-            this.tabEquipamentos.Size = new System.Drawing.Size(561, 529);
+            this.tabEquipamentos.Size = new System.Drawing.Size(576, 458);
             this.tabEquipamentos.TabIndex = 1;
             this.tabEquipamentos.Text = "Novo equipamento";
             this.tabEquipamentos.VerticalScrollbarBarColor = true;
@@ -290,7 +290,7 @@ namespace biblioteca
             // tgEquipQuantidade
             // 
             this.tgEquipQuantidade.AutoSize = true;
-            this.tgEquipQuantidade.Location = new System.Drawing.Point(125, 102);
+            this.tgEquipQuantidade.Location = new System.Drawing.Point(115, 102);
             this.tgEquipQuantidade.Name = "tgEquipQuantidade";
             this.tgEquipQuantidade.Size = new System.Drawing.Size(80, 17);
             this.tgEquipQuantidade.Style = MetroFramework.MetroColorStyle.Green;
@@ -304,7 +304,7 @@ namespace biblioteca
             // 
             this.nudEquipQuantidade.Enabled = false;
             this.nudEquipQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudEquipQuantidade.Location = new System.Drawing.Point(226, 100);
+            this.nudEquipQuantidade.Location = new System.Drawing.Point(201, 100);
             this.nudEquipQuantidade.Maximum = new decimal(new int[] {
             2500,
             0,
@@ -316,7 +316,7 @@ namespace biblioteca
             0,
             0});
             this.nudEquipQuantidade.Name = "nudEquipQuantidade";
-            this.nudEquipQuantidade.Size = new System.Drawing.Size(310, 22);
+            this.nudEquipQuantidade.Size = new System.Drawing.Size(356, 22);
             this.nudEquipQuantidade.TabIndex = 66;
             this.nudEquipQuantidade.Value = new decimal(new int[] {
             1,
@@ -326,18 +326,18 @@ namespace biblioteca
             // 
             // btEquipSubmeter
             // 
-            this.btEquipSubmeter.Location = new System.Drawing.Point(334, 468);
+            this.btEquipSubmeter.Location = new System.Drawing.Point(339, 411);
             this.btEquipSubmeter.Name = "btEquipSubmeter";
-            this.btEquipSubmeter.Size = new System.Drawing.Size(202, 30);
+            this.btEquipSubmeter.Size = new System.Drawing.Size(218, 30);
             this.btEquipSubmeter.TabIndex = 54;
             this.btEquipSubmeter.Text = "Submeter";
             this.btEquipSubmeter.UseSelectable = true;
             // 
             // btEquipLimpar
             // 
-            this.btEquipLimpar.Location = new System.Drawing.Point(126, 468);
+            this.btEquipLimpar.Location = new System.Drawing.Point(115, 411);
             this.btEquipLimpar.Name = "btEquipLimpar";
-            this.btEquipLimpar.Size = new System.Drawing.Size(202, 30);
+            this.btEquipLimpar.Size = new System.Drawing.Size(218, 30);
             this.btEquipLimpar.TabIndex = 55;
             this.btEquipLimpar.Text = "Limpar";
             this.btEquipLimpar.UseSelectable = true;
@@ -349,7 +349,7 @@ namespace biblioteca
             // 
             // 
             this.tbEquipCodigo.CustomButton.Image = null;
-            this.tbEquipCodigo.CustomButton.Location = new System.Drawing.Point(389, 1);
+            this.tbEquipCodigo.CustomButton.Location = new System.Drawing.Point(420, 1);
             this.tbEquipCodigo.CustomButton.Name = "";
             this.tbEquipCodigo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.tbEquipCodigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -358,7 +358,7 @@ namespace biblioteca
             this.tbEquipCodigo.CustomButton.UseSelectable = true;
             this.tbEquipCodigo.CustomButton.Visible = false;
             this.tbEquipCodigo.Lines = new string[0];
-            this.tbEquipCodigo.Location = new System.Drawing.Point(125, 62);
+            this.tbEquipCodigo.Location = new System.Drawing.Point(115, 62);
             this.tbEquipCodigo.MaxLength = 32767;
             this.tbEquipCodigo.Name = "tbEquipCodigo";
             this.tbEquipCodigo.PasswordChar = '\0';
@@ -368,7 +368,7 @@ namespace biblioteca
             this.tbEquipCodigo.SelectionLength = 0;
             this.tbEquipCodigo.SelectionStart = 0;
             this.tbEquipCodigo.ShortcutsEnabled = true;
-            this.tbEquipCodigo.Size = new System.Drawing.Size(411, 23);
+            this.tbEquipCodigo.Size = new System.Drawing.Size(442, 23);
             this.tbEquipCodigo.TabIndex = 64;
             this.tbEquipCodigo.UseSelectable = true;
             this.tbEquipCodigo.WaterMark = "Código/Etiqueta do exemplar";
@@ -381,16 +381,16 @@ namespace biblioteca
             // 
             // 
             this.tbEquipAdicionais.CustomButton.Image = null;
-            this.tbEquipAdicionais.CustomButton.Location = new System.Drawing.Point(91, 1);
+            this.tbEquipAdicionais.CustomButton.Location = new System.Drawing.Point(174, 1);
             this.tbEquipAdicionais.CustomButton.Name = "";
-            this.tbEquipAdicionais.CustomButton.Size = new System.Drawing.Size(319, 319);
+            this.tbEquipAdicionais.CustomButton.Size = new System.Drawing.Size(267, 267);
             this.tbEquipAdicionais.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.tbEquipAdicionais.CustomButton.TabIndex = 1;
             this.tbEquipAdicionais.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tbEquipAdicionais.CustomButton.UseSelectable = true;
             this.tbEquipAdicionais.CustomButton.Visible = false;
             this.tbEquipAdicionais.Lines = new string[0];
-            this.tbEquipAdicionais.Location = new System.Drawing.Point(125, 136);
+            this.tbEquipAdicionais.Location = new System.Drawing.Point(115, 136);
             this.tbEquipAdicionais.MaxLength = 32767;
             this.tbEquipAdicionais.Multiline = true;
             this.tbEquipAdicionais.Name = "tbEquipAdicionais";
@@ -401,7 +401,7 @@ namespace biblioteca
             this.tbEquipAdicionais.SelectionLength = 0;
             this.tbEquipAdicionais.SelectionStart = 0;
             this.tbEquipAdicionais.ShortcutsEnabled = true;
-            this.tbEquipAdicionais.Size = new System.Drawing.Size(411, 321);
+            this.tbEquipAdicionais.Size = new System.Drawing.Size(442, 269);
             this.tbEquipAdicionais.TabIndex = 62;
             this.tbEquipAdicionais.UseSelectable = true;
             this.tbEquipAdicionais.WaterMark = "Anotações adicionais";
@@ -415,7 +415,7 @@ namespace biblioteca
             // 
             // 
             this.tbEquipDesignacao.CustomButton.Image = null;
-            this.tbEquipDesignacao.CustomButton.Location = new System.Drawing.Point(391, 1);
+            this.tbEquipDesignacao.CustomButton.Location = new System.Drawing.Point(422, 1);
             this.tbEquipDesignacao.CustomButton.Name = "";
             this.tbEquipDesignacao.CustomButton.Size = new System.Drawing.Size(19, 19);
             this.tbEquipDesignacao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -424,7 +424,7 @@ namespace biblioteca
             this.tbEquipDesignacao.CustomButton.UseSelectable = true;
             this.tbEquipDesignacao.CustomButton.Visible = false;
             this.tbEquipDesignacao.Lines = new string[0];
-            this.tbEquipDesignacao.Location = new System.Drawing.Point(125, 24);
+            this.tbEquipDesignacao.Location = new System.Drawing.Point(115, 24);
             this.tbEquipDesignacao.MaxLength = 32767;
             this.tbEquipDesignacao.Name = "tbEquipDesignacao";
             this.tbEquipDesignacao.PasswordChar = '\0';
@@ -434,7 +434,7 @@ namespace biblioteca
             this.tbEquipDesignacao.SelectionLength = 0;
             this.tbEquipDesignacao.SelectionStart = 0;
             this.tbEquipDesignacao.ShortcutsEnabled = true;
-            this.tbEquipDesignacao.Size = new System.Drawing.Size(411, 21);
+            this.tbEquipDesignacao.Size = new System.Drawing.Size(442, 21);
             this.tbEquipDesignacao.TabIndex = 61;
             this.tbEquipDesignacao.UseSelectable = true;
             this.tbEquipDesignacao.WaterMark = "Designação do equipamento";
@@ -444,7 +444,7 @@ namespace biblioteca
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(15, 24);
+            this.metroLabel10.Location = new System.Drawing.Point(11, 24);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(89, 19);
             this.metroLabel10.TabIndex = 56;
@@ -453,7 +453,7 @@ namespace biblioteca
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(15, 62);
+            this.metroLabel9.Location = new System.Drawing.Point(11, 62);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(66, 19);
             this.metroLabel9.TabIndex = 60;
@@ -462,7 +462,7 @@ namespace biblioteca
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(16, 136);
+            this.metroLabel3.Location = new System.Drawing.Point(12, 136);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(71, 19);
             this.metroLabel3.TabIndex = 57;
@@ -471,7 +471,7 @@ namespace biblioteca
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(16, 100);
+            this.metroLabel8.Location = new System.Drawing.Point(12, 100);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(91, 19);
             this.metroLabel8.TabIndex = 59;
@@ -484,7 +484,7 @@ namespace biblioteca
             this.tabLista.Location = new System.Drawing.Point(613, 63);
             this.tabLista.Name = "tabLista";
             this.tabLista.SelectedIndex = 0;
-            this.tabLista.Size = new System.Drawing.Size(614, 567);
+            this.tabLista.Size = new System.Drawing.Size(614, 500);
             this.tabLista.Style = MetroFramework.MetroColorStyle.Green;
             this.tabLista.TabIndex = 15;
             this.tabLista.UseSelectable = true;
@@ -499,16 +499,24 @@ namespace biblioteca
             this.tabLista1.HorizontalScrollbarSize = 10;
             this.tabLista1.Location = new System.Drawing.Point(4, 38);
             this.tabLista1.Name = "tabLista1";
-            this.tabLista1.Size = new System.Drawing.Size(606, 525);
+            this.tabLista1.Size = new System.Drawing.Size(606, 458);
             this.tabLista1.TabIndex = 0;
             this.tabLista1.Text = "Lista";
             this.tabLista1.VerticalScrollbarBarColor = true;
             this.tabLista1.VerticalScrollbarHighlightOnWheel = false;
             this.tabLista1.VerticalScrollbarSize = 10;
             // 
+            // listLista
+            // 
+            this.listLista.FormattingEnabled = true;
+            this.listLista.Location = new System.Drawing.Point(17, 24);
+            this.listLista.Name = "listLista";
+            this.listLista.Size = new System.Drawing.Size(573, 381);
+            this.listLista.TabIndex = 17;
+            // 
             // btDeletar
             // 
-            this.btDeletar.Location = new System.Drawing.Point(313, 468);
+            this.btDeletar.Location = new System.Drawing.Point(312, 411);
             this.btDeletar.Name = "btDeletar";
             this.btDeletar.Size = new System.Drawing.Size(278, 30);
             this.btDeletar.TabIndex = 13;
@@ -517,7 +525,7 @@ namespace biblioteca
             // 
             // btAlterar
             // 
-            this.btAlterar.Location = new System.Drawing.Point(18, 468);
+            this.btAlterar.Location = new System.Drawing.Point(17, 411);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(289, 30);
             this.btAlterar.TabIndex = 12;
@@ -541,9 +549,17 @@ namespace biblioteca
             this.tabAtivos.VerticalScrollbarHighlightOnWheel = false;
             this.tabAtivos.VerticalScrollbarSize = 10;
             // 
+            // listAtivos
+            // 
+            this.listAtivos.FormattingEnabled = true;
+            this.listAtivos.Location = new System.Drawing.Point(17, 24);
+            this.listAtivos.Name = "listAtivos";
+            this.listAtivos.Size = new System.Drawing.Size(573, 381);
+            this.listAtivos.TabIndex = 16;
+            // 
             // btAtivDeletar
             // 
-            this.btAtivDeletar.Location = new System.Drawing.Point(312, 468);
+            this.btAtivDeletar.Location = new System.Drawing.Point(312, 411);
             this.btAtivDeletar.Name = "btAtivDeletar";
             this.btAtivDeletar.Size = new System.Drawing.Size(278, 30);
             this.btAtivDeletar.TabIndex = 15;
@@ -552,34 +568,18 @@ namespace biblioteca
             // 
             // btAtivAlterar
             // 
-            this.btAtivAlterar.Location = new System.Drawing.Point(17, 468);
+            this.btAtivAlterar.Location = new System.Drawing.Point(17, 411);
             this.btAtivAlterar.Name = "btAtivAlterar";
             this.btAtivAlterar.Size = new System.Drawing.Size(289, 30);
             this.btAtivAlterar.TabIndex = 14;
             this.btAtivAlterar.Text = "Alterar";
             this.btAtivAlterar.UseSelectable = true;
             // 
-            // listAtivos
-            // 
-            this.listAtivos.FormattingEnabled = true;
-            this.listAtivos.Location = new System.Drawing.Point(17, 24);
-            this.listAtivos.Name = "listAtivos";
-            this.listAtivos.Size = new System.Drawing.Size(573, 433);
-            this.listAtivos.TabIndex = 16;
-            // 
-            // listLista
-            // 
-            this.listLista.FormattingEnabled = true;
-            this.listLista.Location = new System.Drawing.Point(18, 24);
-            this.listLista.Name = "listLista";
-            this.listLista.Size = new System.Drawing.Size(573, 433);
-            this.listLista.TabIndex = 17;
-            // 
             // Equipamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 630);
+            this.ClientSize = new System.Drawing.Size(1250, 576);
             this.ControlBox = false;
             this.Controls.Add(this.tabLista);
             this.Controls.Add(this.tabRegisto);

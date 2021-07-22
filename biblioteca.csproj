@@ -99,7 +99,6 @@
     <Compile Include="Espacos.Designer.cs">
       <DependentUpon>Espacos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Professor.cs" />
     <Compile Include="Utilizadores.cs">
       <SubType>Form</SubType>
     </Compile>

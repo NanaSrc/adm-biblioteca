@@ -84,14 +84,14 @@ namespace biblioteca
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::biblioteca.Properties.Resources.booking1;
+            this.pictureBox1.BackgroundImage = global::biblioteca.Properties.Resources.booking3;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.ErrorImage = global::biblioteca.Properties.Resources.biblio;
             this.pictureBox1.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.pictureBox1.Location = new System.Drawing.Point(349, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(374, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(290, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 82);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
@@ -102,7 +102,7 @@ namespace biblioteca
             this.biblionet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.biblionet.ErrorImage = global::biblioteca.Properties.Resources.biblio;
             this.biblionet.InitialImage = global::biblioteca.Properties.Resources.biblio;
-            this.biblionet.Location = new System.Drawing.Point(166, 36);
+            this.biblionet.Location = new System.Drawing.Point(187, 36);
             this.biblionet.Name = "biblionet";
             this.biblionet.Size = new System.Drawing.Size(128, 93);
             this.biblionet.TabIndex = 15;

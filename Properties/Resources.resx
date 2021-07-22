@@ -172,9 +172,6 @@
   <data name="books1.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\books1.jpg.opdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="equipamentos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipamentos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="booking1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\booking1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -250,8 +247,8 @@
   <data name="biblio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\biblio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eventos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eventos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="utilizadores3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\utilizadores3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,6 +264,12 @@
   </data>
   <data name="biblionet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\biblionet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eventos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eventos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salas61" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salas6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +292,8 @@
   <data name="booking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\booking.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="equipamentos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipamentos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sair3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sair3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,7 +319,7 @@
   <data name="utilizadores6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\utilizadores6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="booking3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

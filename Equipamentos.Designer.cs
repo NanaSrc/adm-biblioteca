@@ -80,7 +80,7 @@ namespace biblioteca
             this.tabRegisto.Controls.Add(this.tabEquipamentos);
             this.tabRegisto.Location = new System.Drawing.Point(23, 63);
             this.tabRegisto.Name = "tabRegisto";
-            this.tabRegisto.SelectedIndex = 1;
+            this.tabRegisto.SelectedIndex = 0;
             this.tabRegisto.Size = new System.Drawing.Size(584, 500);
             this.tabRegisto.Style = MetroFramework.MetroColorStyle.Green;
             this.tabRegisto.TabIndex = 0;
@@ -106,7 +106,7 @@ namespace biblioteca
             this.tabReg.HorizontalScrollbarSize = 10;
             this.tabReg.Location = new System.Drawing.Point(4, 38);
             this.tabReg.Name = "tabReg";
-            this.tabReg.Size = new System.Drawing.Size(576, 529);
+            this.tabReg.Size = new System.Drawing.Size(576, 458);
             this.tabReg.TabIndex = 2;
             this.tabReg.Text = "Novo registo";
             this.tabReg.VerticalScrollbarBarColor = true;
@@ -135,7 +135,7 @@ namespace biblioteca
             // 
             // btRegSelecionar
             // 
-            this.btRegSelecionar.Location = new System.Drawing.Point(310, 133);
+            this.btRegSelecionar.Location = new System.Drawing.Point(310, 132);
             this.btRegSelecionar.Name = "btRegSelecionar";
             this.btRegSelecionar.Size = new System.Drawing.Size(51, 29);
             this.btRegSelecionar.TabIndex = 84;
@@ -280,7 +280,7 @@ namespace biblioteca
             this.tabEquipamentos.HorizontalScrollbarSize = 10;
             this.tabEquipamentos.Location = new System.Drawing.Point(4, 38);
             this.tabEquipamentos.Name = "tabEquipamentos";
-            this.tabEquipamentos.Size = new System.Drawing.Size(576, 458);
+            this.tabEquipamentos.Size = new System.Drawing.Size(576, 529);
             this.tabEquipamentos.TabIndex = 1;
             this.tabEquipamentos.Text = "Novo equipamento";
             this.tabEquipamentos.VerticalScrollbarBarColor = true;
@@ -542,7 +542,7 @@ namespace biblioteca
             this.tabAtivos.HorizontalScrollbarSize = 10;
             this.tabAtivos.Location = new System.Drawing.Point(4, 38);
             this.tabAtivos.Name = "tabAtivos";
-            this.tabAtivos.Size = new System.Drawing.Size(606, 525);
+            this.tabAtivos.Size = new System.Drawing.Size(606, 458);
             this.tabAtivos.TabIndex = 1;
             this.tabAtivos.Text = "Empréstimos ativos";
             this.tabAtivos.VerticalScrollbarBarColor = true;

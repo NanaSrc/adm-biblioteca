@@ -12,18 +12,16 @@ namespace biblioteca
 {
     public partial class Utilizadores : MetroFramework.Forms.MetroForm
     {
-        List<Aluno> alunos;
-        List<Professor> professores;
+        List<Utilizador> utilizadores;
         public Utilizadores()
         {
             InitializeComponent();
-            alunos = new List<Aluno>();
-            professores = new List<Professor>();
+            utilizadores = new List<Utilizador>();;
         }
 
         private void Utilizadores_Load(object sender, EventArgs e)
         {
-            tbAluNome.Focus();
+            tbNome.Focus();
             CarregaUtilizadores();
             CarregaEmprestimos();
         }
@@ -36,30 +34,6 @@ namespace biblioteca
         private void CarregaUtilizadores()
         {
             //Carregar utilizadores
-        }
-
-        private void btSubmeter_Click(object sender, EventArgs e)
-        {
-            //Adicionar a lista
-            //Guardar a lista
-            //Atualizar a lista
-            //Limpar campos
-
-            if (ProfPreenchido())
-            {
-                Professor novo = new Professor(tbProfNome.Text, tbProfProcesso.Text, tbProfAdicionais.Text);
-                PreencherCampos(novo);
-                professores.Add(novo);
-
-                listUtilizadores.DataSource = null;
-                listUtilizadores.DataSource = professores;
-                AluDefaults();
-            }
-            else
-            {
-                MessageBox.Show("Preencha todos os campos obrigatórios." + Environment.NewLine + "Campos marcados com o asterisco '⚹'", "Erro ao submeter formulário", MessageBoxButtons.OK, MessageBoxIcon.Warning); ;
-            }
-
         }
 
         private void PreencherCampos(Professor professor)
@@ -80,25 +54,12 @@ namespace biblioteca
 
         private void AluDefaults()
         {
-            tbAluNome.Text = "";
+            tbNome.Text = "";
             tbAluTurma.Text = "";
-            tbAluProcesso.Text = "";
+            tbProcesso.Text = "";
             cbAluAno.SelectedIndex = -1;
-            tbAluAdicionais.Text = "";
-            tbAluNome.Focus();
-        }
-
-        private void btProfLimpar_Click(object sender, EventArgs e)
-        {
-            ProfDefaults();
-        }
-
-        private void ProfDefaults()
-        {
-            tbProfNome.Text = "";
-            tbProfProcesso.Text = "";
-            tbProfAdicionais.Text = "";
-            tbProfNome.Focus();
+            tbAdicionais.Text = "";
+            tbNome.Focus();
         }
 
         private void Utilizadores_FormClosing(object sender, FormClosingEventArgs e)
@@ -142,12 +103,12 @@ namespace biblioteca
 
             if (AluPreenchido())
             {
-                Aluno novo = new Aluno(tbAluNome.Text, tbAluProcesso.Text, cbAluAno.Text, tbAluTurma.Text, tbAluAdicionais.Text);
+                Utilizador novo = new Utilizador(tbNome.Text, tbProcesso.Text, cbAluAno.Text, tbAluTurma.Text, tbAdicionais.Text);
                 PreencherCampos(novo);
-                alunos.Add(novo);
+                utilizadores.Add(novo);
 
                 listUtilizadores.DataSource = null;
-                listUtilizadores.DataSource = alunos;
+                listUtilizadores.DataSource = utilizadores;
                 AluDefaults();
             }
             else
@@ -160,7 +121,7 @@ namespace biblioteca
             //Limpar campos
         }
 
-        private void PreencherCampos(Aluno aluno)
+        private void PreencherCampos(Utilizador aluno)
         {
             if (aluno.Processo == "")
                 aluno.Processo = "N/A";
@@ -174,10 +135,24 @@ namespace biblioteca
 
         private bool AluPreenchido()
         {
-            if (tbAluNome.Text != "")
+            if (tbNome.Text != "")
                 return true;
             else
                 return false;
+        }
+
+        private void cbFuncao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbFuncao.SelectedText == "Aluno")
+            {
+                tbAluTurma.Enabled = true;
+                cbAluAno.Enabled = true;
+            }
+            else
+            {
+                tbAluTurma.Enabled = false;
+                cbAluAno.Enabled = false;
+            }
         }
     }
 }
